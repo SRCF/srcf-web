@@ -1,0 +1,107 @@
+<!--#set var="title" value="Frequently Asked Questions" -->
+<!--#include virtual="../inc/header.html" -->
+
+<!--#include virtual="../inc/counts.html" -->
+<!--#include virtual="../inc/ubuntuversion.html" -->
+
+<h2>Frequently Asked Questions: About the SRCF</h2>
+
+<h3 id="what">What is the SRCF?</h3>
+
+<p>The SRCF is the University of Cambridge's Student-Run Computing
+Facility. We provide web hosting, shell accounts and various other
+computing services to members of the University and groups such as
+University societies. We are a University society, registered with
+the Societies Syndicate. As such we are not formally supported by the 
+University Administration in any way; instead the service is maintained 
+by a group of volunteers.</p>
+
+<h3 id="who">Who are the SRCF?</h3>
+
+<p>The SRCF executive &mdash; the <a href="/committee">committee</a> and sysadmin (system administration) team &mdash; consists of current and former University of Cambridge students.
+We hold elections for the committee positions every year at our AGM, according to our <a href="constitution">constitution</a>.
+Any member of the University (staff or student) can <a href="/signup">register</a> to become a lifetime member of the SRCF, and so use our services.
+We do not charge any membership fees, or require anything from our members beyond that they abide by our <a href="/tos">Terms of Service</a>.</p>
+
+<h3 id="why">Why does the SRCF exist?</h3>
+
+<p>The SRCF was formed in 1999 to provide services which the University Administration could not, including web hosting, mailing lists, and other computing resources for student societies.
+Nowadays, the <a href="http://help.uis.cam.ac.uk/email-telephony-and-collaboration/map-collaborative-services/society-web-pages/computing">UIS</a> and many external hosting providers also offer similar services, but none provide as many features at no cost as the SRCF.</p>
+
+<p>Our sysadmins volunteer due to their interest in the GNU/Linux operating system and related software, current server technologies, and to gain valuable experience administering large, multi-user, networked systems.
+The SRCF also effectively functions as the Linux Users Group (LUG) of the University.</p>
+
+<h3 id="system">What sort of systems do you run?</h3>
+
+<p>We maintain and manage all of our own hardware (physically located in Cambridge) and software.
+We primarily use <a href="http://www.ubuntu.com/">Ubuntu Linux</a>
+as it is free (<a href="http://www.gnu.org/philosophy/free-sw.html">in all
+senses</a>), stable and relatively easy to maintain.</p>
+
+<p>The SRCF's primary server, <tt>pip</tt>, is our shell server, and hosts our users' home directories and email.  It
+has two six-core 2.1GHz Intel Xeon E5-2620 CPUs with 64GB of RAM and four 4TB
+SATA disks.  This is currently running Ubuntu <!--#echo var="ubuntuversion" -->
+(we normally upgrade once every year or two, in the summer).</p>
+
+<p>Most of our other services run on our virtualised cloud known as
+<tt>thunder</tt>.  This comprises a half-dozen assorted physical servers running the free version of XenServer
+and a back-end storage server, <tt>alto</tt>. Several of these machines were graciously donated 
+by <a href="https://www.thirdlight.com">Third Light Ltd.</a> and Peterhouse.</p>
+
+<p>Virtual machines in public service include:</p>
+<ul>
+<!-- <li><tt>cyclone</tt>: <a href="/desktop">SRCF Desktop</a></li> -->
+<li><tt>sinkhole</tt>: web (Apache) and PostgreSQL server
+<li><tt>squirrel</tt>: MySQL database server</li>
+<li><tt>cavein</tt>: long-running resource-hungry services, e.g. game servers</li>
+<li><tt>blizzard</tt>: authoritative DNS (and DNSSEC) server</li>
+<li><tt>flame</tt>: <a href="/faq/news">Usenet (NNTP) server</a></li>
+<li><tt>flood</tt>: <a href="/faq/irc">IRC (Internet Relay Chat) server</a></li>
+</ul>
+
+<p>Until 2006 we had just one server in use, <tt>kern</tt> (a dual Athlon
+1.6GHz PC with 2GB of RAM and 400GB of disk).  Before that we
+<em>used</em> to run on an ancient Intel Pentium running at 166MHz with
+128MB of RAM.  How times have changed :)</p>
+
+<h3 id="help">You guys are doing a great job.  How can I help you
+out?</h3>
+
+<p>We always welcome donations &mdash; as we don't charge for our services,
+it's the only way we can afford to buy new hardware to keep up with the
+demand. If you want to make a donation, please visit <a
+href="https://www.srcf.net/donate">this page</a> and it'll tell you
+what to do.</p>
+
+<p>If you want to donate some time and experience to help us out, then
+why not join our support team? This is an email-based help list for
+problems not requiring administrative access to the SRCF server. If you
+have experience of using a website or other services on the SRCF, and
+want to help out, then send an email to <a
+href="mailto:sysadmins@srcf.net">sysadmins@srcf.net</a> to be
+added to the list. Many thanks in advance to all who volunteer!</p>
+
+<p>We are also always recruiting new sysadmins. If you have experience administering Linux systems,
+or are willing to learn, please send an email to the committee at <a
+href="mailto:committee@srcf.net">committee@srcf.net</a>.
+We will invite you to meet the sysadmin team in person, and discuss where you can help out.</p>
+
+<h3 id="users">How many users do you have?</h3>
+
+<p>There are currently <!--#echo var="users" --> users (members
+with active shell accounts).</p>
+
+<h3 id="members">How many members do you have?</h3>
+
+<p>There are currently <!--#echo var="members" --> members of
+the society (membership is for life).</p>
+
+<h3 id="societies">How many societies do you host?</h3>
+
+<p>We currently host <!--#echo var="societies" --> society
+accounts, of which <!--#echo var="inactive_societies" --> are
+no longer maintained.</p>
+
+<p><img src="/membershipgraph" alt="Membership graph"/></p>
+
+<!--#include virtual="../inc/footer.html" -->

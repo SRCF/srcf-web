@@ -1,0 +1,174 @@
+<!--#set var="title" value="Minutes" -->
+<!--#include virtual="../inc/header.html" -->
+
+<h1>Minutes of SRCF committee/sysadmin meeting held 19th November 2007</h1>
+
+<p><b>Venue:</b> <a href="http://www.the-cambridgeblue.co.uk/">The Cambridge Blue</a>, Gwydir Street</p>
+
+<p><b>In attendance:</b></p>
+
+<ul>
+<li>Haibo E, chairperson</li>
+<li>Malcolm Scott, secretary and sysadmin</li>
+<li>David Simner, treasurer</li>
+<li>Jen Johnson, publicity officer</li>
+<li>Kris Glass, sysadmin</li>
+</ul>
+
+<p><b>Minutes</b></p>
+
+<ol>
+
+<li>Matters arising from previous minutes:
+<ol style="list-style-type: lower-roman">
+<li>Update on acquisition of minutes from previous year:
+	<ul>
+	<li>Luke claimed to Kris that he had sent minutes to Haibo; however Haibo has heard nothing from Luke.</li>
+	<li><b>Action: Kris to pester Luke more aggressively.</b></li>
+	<li>Malcolm has so far not managed to find the minutes from May 2007; they may have been lost.</li>
+	</ul>
+</li>
+<li>Report from Kristian on SRCF holdings in the GU:
+	<ul>
+	<li>Kris and Jen will be clearing out unused equipment from the GU shortly.</li>
+	<li><b>Action: Kris to produce and circulate an inventory of our holdings in the GU.</b></li>
+	</ul>
+</li>
+<li>Treasurer's report on internet banking:
+	<ul>
+	<li>We now have two bank accounts: a current account (negligible interest, but allows us to write cheques) and a business savings account (approximately 3% interest).</li>
+	<li>We now also have access to internet banking after years of trying. Access is via a SecureID keyfob.</li>
+	<li>&pound;1600 from CUCS is now in our bank accounts.</li>
+	</ul>
+</li>
+<li>Compliance with Societies Syndicate:
+	<ul>
+	<li>All necessary documents have been sent to the Junior Proctor.</li>
+	<li>Accounts have been sent to Bob Dowling to forward onwards.</li>
+	<li>We should therefore be a fully registered society for another year.</li>
+	</ul>
+</li>
+<li>Documentation; update from Malcolm on access to CUSU and pip:
+	<ul>
+	<li>There is a new off-site wiki for sysadmin and committee documentation (<a href="http://www.srcf.retrosnub.co.uk/">http://www.srcf.retrosnub.co.uk/</a>).</li>
+	<li>This is hosted on an account donated by <a href="http://www.retrosnub.co.uk/">Retrosnub Internet Services</a>.</li>
+	<li>Malcolm has written a detailed document containing access arrangements and a map.</li>
+	<li><b>Action: Malcolm to fix a non-critical Raven authentication bug with the wiki as discussed.</b></li>
+	<li><b>Action: Kris to ensure that he still has access to CUSU via the cardlock before he receives keys for next term.</b></li>
+	<li>Kris is in the process of documenting our various sysadmin tools on the wiki.</li>
+	</ul>
+</li>
+<li>Review of new mailing lists:
+	<ul>
+	<li>Mailing lists have been reorganised as discussed in the previous meeting.</li>
+	<li><b>Action: Malcolm to produce documentation for sysadmins and committee regarding these lists.</b></li>
+	<li>We have a problem that Mailman makes it too easy for people to request unsubscription from the lists; people are discovering their subscriptions to SRCF lists and attempting to unsubscribe from them even before they have received email via the lists.  If the unsubscription request is approved, the change will not be permanent as the lists are regenerated from the master membership list occasionally.
+		<ul>
+		<li><b>Action: someone to customise the Mailman list information / unsubscription pages to better explain the point of the lists and to discourage people from unsubscribing.</b></li>
+		<li>If someone unsubscribes from soc-srcf, the sysadmins should add that person to the email opt-out list (<tt>/societies/srcf/admin/email-optout</tt>) so that they are not resubscribed automatically.</li>
+		<li>The unsubscription page for soc-srcf-users should say something like "you agree to let the sysadmins cancel your account" as it is necessary for all users to be on that mailing list.</li>
+		</ul>
+	</li>
+	<li><b>Action: Kris to add a description of the lists to the public website, including a note on the front page.</b></li>
+	</ul>
+</li>
+<li>New hardware:
+	<ul>
+	<li>A 1U Intel server of reasonable specification was donated by <a href="http://www.thirdlight.com/">Third Light Ltd.</a>, the managing director of which (Michael Wells) was a SRCF user during his time at the University.  We are of course very grateful for this.</li>
+	<li>The supplied disks were mismatched; one is large but broken, the other is small.  The disks are SCSI.  Malcolm intends to donate a pair of suitable disks but his plans have been thwarted so far by inept vendors.  The machine cannot be set up until the disks are obtained and installed.</li>
+	<li>The use to which this server will be put is not yet certain.  <b>Action: sysadmins to decide upon a suitable use for it before the AGM.</b></li>
+	<li>It was noted that a syslog server would be a useful secondary task for the machine; this consumes almost no resources and could run in parallel with other applications.</li>
+	<li>The server was not supplied with rackmount rails.  David has authorised Malcolm to buy some; Malcolm has attempted to obtain them but due to further inept vendors (and the model being discontinued) has had no luck so far.  We should try other vendors and perhaps ask Third Light whether the originals are still available.  <b>Action: Malcolm to continue the quest for the holy rail.</b>  (The secretary apologises.)</li>
+	</ul>
+</li>
+<li>UCS machine room tour:
+	<ul>
+	<li>Approximately 25 people attended, very few of whom were freshers, which is fewer than recent years but was more manageable.</li>
+	<li>The lower number may have been due to its advertisement during the mailing list reorganisation.</li>
+	</ul>
+</li>
+<li>SRCF web site:
+	<ul>
+	<li>David and Kris have started updating the site and fixing the version control.</li>
+	<li>This will continue as previously discussed.</li>
+	</ul>
+</li>
+</ol>
+</li>
+
+<li>Sysadmins:
+	<ol style="list-style-type: lower-roman">
+	<li>Old sysadmins:
+		<ul>
+		<li>It is apparent that Phil Cowans and Steven Murdoch do not use their root privileges often.</li>
+		<li>Steven's specialist security knowledge is a useful asset for moments of crisis.</li>
+		<li><b>Action: ask Phil whether he is still interested in remaining a sysadmin.</b></li>
+		</ul>
+	</li>
+	<li>New sysadmins:
+		<ul>
+		<li>An informal meeting for potential sysadmins was held.  Malte Schwarzkopf and James Clemence attended.  Both were deemed suitable to join the sysadmin team.</li>
+		<li>Dave Eyers could not make the meeting but expressed an interest.  He has served on the support list for some time, always giving exceptional answers to emails, and is known to have experience of sysadmin duties elsewhere, so he would also be suitable to join the team.</li>
+		<li>We do not have sufficient knowledge of the few others who applied but did not attend the meeting to determine whether or not they would be suitable.  If necessary, we will arrange to meet some of them and decide at a later date.</li>
+		<li><b>Action: Haibo to invite Malte, James and Dave to join the team, and email the others to inform them of the above.  Kris / Malcolm to provide Haibo with contact details.</b></li>
+		<li>We will hold a social event to welcome the new sysadmins at the start of next term, to which all members will be invited.</li>
+		<li><b>Action: sysadmins to make documentation more complete and ensure that we have a recent complete backup before the new sysadmins get root.</b></li>
+		</ul>
+	</li>
+	</ol>
+</li>
+
+<li>Security compromise on 29th October:
+	<ul>
+	<li>It was noted that Malcolm is awesome for restoring service within 16 hours despite the necessity for a complete reinstall and audit of configuration.  Malcolm in turn acknowledged the invaluable assistance of Kris and Ross.</li>
+	<li>The Union of Clare Students is offering us a small amount of backup space for /etc; we thank them for the offer but decline as we can now perform our own backups.</li>
+	<li>The root-level compromise arose because we were running a kernel with a known security vulnerability; a new kernel package had been installed a couple of weeks prior to the incident but had not rebooted.  The administrative hassle of scheduling and announcing reboots in advance was noted.  <b>Action: the sysadmins will advertise (on the website front page) Sundays 2am-3am as a potentially vulnerable period in which they are permitted to reboot the server without much prior warning.</b></li>
+	<li>We do not currently have a means of power-cycling pip remotely.  This would be useful to keep the downtime to a minimum during reboots as it would allow us to recover remotely from certain problems which would currently require a trip to the server room.  <b>Action: sysadmins to investigate what would be involved in providing remote power control.</b></li>
+	</ul>
+</li>
+
+<li>Inventory:
+	<ul>
+	<li><b>Action: Malcolm to inventorise SRCF holdings in CUSU by the end of term.</b></li>
+	<li>Kris will be inventorising our holdings in the Graduate Union as above.</li>
+	</ul>
+</li>
+
+<li>Social events:
+	<ul>
+	<li>These can now be advertised via the soc-srcf-social mailing list.</li>
+	<li>The next event will be the welcome event for new sysadmins (probably a pubmeet), as above.</li>
+	</ul>
+</li>
+
+<li>Self-service control panel for users (Kris's project):
+	<ul>
+	<li>The idea is that menial administrative tasks will be requested using an online control panel.  This will ensure that users provide the correct information with their requests, make sure that society account requests come from a recognised administrator, etc..</li>
+	<li>The control panel will not perform any tasks which need root.  Instead, requests will be emailed to the sysadmins, or ultimately be added to a queue for sysadmins to process as a batch.</li>
+	<li>Raven authentication will be used.</li>
+	<li>At the same time, the admin scripts are being standardised to avoid code duplication.</li>
+	<li><b>Action: Kris will be working on all this over Christmas.</b></li>
+	<li>It was noted that Kris is awesome for actually doing this as it's been on the To Do list for several years.</li>
+	</ul>
+</li>
+
+<li>SRCF stash:
+	<ul>
+	<li>The sysadmins would like stash, e.g. t-shirts. :-)</li>
+	<li><b>Action: Jen to produce a design.</b></li>
+	<li>Rosie Warner would be willing to embroider a small batch of clothing for us (for a small fee) as she has the necessary equipment.</li>
+	</ul>
+</li>
+
+<li>AOB:
+	<ul>
+	<li>The hostname "kern" is being treated as a role address for most of our services, for historical reasons.  <b>Action: Kris to plan deprecation of this hostname, and the movement to invidivual role addresses.</b></li>
+	<li>AGM venue: Kris suggests the Clare College Blythe Room.  This would need booking at least two weeks in advance.</li>
+	</ul>
+</li>
+
+<li>The next meeting will be held just before the social, on <b>Thursday 17th January at 7pm</b> (venue tbc).  It would be nice if people didn't arrange conflicting commitments this time.  Please <b>put this in your diary</b>; if necessary <b>get a diary</b> :-).</li>
+
+</ol>
+
+<!--#include virtual="../inc/footer.html" -->

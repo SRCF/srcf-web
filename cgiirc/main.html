@@ -1,0 +1,40 @@
+<!--#set var="title" value="IRC" -->
+<!--#include virtual="../inc/header.html" -->
+<script language="JavaScript"><!--
+// From irc.cgi
+function setjs() {
+ if(navigator.product == 'Gecko') {
+   document.loginform["interface"].value = 'mozilla';
+ }else if(window.opera && document.childNodes) {
+   document.loginform["interface"].value = 'opera7';
+ }else if(navigator.appName == 'Microsoft Internet Explorer' &&
+    navigator.userAgent.indexOf("Mac_PowerPC") > 0) {
+    document.loginform["interface"].value = 'konqueror';
+ }else if(navigator.appName == 'Microsoft Internet Explorer' &&
+ document.getElementById && document.getElementById('ietest').innerHTML) {
+   document.loginform["interface"].value = 'ie';
+ }else if(navigator.appName == 'Konqueror') {
+    document.loginform["interface"].value = 'konqueror';
+ }else if(window.opera) {
+   document.loginform["interface"].value = 'opera';
+ }
+}
+//-->
+</script>
+
+<h1 id="ietest">SRCF web-IRC service</h1>
+
+<p>To use the SRCF IRC service through your web browser, please log in below.</p>
+
+<p>Alternatively, you can use a standalone IRC client to connect to <tt><a href="irc://irc.srcf.net/">irc.srcf.net</a></tt>.</p>
+
+<form method="POST" action="irc.cgi" name="loginform" onsubmit="setjs()">
+<input type="hidden" name="interface" value="nonjs"/>
+<table style="border:1px solid black; background-color:#eee; padding:0.5em;">
+<tr><td>Nickname:</td><td><input type="text" name="Nickname"/></td></tr>
+<tr><td>Channel:</td> <td><input type="text" name="Channel" value="#<!--#if expr="$QUERY_STRING" --><!--#echo var="QUERY_STRING" --><!--#else -->srcf<!--#endif -->"/></td></tr>
+<tr><td colspan="2" style="text-align:center; padding-top:1em;"><input type="submit" value="Connect"/></td></tr>
+</table>
+</form>
+
+<!--#include virtual="../inc/footer.html" -->

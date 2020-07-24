@@ -1,0 +1,8 @@
+# This is served as a default robots.txt for any srcf.net site which does not
+# specify its own robots.txt.
+
+User-agent: *
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Disallow: /

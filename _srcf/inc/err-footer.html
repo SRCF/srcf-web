@@ -1,0 +1,24 @@
+          <!--#if expr="$REDIRECT_ERROR_NOTES" -->
+          <pre style="white-space: pre-wrap;"><!--#echo encoding="none" var="REDIRECT_ERROR_NOTES" --></pre>
+          <!--#endif -->
+          <!--#if expr="$NOFOOTER" -->
+          <!--#else -->
+          <h5>For visitors</h5>
+          <p>You may contact the <a href="mailto:<!--#echo encoding="url" var="SERVER_ADMIN" -->">webmaster</a> for assistance.</p>
+          <h5>For the site owner</h5>
+          <p>If you think this is a server error, please contact the <a href="mailto:soc-srcf-support@lists.cam.ac.uk">support team</a>.</p>
+          <!--#endif -->
+        </div>
+      </div>
+      <div class="float-left">
+        <a href="/" class="text-muted"><!--#echo var="SERVER_NAME" --></a>
+      </div>
+      <div class="float-right">
+        <a href="https://www.srcf.net">
+          <span class="text-danger">Student-Run</span>
+          <span class="text-primary">Computing Facility</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

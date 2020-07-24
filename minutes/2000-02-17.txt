@@ -1,0 +1,56 @@
+Minutes SRCF committee meeting Thu Feb 17 2000
+
+Venue: The Bun Shop
+
+Present:
+	Matthew Vernon
+	Hanna Wallach
+	Peter Clay
+	Jock Busuttil
+
+In attendance:
+	Martin Keegan
+
+1.	Matters arising
+
+It was decided that we wouldn't publish minutes on the website until they had been approved by a subsequent committee meeting.
+
+Ian Jackson accepts his role as a security consultant, and Peter Benie accepts his role as an admin.  These should be formalised.  They are both already members.
+
+soc-srcf has been fixed to contain the current members.
+
+The minutes of the last meeting were not approved pending amendments by Matthew.
+
+2.	Finance
+
+No bank account yet - we should get the signatures of the new committee on the application form.
+
+Membership has been checked against the amount of subscriptions received.  We have about 200 pounds in cash and cheques.
+
+We hsould investigate funding a backup device of our own (we currently rely on Matthew's personal tape drive).  Matthew has not yet been paid for the tapes.
+
+3.	AGM
+
+Nominations as noted.
+
+Directions to the Winstanley Lecture Theatre have been given to Matthew.
+
+It was proposed that we should look into setting the membership fees to zero.
+
+The AGM Agenda was defined.
+
+4.	AOB
+
+Alan Bird offers a reciprocal arrangement with CUSU.  They need three people:
+	-- an admin for heffalump.cusu
+	-- mac/printer techs
+	-- a webmaster
+
+In exchange, they plan to offer CUSU backing for the Societies Syndicate application for funds; and justify our presence to the next CUSU exec.
+
+We should consider getting a lockable cabinet in CUSU.
+
+Matthew suggested the SRCF becoming a registered charity.
+
+The meeting closed at 18:43.
+

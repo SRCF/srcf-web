@@ -1,0 +1,104 @@
+Minutes SRCF committee meeting Thu Apr 27 2000 
+
+Venue: Starbucks 
+
+Present: 
+
+	 Bob Dowling 
+	 Martin Keegan 
+	 Hanna Wallach 
+	 Peter Clay 
+	 Jock Busuttil 
+
+
+
+1. Matters arising 
+
+The minutes from the last meeting (Mon 16 April 2000) were confirmed. 
+
+2. Review of the accounts 
+
+Bob said that he had reviewed the accounts for the SRCF and that all
+was in order. He asked the committee to explain its reasoning for the
+removal of the membership fees. Since the accounts demonstrate that the
+vast majority of our assets have been donated, and that the money
+generated from membership fees was sitting largely untouched in a bank
+account (apart from the outlay on the backup tapes that Matthew Vernon
+bought), the change to the membership fees is justifiable. 
+
+It was suggested that the remainder of the money directly from the
+membership fees should be set aside for critical hardware failures
+(such as a hard drive or memory failing) and not used to acquire new
+kit. This should be done by soliciting donations from members. 
+
+3. Members 
+
+Jock raised the concern that, with the floodgates open after the
+announcement that membership fees had been removed, the SRCF might be
+unable to cope with the demand. It was pointed out that we can
+currently host two hundred users on our disk, and that is on the
+assumption that they all are completely filling their 100Mb quota. In
+any case, we would have sufficient warning if we looked at buying a new
+hard disk when the number of users reached 70-75% of our capacity. 
+
+Jock proceeded to get his coat. 
+
+Bob asked about the member registration procedures in place. We
+currently have two stages of registration: 
+
+     -- add2canon / addsoc - add entries to the canonical membership
+     lists, then emails the information to the admins for account
+     creation (executed by anyone) 
+     -- customised adduser scripts that create the account and
+     password which it then emails to the new user (executed by root).
+
+
+
+Bob then pointed out the impact of the recent changes to the Data
+Protection Act. For existing members (the 'transitional phase'), an
+email must be sent out detailing what information is stored about them
+electronically (in our case, not a great deal), what it is used for and
+informing them that they need to explicitly opt out. For new members,
+we must ask their explicit permission to store the same information (an
+opt in situation). 
+
+It was noted that two users had not received passwords because for some
+reason, adduser.local was not executable. This has been rectified. 
+
+4. AOB 
+
+Societies syndicate: it was noted that they meet for the last time this
+academic year in June. It was resolved that we would make an
+application for capital to purchase necessary hardware and consumables
+(hard drives, magnetic tapes, larger tape drive, new box, memory etc.) 
+
+DNS stuff: we now have kern and snook.srcf.societies.cam.ac.uk. We need
+to subsequently request www.srcf.societies.cam.ac.uk from the CS and
+kern and snook.srcf.ucam.org from Ian Jackson. Care must be taken at
+all stages NOT TO BREAK THE MAIL SYSTEM. 
+
+Techlinks: it was noted that it would be nice to be privy to the
+missives that the CS sends to departments who have techlinks. 
+
+Root appointment: Jock is to be made root (qua Jock, not webmaster) so
+that minor admin tasks can be carried out more quickly. 
+
+Website indexing: Jock is to ask for kern to be added to the list of
+sites indexed by the main university search engine
+(http://www-search.cam.ac.uk/). 
+
+Service wishlist: what kind of stuff should we be doing? 
+
+     -- website hosting (which we do) 
+     -- anonymous ftp (for download only) 
+     -- email and mailing lists (which we do) 
+     -- allowing users to add an interface to ldap service, integrated
+     to exim, that MSIE and Netscape can make use of 
+     -- thor-a-like services 
+     -- self-signing SSL 
+     -- becoming the top of the 'trust tree' whereby we offer key
+     signing of all flavours. 
+
+
+
+The meeting closed at 15:20.

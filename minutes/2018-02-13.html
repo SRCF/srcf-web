@@ -1,0 +1,110 @@
+<!--#set var="title" value="Minutes of SRCF executive meeting, 13th February 2018" -->
+<!--#include virtual="../inc/header.html" -->
+
+<h1><!--#echo encoding="none" var="title" --></h1>
+
+<p>Minutes of the Executive Meeting held in Robinson College Bar from 20:00 on Tuesday 13 February 2018.</p>
+<p>Present:</p>
+<ul>
+<li>Dexter Chua (Chair, Sysadmin, <code>dec41</code>)</li>
+<li>Charles Board (Junior Treasurer, <code>cvrb2</code>)</li>
+<li>Will Earley (Publicity, <code>wje25</code>)</li>
+<li>Malcolm Scott (Sysadmin, <code>mas90</code>)</li>
+<li>Edwin Bahrami Balani (Sysadmin, <code>eb677</code>)</li>
+</ul>
+<p>Apologies:</p>
+<ul>
+<li>Richard Allitt (Minister of Defence, <code>rsa33</code>)</li>
+</ul>
+<p>Summary of action points:</p>
+<ul>
+<li>Dexter
+<ul>
+<li>Email Bob Dowling about GDPR.</li>
+<li>Organise an AGM this Term.</li>
+<li>Email the anonymous donor.</li>
+<li>Ask CyberSoc if they &quot;intend to use smog&quot;.</li>
+</ul></li>
+<li>Charles
+<ul>
+<li>Continue looking for Trinity Hall email for Garden Party</li>
+</ul></li>
+<li>Sysadmins
+<ul>
+<li>Email suspended user to reinstate account</li>
+</ul></li>
+</ul>
+<h2 id="gdpr">1. GDPR</h2>
+<ul>
+<li>Currently unclear how responsibility will be shared between societies using the SRCF to store data and the SRCF itself
+<ul>
+<li>There are different clearly-defined activities including data storage, data processing, etc.</li>
+</ul></li>
+<li>Talk to Bob Dowling (Senior Treasurer) about the GDPR and how to proceed</li>
+<li><strong>Action: Dexter</strong> to email Bob</li>
+</ul>
+<h2 id="garden-party">2. Garden party</h2>
+<ul>
+<li>OpenMarket still to send money for last time</li>
+<li><strong>Action: Charles</strong> to continue looking for Trinity Hall email for garden party</li>
+</ul>
+<h2 id="terms-of-service">3. Terms of Service</h2>
+<ul>
+<li>Dexter: may be better to deal with GDPR first</li>
+<li>Should email users with notice period prior to any planned ToS changes</li>
+</ul>
+<h2 id="decision-on-suspended-account">4. Decision on suspended account</h2>
+<ul>
+<li>User ran a Tor exit node for ~1 day; violated ToS and CUDN rules</li>
+<li>Was apologetic and recognised their wrongs in their reply to sysadmins' notice of account suspension</li>
+<li>A vote of those present from the Committee was held on a motion to restore the user's account:
+<ul>
+<li>Three in favour, none against, none abstaining. The motion passes.</li>
+</ul></li>
+<li><strong>Action: Sysadmins</strong> to email the user regarding restoration of account</li>
+</ul>
+<h2 id="brief-sysadmins-report">5. Brief sysadmins' report</h2>
+<ul>
+<li>Main issue is that if all the recently-donated servers are turned on at once, the UPS complains</li>
+<li>May want to retire some servers, e.g. those that restrict VM pool capabilities</li>
+<li>Re. Third Light’s offer of servers last year: Dexter emailed them but received no reply.</li>
+<li>Perhaps a bad idea to buy servers currently as current CPUs are awful (Spectre/Meltdown). Malcolm reckons first generation of new CPUs will have bugs.</li>
+<li>pip is doing well, especially since web hosting has been outsourced to sinkhole</li>
+</ul>
+<h2 id="any-other-business">6. Any other business</h2>
+<ul>
+<li>New Control Panel &amp; Bootstrappified website launch: noted to be awesome.
+<ul>
+<li>Thanks be to Richard Allitt (rsa33, co-opted Minister of Defence).</li>
+</ul></li>
+<li><strong>Action: Dexter</strong> to organise AGM by end of Term.
+<ul>
+<li>Would be good to have more (undergraduate, particularly) student members of Committee.</li>
+<li>Could/should ask the people attending Hack Days to help recruitment.</li>
+</ul></li>
+<li><strong>Action: Dexter</strong> to email a former user who anonymously donated £1000.</li>
+</ul>
+<h2 id="smog">7. smog &amp; the future of the VM cluster (AOB but deserves a subheading)</h2>
+<ul>
+<li>smog and pip are similarly spec’d machines funded by a CL grant from GCHQ</li>
+<li>smog is currently very unused and lives in SRCF rack at Mill Lane.
+<ul>
+<li>Last use of smog was April 2017.</li>
+</ul></li>
+<li>Meant to be used to quickly spin up personal VMs for cybersecurity/CTF-type events run by CyberSoc, and run by the SRCF on behalf of Frank Stajano in return for pip</li>
+<li>Current environment around smog is deliberately paranoid, since it’s meant for people to break into (VMs running on) it</li>
+<li>Best to approach CyberSoc about it; they are still in existence and active (last mailing list post on Jan 2018)
+<ul>
+<li>Need to see what plans, if any, CyberSoc have to use smog in future</li>
+</ul></li>
+<li>There are currently: 1 ‘newest’ VM host (cirrus, from Peterhouse donation), 3 ‘new’ ones (of which one is winnie.cusu) and 5 ‘old’ VM hosts.
+<ul>
+<li>Based on RAM capacity (main limiting factor for VM hosts), smog could replace ~4-5 of the ‘old’ hosts (which are currently in cold standby to carry the load in maintenance periods)</li>
+<li>In combination with some donated Retrosnub machines, smog could replace all of the old VM capacity and possibly then some.</li>
+</ul></li>
+<li>If smog and another CUSU server were added to the VM pool, should be able to remove the oldest of the existing VM hosts from the pool</li>
+<li><p><strong>Action: Dexter</strong> to ask CyberSoc if they “intend to use smog”</p></li>
+</ul>
+<p>The meeting closed at 21:52.</p>
+
+<!--#include virtual="../inc/footer.html" -->

@@ -1,0 +1,258 @@
+<!--#set var="title" value="Minutes of SRCF executive meeting, 12th May 2013" -->
+<!--#include virtual="../inc/header.html" --> 
+<h1><!--#echo encoding="none" var="title" --></h1>
+
+<p>The meeting was held on Sunday the 12th of May 2013, between 6pm and 8pm, in the Castle Inn, Castle Street, Cambridge</p>
+
+<p>In Attendance:</p>
+<ul>
+    <li>Matthew Ireland (Chair)</li>
+    <li>Daniel Richman (Secretary, Sysadmin)</li>
+    <li>Charles Board (Junior Treasurer)</li>
+    <li>Amar Sood (Publicity, Sysadmin)</li>
+    <li>Ben Millwood (Sysadmin)</li>
+    <li>Malcolm Scott (Sysadmin)</li>
+</ul>
+
+<p>Apologies for Absence</p>
+
+<ul>
+    <li>Daniel Thomas (Sysadmin)</li>
+    <li>Andrew Ryrie (Sysadmin)</li>
+</ul>
+
+<h3>Approval of Minutes from the previous meeting</h3>
+<p>The minutes of the AGM have yet to be produced.</p>
+
+<h3>Matters arising from the previous meeting:</h3>
+
+<ul>
+    <li>Business omitted from the meeting: forkbombing, purchase of UPS, Control Panel, Last year's accounts</li>
+    <li>
+        Definitive SRCF Membership list (<code>soc-srcf@lists.cam.ac.uk</code> vs <code>/societies/sysadmins/admin/memberlist</code>) <br />
+        <i>To determine whether the SRCF has a definitive membership list, and if so, what it is</i>
+
+        <ul>
+            <li>
+                Do we need one?
+                <ul>
+                    <li>If the proctors ask, we should be able to tell them</li>
+                </ul>
+            </li>
+            <li>We have no definition of what canonical is</li>
+            <li>We need to be able to remove people if they leave, to the extent that we should be able to completely forget about someone forever</li>
+            <li>Distinction between member asking "remove my membership" vs "take me off the mailing list": a long while ago (do not any more): if someone asked to leave, we only removed them from the mailing list</li>
+            <li>We have lots of members we cannot contact</li>
+            <li>Most other societies keep information forever</li>
+            <li>We do not want to re-use a username</li>
+            <li>We should have some way of marking people as ex-member</li>
+            <li>
+                <i>Remark (post meeting)</i>:
+                The text below summarises the 'statuses' in <code>/societies/sysadmins/admin/memberlist</code> as of 2013-06-07
+<pre>
+       3 honorary
+    5297 member
+       1 revoked
+    2188 user
+</pre>
+            </li>
+            <li>
+                <b>Action</b> (Executive):
+                <ul>
+                    <li>Go through <code>/societies/sysadmins/ex-members.txt</code></li>
+                    <li>Change statuses to new a ex-member status "terminated", where appropriate</li>
+                    <li>If we have extra free time: go through opt-out emails, attempt to identify why they left, update as appropriate</li>
+                    <li>Create a definitive list of membership</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Removing link spam from the Donors' page
+        <ul>
+            <li>The donors page does not have the ability to specify a link - must have been manual, hence there is no need for a message to the donors page that links may be removed at any time (which was an action from the previous meeting)</li>
+            <li>
+                <b>Action</b> (Ben): Edit Donors' database:
+                <ul>
+                    <li>Link spam: "Prime Office Space Cambridge" - to be removed</li>
+                    <li>Dead link: Cambridge Computer Consultants</li>
+                </ul>
+                <i>(completed on the spot)</i>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Providing users easier access to their web logs:
+        <ul>
+            <li><b>Action</b> (Ben): Add symlinks to logs in users'/societies' home directories</li>
+            <li>It was not decided whether we should we inform users that we have done this</li>
+        </ul>
+    </li>
+    <li>
+        Support System:
+        <ul>
+            <li>Consensus: Stackoverflow &gt; Wiki &gt; Support mailing list (the latter being the current solution, which "doesn't really work")</li>
+            <li>Amar found some open source stack overflow clones, but is worried about their long term maintenance prospects</li>
+            <li>Concern over answers on the system being kept up to date; it was noted that some of the current FAQ items are out of date</li>
+            <li>We decided to discuss this further at the garden party after having thought about it</li>
+        </ul>
+    </li>
+    <li>
+        Privacy Policy:
+        <ul>
+            <li>We should inform members of things including but not limited to the fact that their email forwarding address is world readable</li>
+            <li><b>Action</b> (Matthew): Either outsource writing it or write something and then outsource checking it</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Exceptional Items:</h3>
+
+<ul>
+    <li>
+        Garden Party
+        <ul>
+            <li>
+                Joint Tech Societies Garden Party
+                <ul>
+                    <li>CUCaTS, Cybersoc, have floated the idea of a joint garden party</li>
+                    <li><i>Remark: Amar is the president of CUCaTS</i></li>
+                    <li>Benefits: avoid scheduling clashes, pool resources</li>
+                    <li>The SRCF has traditionally done a solo garden party and has regular (incl. alumni) attendees each year</li>
+                    <li>Having many garden parties means everyone can go to at least one</li>
+                </ul>
+            </li>
+            <li>We want to avoid clashing with the Science Societies, though we don't know when theirs will be</li>
+            <li><b>Action</b> (Matthew): Email Sci Socs to ask when their GP will be</li>
+            <li>We need to book soon, lest all venues be unavailable</li>
+        </ul>
+    </li>
+    <li>
+        SSL Certificates
+        <ul>
+            <li>Malcolm found a company reselling AlphaSSL - significant saving ($49 vs £200 / 2 years)</li>
+            <li>Matthew: Next meeting: set out plan to stop supporting <code>srcf.ucam.org</code></li>
+            <li>Only going to renew for 1 year</li>
+            <li><b>Action</b>: Sysadmins - keep eye on logs for referers to work out who links to us at the old address</li>
+        </ul>
+    </li>
+    <li>
+        Automating TTL on old societies
+        <ul>
+            <li>We should gzip, rather than delete stuff; we have the disk space to do this</li>
+            <li>Society names should be reusable</li>
+            <li>Especially for CompSci Group projects which use the same names each year</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Any other business:</h3>
+
+<ul>
+    <li>
+        News
+        <ul>
+            <li>The sysadmins were thanked for upgrading pip</li>
+            <li>Matthew and Charles have filled out the HSBC mandate to update names on the bank account</li>
+            <li>
+                Third Light Servers update:
+                <ul>
+                    <li>One will be used to virtualise pip</li>
+                    <li>Other to go in grad union alongside CUSU backup box for our backups</li>
+                    <li>Malcom noted that we need a new disk for the latter</li>
+                    <li>We resolved to deal with it later</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Concerns about Woozle in the Grad Union
+        <ul>
+            <li>Woozle was offline without any explanation yesterday</li>
+            <li>Not worth worrying about it: pip is at far greater risk anyway</li>
+        </ul>
+    </li>
+    <li>
+        Hydra
+        <ul>
+            <li>Development currently paused</li>
+            <li><b>Action</b>: (Daniel R) - Collect stats on how many societies use PHP, Other CGI, just static content, Apache-specific features (.htaccess), ...</li>
+        </ul>
+    </li>
+    <li>
+        IRC over SSL
+        <ul>
+            <li>A user complained about lack of SSL on IRC</li>
+            <li>Would need to rebuild our IRC server</li>
+            <li>SSL over IRC is <a href="http://www.quakenet.org/articles/99-trust-is-not-transitive-or-why-irc-over-ssl-is-pointless">silly</a></li>
+        </ul>
+    </li>
+    <li>
+        pip is a mess
+        <ul>
+            <li>Amar suggested building a new system from scratch and migrating things for it</li>
+            <li>Goals: A system where we understand how everything works, rollbacks, clear what each script does</li>
+            <li>If Malcolm were to disappear, even temporarily, things would be maintainable but we'd be in trouble</li>
+            <li>The problem could be lack of documentation: and to that extent we could rewrite documentation instead</li>
+            <li>Without a lot of thought and planning a rebuild won't help</li>
+            <li>Key services - web, email - are relatively sane, well documented</li>
+            <li>Matthew suggested a dedicated structured meeting for this before summer vacation if we want to proceed</li>
+        </ul>
+    </li>
+    <li>
+        Third Light have offered us more sponsorship
+        <ul>
+            <li>Need more time to think what best to use this on</li>
+            <li><b>Action</b>: Matthew will email Third Light</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>To be delayed until the next meeting:</h3>
+
+<ul>
+    <li>
+        Annual Dinner
+        <ul>
+            <li>Plan to discuss this over the summer, looking to do it in December</li>
+            <li>Neill/OpenMarket may be open to sponsoring</li>
+        </ul>
+    </li>
+    <li>
+        Virtual Machines
+        <ul>
+            <li>Plans for the future: virtualise pip, use pip hardware to offer people VMs</li>
+            <li>Will consider this over the summer: discuss at garden party</li>
+        </ul>
+    </li>
+    <li>Support system (see above)</li>
+    <li>Timeline for migrating remaining websites off <code>srcf.ucam.org</code> (see above: SSL certificates)</li>
+    <li>Discussion of freshers' fair and squash</li>
+    <li>Discussion of control panel progress</li>
+    <li>Further sysadmin recruitment</li>
+</ul>
+
+<h3>Actions summary:</h3>
+
+<ul>
+    <li>Executive: Create a definitive list of membership, update user statuses</li>
+    <li>Sysadmins: keep eye on logs for referers to work out who links to us at the old address</li>
+    <li>
+        Ben
+        <ul>
+            <li>Edit Donors' database to remove link spam / dead links</li>
+            <li>Add symlinks to web logs in users'/societies' home directories</li>
+        </ul>
+    </li>
+    <li>
+        Matthew
+        <ul>
+            <li>Either outsource writing the privacy policy or write something and then outsource checking it</li>
+            <li>Email Sci Socs to ask when their Garden Party will be</li>
+            <li>Email Third Light about their offer of further sponsorship</li>
+        </ul>
+    </li>
+    <li>Daniel R: Collect stats on how many societies use PHP, Other CGI, just static content, Apache-specific features (.htaccess), ...</li>
+</ul>
+
+<!--#include virtual="../inc/footer.html" -->

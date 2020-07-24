@@ -1,0 +1,137 @@
+<!--#set var="title" value="Minutes" -->
+<!--#include virtual="../inc/header.html" -->
+
+<h1>Minutes of SRCF committee/sysadmin meeting held 18th February 2008</h1>
+
+<p><b>Venue:</b> The Castle Inn</p>
+
+<p><b>In attendance:</b></p>
+
+<ul>
+<li>Haibo E, chairperson</li>
+<li>Malcolm Scott, secretary and sysadmin</li>
+<li>David Simner, treasurer</li>
+<li>Jen Johnson, publicity officer</li>
+<li>Kristian Glass, sysadmin</li>
+<li>Malte Schwarzkopf, sysadmin</li>
+</ul>
+
+<p><b>Minutes</b></p>
+
+<ol>
+
+<li>Matters arising from previous minutes:
+<ol style="list-style-type: lower-roman">
+<li>Ratification of previous minutes:
+	<ul><li>The action "people who are currently in position of old SRCF hardware should take responsibility for disposing of it" requires clarification: this equipment is to be sold where appropriate, not necessarily just discarded.</li></ul></li>
+<li>Disk Smashing Party:
+	<ul>
+	<li>This should be held in exam term, possibly shortly after the compsci dissertation deadline (Friday 16th May).</li>
+	<li>The party will be open to current/past committee and sysadmins only to avoid health and safety issues.</li>
+	<li>The party will be held outdoors, and may involve a picnic.</li>
+	<li>We will decide upon a venue closer to the time.</li>
+	</ul>
+	</li>
+<li>Sale of ex-TCM equipment:
+	<ul>
+	<li>Phil (our previous TCM contact) is no longer in Cambridge.</li>
+	<li><b>Action: Kristian to consider emailing Christian Steinr&uuml;cken who is also in the group and may have some interest in the situation.</b></li>
+	<li>If we are allowed to, we will probably sell this equipment at the garden party.</li>
+	</ul>
+	</li>
+<li>UPS ownership:
+	<ul>
+	<li><b>Action: Kristian to try to determine who owns the UPS in the GU.</b></li>
+	</ul>
+	</li>
+<li>Possibility of using a wiki for the FAQ:
+	<ul>
+	<li>Since this was James's idea, full discussion will be postponed until he is present at a meeting.</li>
+	<li>It was unclear to those present why we would want to use a wiki for the FAQ.</li>
+	</ul>
+	</li>
+<li>Cyclone (new server):
+	<ul>
+	<li>Progress is being made despite awkward hardware: we have an OS installed on the disks, but the disks still need reinstalling in the server.</li>
+	<li><b>Action still pending: Malcolm to email Third Light enquiring about rails</b></li>
+	</ul>
+	</li>
+<li>New sysadmins:
+	<ul>
+	<li>The new sysadmins (Malte, James, Dave) have been granted root access.</li>
+	<li><b>Action: sysadmins to clean up pjc51-adm as he is no longer a sysadmin.</b></li>
+	<li><b>Action: sysadmins to clear up (or poke Ian to clear up) the iga20-tmp account which still exists from October's break-in recovery.</b></li>
+	</ul>
+	</li>
+<li>Stash:
+	<ul>
+	<li><b>Action still pending: Kristian to advertise the stash competition.</b></li>
+	</ul>
+	</li>
+<li>Donations:
+	<ul>
+	<li><b>Action still pending: David to put the list of donors on the wiki.</b></li>
+	<li><b>Action still pending: Kristian to ask people using lots of resources to donate.</b></li>
+	</ul>
+	</li>
+<li>RAM upgrade:
+	<ul>
+	<li>It transpires that pip requires memory to be installed in identical sets of four for optimal performance.</li>
+	<li>We therefore purchased on 29th January 2008 and installed on 3rd February a further 8GB of memory, as four 2GB Kingston PC2-5400 ECC registered DIMMs, at a cost of &pound;259.96, thus increasing pip's memory to 12GB.  This should improve performance due to larger caches and significantly increase the amount of time we have to catch something consuming all available memory.</li>
+	</ul>
+	</li>
+</ol>
+</li>
+
+<li>AGM:
+	<ul>
+	<li>The Blythe Room, Clare Colony has been booked (for free).</li>
+	<li><b>Action: Kristian to double-check the booking tonight.</b></li>
+	<li><b>Action: Malcolm to announce the AGM after the venue is confirmed.</b></li>
+	<li><b>Action: Malcolm to circulate an agenda a few days before the meeting.</b></li>
+	<li>Regarding vacant positions on the incoming committee, it was noted that we should not permit a sysadmin to be chair, but sysadmins may stand for any other position.  We should aim to have at least one, ideally two sysadmins on the committee so that they are represented at committee meetings.</li>
+	<li><b>Action: Malcolm to put the above guidelines on the wiki.</b></li>
+	</ul>
+	</li>
+
+<li>Mailing lists (again):
+	<ul>
+	<li>We need a list on which downtime is announced, from which a user can opt out without losing his account (but which contains all users by default).</li>
+	<li>The name <tt>soc-srcf-maintenance</tt> was suggested.  <b>Action: Malcolm to register and configure this.</b></li>
+	<li><b>Action: Malcolm to look into disabling unsubscription by users from <tt>soc-srcf</tt> and <tt>soc-srcf-users</tt> (requiring them to email us instead, due to membership of these lists being required for users).</b></li>
+	<li><b>Action: Malcolm to look into redirecting users' requests for unsubscription from <tt>soc-srcf-maintenance</tt> to a script on pip, so that we can automatically maintain a canonical list of who has opted out.</b></li>
+	</ul>
+	</li>
+
+<li>Tomas Pfister (tjp35):
+	<ul>
+	<li>Tomas was seen (on #srcf) to claim that he had found "around 50 clear mysql passwords... in less than half an hour" (amongst other unfounded accusations that the sysadmins are neglecting the security of our service).</li>
+	<li>Since password-hunting was deemed a violation of our (and JANET's) acceptable use policy, the sysadmins suspended his account pending decision by the committee.</li>
+	<li>Following discussion, the committee decided to terminate his membership in the society (and hence also his account).  He may apply to re-join the society no earlier than Michaelmas 2008.</li>
+	<li><b>Action: Malcolm to inform Tomas of this decision, pointing out (due to his concerns of being ejected from the University) that it is unlikely to result in any further disciplinary action.</b></li>
+	<li><b>Action: Malcolm to inform CERT of the incident for their records.</b></li>
+	<li><b>Action: Kristian to check whether Tomas may have used the passwords he obtained (e.g. by checking process accounting logs).</b></li>
+	<li><b>Action: Malcolm to draft a revision to the terms of service to clarify our policy on world-readable files</b> (i.e. that due to our relaxed umask, permission to read a file is not necessarily implicit in the permissions bits on that file: one also requires out-of-band permission from the owner of the file).</li>
+	</ul>
+	</li>
+
+<li>LAN party report:
+	<ul>
+	<li>This was a triumph.  I'm making a note here: huge success.</li>
+	<li>We covered our costs and made a slight profit in donations solicited during the event.</li>
+	<li>Lots of spare food was left over and can be used for a future event.</li>
+	<li>The committee is happy to regularly hold LAN parties.  Another could be held during May Week, after the end of 1A exams (to decide closer to the time).</li>
+	</ul>
+	</li>
+
+<li>Other business:
+	<ul>
+	<li>The secretary apologised for the delay in publishing minutes, which resulted in several actions still pending.  He has been encouraged to produce minutes more quickly next time.  Apparently that didn't help, for which he again apologises.</li>
+	<li><b>Action: Malte and David to investigate the possibility of a formal dinner for past/present committee and sysadmins</b> (ideally before Matthew Garrett leaves the city).  We should aim for around 22nd/23rd April.</li>
+	<li>The SRCF has been invited to Cornwall for an annual surfer party week.  This will be discussed out-of-band if anyone is interested.</li>
+	</ul>
+	</li>
+
+</ol>
+
+<!--#include virtual="../inc/footer.html" -->

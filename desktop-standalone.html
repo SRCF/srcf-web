@@ -1,0 +1,32 @@
+<!--#set var="title" value="Desktop" -->
+<!--#include virtual="inc/header.html" -->
+<h1>SRCF Desktop Service: standalone client</h1>
+
+<p style="border: 2px solid red; padding: 0.5em; font-size: 110%; font-weight: bold">The SRCF Desktop service will be <a href="http://wiki.srcf.net/News/DesktopServiceClosure">closing down on 29th July 2017</a>.</p>
+
+<p>These instructions are for use of a standalone NX client with the SRCF desktop service.  If in doubt, you should first try <a href="webdesktop">the web client</a> as that does not require manual installation.</p>
+
+<h3>Connecting to the SRCF Desktop service</h3>
+
+<ol>
+<li><b>First time?  You'll need to download and install a NX client;</b> we recommend OpenNX:
+	<ul>
+	<li><b><a href="http://sourceforge.net/projects/opennx/files/opennx/CI-win32/NXWin-Variant/OpenNX-0.16.0.725-Setup.exe/download">OpenNX Client 0.16.0.725 for Windows</a></b></li>
+	<li><b><a href="http://sourceforge.net/projects/opennx/files/opennx/CI/OpenNX-0.16.0.725.dmg/download">OpenNX Client 0.16.0.725 for Mac OSX</a></b></li>
+	
+	<li>For other packages, including for Ubuntu and Debian and the source distribution, see <a href="http://www.opennx.net/download.html">the OpenNX download page</a> although note that OpenNX 0.16.0.<b>729</b> may crash so if you have problems install the previous version.</li>
+	<li><b>Do not use "NoMachine Player 4":</b> it is by default incompatible with the SRCF Desktop service.</li>
+	</ul>
+<li><b>Run the OpenNX connection wizard, and point it at <tt>desktop.srcf.net</tt> .</b><br/>
+	<img src="images/opennxsetup.png" alt="OpenNX setup wizard" style="margin: 3px 0 3px 3em"/><br/>
+	The "type of your internet connection" should be set as relevant: for example, "LAN" if your computer is connected to a college/department network, or "ADSL" for most home broadband connections.</li>
+<li>On the next page, set the <b>desktop environment</b> to <b>GNOME</b> to match the web client's default of GNOME Classic.<br/>
+	<img src="images/opennxsetup2.png" alt="OpenNX setup wizard (2)" style="margin: 3px 0 3px 3em"/><br/>
+	<ul><li style="font-size: 90%">(If you prefer XFCE, choose <i>CDE</i>.  For KDE, choose <i>KDE</i>.  For Unity, choose <i>Custom</i>, click <i>Settings...</i>, and set to <i>Run the following command:</i> <tt>gnome-session --session ubuntu-2d</tt>, then choose <i>New virtual desktop</i>.  To run a custom <tt>.xsession</tt> script instead of a standard desktop environment, configure as for Unity but use the command <tt>/etc/X11/Xsession</tt>.)</li></ul>
+</li>
+<li>Leave all other settings in the OpenNX client set to their defaults if unsure.</li>
+<li><b>Log in with your SRCF username and password when prompted.</b></li>
+<li>You should now be up and running!</li>
+</ol>
+
+<!--#include virtual="inc/footer.html" -->

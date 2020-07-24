@@ -1,0 +1,53 @@
+Index: constitution.html
+===================================================================
+--- constitution.html	(revision 470)
++++ constitution.html	(working copy)
+@@ -16,19 +16,22 @@
+   Membership of the society shall be extended to all members of the University
+   and any others who may apply to the Committee.
+   Use of the facilities provided by the society shall be restricted to members
+-  and subject to an annual fee, which the Committee shall determine, and which
+-  may vary according to the type of use made of the facility.
++  and may be subject to an annual fee, and which the Committee shall determine,
++  and which may vary according to the type of use made of the facility.
+   The Committee may also set an annual membership fee of the society, and in
+-  addition may offer honorary memberships (free) and life membership (for a
+-  fee) to any persons as it sees fit.
++  addition may offer honorary memberships and life membership to any persons as
++  it sees fit.
+   It shall not refuse an application for membership on the grounds of race,
+-  sex, sexual orientation, religion, or political views.
++  sex, sexual orientation, disability, religion, or political views.
+   It may, however, expel any member for behaviour likely to bring the society
+   or university into disrepute, for acting in a way that is damaging to the
+   integrity of any of the facility's machines, or for breaking any of the
+   relevant rules relating to the use of computers in the University.
+   The administrators may suspend the account of anyone they suspect of the
+   above, pending the decision of the Committee.
++  For official communications of the society email shall be sufficient, and it
++  shall be the responsibility of members of the society to provide the
++  Secretary with an appropriate email address.
+   All members shall have full voting rights at society meetings.</li>
+  <li>Meetings of the society:
+   <ol>
+@@ -63,7 +66,8 @@
+   </ol>
+  </li>
+  <li>
+-  The Committee shall be elected at the AGM.
++  The Committee shall be elected at the AGM by Single Transferable Vote with a
++  RON as defined by the University.
+   Nominations must be submitted to the Secretary at least three days before the
+   AGM (in the absence of other nominations for any post, nominations shall be
+   accepted at the AGM for that post), either on paper signed by proposer,
+@@ -74,6 +78,10 @@
+   The Committee may co-opt additional Committee members as it sees fit, and
+   shall be responsible for the appointment of system administrators, who shall
+   be responsible to the Committee.
++  The Committee must have a majority of members who are current CU
++  undergraduate or postgraduate students or are members of the Regent House and
++  the majority of principal officers: Chairman, Secretary and Junior Treasurer
++  must be current students.
+  </li>
+  <li>
+   The Committee shall consist of Chairman, Secretary, Junior Treasurer, and PR

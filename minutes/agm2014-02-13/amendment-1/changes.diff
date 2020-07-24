@@ -1,0 +1,20 @@
+--- old.html	2014-02-23 02:13:16.811170803 +0000
++++ new.html	2014-02-23 02:14:08.170511455 +0000
+@@ -16,7 +16,7 @@
+   Membership of the society shall be extended to all members of the University
+   and any others who may apply to the Committee.
+   Use of the facilities provided by the society shall be restricted to members
+-  and may be subject to an annual fee, and which the Committee shall determine,
++  and may be subject to an annual fee, which the Committee shall determine,
+   and which may vary according to the type of use made of the facility.
+   The Committee may also set an annual membership fee of the society, and in
+   addition may offer honorary memberships and life membership to any persons as
+@@ -72,7 +72,7 @@
+   AGM (in the absence of other nominations for any post, nominations shall be
+   accepted at the AGM for that post), either on paper signed by proposer,
+   seconder and nominee, or PGP signed by all three parties.
+-  Any member of the society may be nominated for any Committee post (proposer
++  Any member of the society may be nominated for any Committee post (a proposer
+   and seconder are needed).
+   The Chair of the AGM shall appoint two tellers at the AGM.
+   The Committee may co-opt additional Committee members as it sees fit, and

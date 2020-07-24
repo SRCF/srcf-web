@@ -1,0 +1,18 @@
+--- old.html	2015-03-12 09:54:24.730839274 +0000
++++ new.html	2015-03-12 09:56:51.815314563 +0000
+@@ -107,8 +107,13 @@
+   EGM called explicitly for that purpose.
+  </li>
+  <li>
+-  In the event of the dissolution of the society, its assets shall be given to
+-  the University society with the most similar interests.
++  The Society may be dissolved at a General Meeting provided that at least fourteen days
++  written notice of the intention to dissolve the Society has been given to the members. At 
++  least two thirds of those present and voting at the General Meeting must vote in favour 
++  of the motion for Dissolution for it to be effective. Any motion for Dissolution of the 
++  Society shall provide that assets remaining after all liabilities have been met shall be 
++  transferred either to another Registered University Society, or to the Societies' 
++  Syndicate.
+  </li>
+ </ol>
+ 

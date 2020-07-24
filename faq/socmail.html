@@ -1,0 +1,143 @@
+<!--#set var="title" value="Frequently Asked Questions" -->
+<!--#include virtual="../inc/header.html" -->
+<h2>Frequently Asked Questions: Society Email Addresses</h2>
+
+<h3 id="socmail">Can societies have email addresses @srcf.net?</h3>
+
+<p>They certainly can. This can be useful for setting up 'Role' addresses
+for the society account, passing mail sent to socname-president@srcf.net 
+to the correct user, for example.</p>
+
+<p>This has the obvious benefit of allowing one email address to
+exist throughout the years, so when one president leaves, the email address 
+remains the same, stopping users having to look up or find the latest crsid.</p>
+
+<h3 id="defaults">What are the default society email addresses?</h3>
+
+<p>If you have not specifically set up any mail processing for your
+society, the following addresses will be in operation:</p>
+
+<ul>
+ <li><b>[socname]-admins@srcf.net</b> - this address cannot be
+ overridden. Mail sent here will be distributed to the individual SRCF
+ mail accounts of all the users who are admins of the society. So,
+ society admins who do not check their email on the SRCF should set up
+ forwarding from their personal SRCF accounts to their main email
+ account.</li>
+ <li><b>[socname]-webmaster@srcf.net</b> - by default this address
+ is re-routed to [socname]-admins@srcf.net (see above). This can be
+ overridden in a society .forward file.</li>
+</ul>
+
+<p><b>IMPORTANT:</b> Since important messages for society admins may be
+sent to one or other of the above addresses, which by default forward to
+the local SRCF email addresses of the society admins, please ensure that
+you either check your local SRCF inbox or arrange for your personal SRCF
+email account to forward to an account you do read &mdash; see the FAQ
+entry: <a href="/faq/email#forwarding">How do I read my SRCF email?</a>
+for more details.</p>
+
+<h3 id="forward">How do I control what happens to society email?</h3>
+
+<p>There are two ways. One way is to set up one or more Mailman mailing
+lists &mdash; see the FAQ entry: <a
+href="/faq/other-services.html#lists">How do I get a Mailman mailing
+list set up?</a> for more details.  These can have names of the form
+[socname]@srcf.net or [socname]-[anything]@srcf.net, and will
+take priority over the .forward method described below. Mailing lists
+are appropriate if you wish to distribute mail to a large number of
+people or if you wish mailing list members to have the ability to
+(un)subscribe themselves.</p>
+
+<p>The second method is to set up a <tt>.forward</tt> file in your
+society's directory (/societies/[socname]/.forward). This will be used
+to process all email sent to addresses of the form
+[socname]@srcf.net or [socname]-[anything]@srcf.net, with
+the exception of [socname]-admins@srcf.net which always has the
+behaviour described in the previous answer, and any names already used
+for your mailing lists. </p>
+
+<h3 id="autoforward">I don't know the syntax of a .forward file, is there another way?</h3>
+
+<p>We have a new script to create basic .forward files from a simple-to-edit 
+list of forwarding addresses. To use this, first create the file 
+'autoforward' in the society account's home directory, i.e. 
+'/societies/[socname]/autoforward'. In that file, add lines in the format:</p>
+<pre>
+address:email,email,email
+</pre>
+
+<p>In a more specific example:</p>
+
+<pre>
+socialsecs:user1@cam.ac.uk,user2@example.org,user3@cam.ac.uk
+</pre>
+
+<p>When the script srcf-autoforward is run the .forward file which will be 
+generated will ensure that mail to socname-socialsecs@srcf.net is 
+forwarded to the three users listed in the comma separated list following 
+the colon. Add any subsequent forwarding addresses you wish to the file for 
+processing.</p>
+
+<p>Once the file is created, or when you have edited the autoforwards file, run:
+</p> 
+
+<pre>
+srcf-autoforward socname
+</pre>
+
+<p>to process the autoforward file and create a correctly formatted set of 
+forwarding rules for your society account.</p>
+
+<p>Note that there is one difference to the usual operation of .forward
+files, which is that if no delivery is set up during the .forward file
+processing, then the email will be bounced (unlike your personal
+.forward file, where the mail would end up in your personal inbox).</p>
+
+<h3 id="advancedforward">What if I want to edit my .forward file directly?</h3>
+
+<p>Then you can do that directly, using the information below.</p>
+
+<p>The syntax of .forward files is explained in detail in the <a
+href="http://www.exim.org/">exim</a> documentation, specifically, <a
+href="http://www.exim.org/exim-html-3.30/doc/html/filter.html">here</a>.</p>
+
+<p>Note that if you use the &ldquo;save&rdquo; command, you must specify
+absolute file paths (e.g.&ldquo;'/societies/mysoc/saved-emails&rdquo;),
+and if you use the logfile command, you must not only use an absolute
+file path but also must specify a mode parameter of 0660, otherwise the
+logfile will not be readable or writable by you! e.g. &ldquo;logfile
+/societies/mysoc/emaillog 0660&rdquo;</p>
+
+<p>To get you started, here is an example .forward file for the
+fictional society &ldquo;mysoc&rdquo;. It would be at
+<tt>/societies/mysoc/.forward</tt>. Lines beginning with # are comments,
+but note that the first line (&ldquo;# Exim filter&rdquo;) is special
+and must be left intact for the filter file to work.</p>
+
+<pre>
+# Exim filter
+
+#  mysoc-webmaster@srcf.net should go to abc12@cam.ac.uk
+
+if ($local_part_suffix is "-webmaster") then
+  deliver abc12@cam.ac.uk
+endif
+
+# Publicity address. mysoc-publicity@srcf.net should go
+# to abc12 and def34
+
+if ($local_part_suffix is "-publicity") then
+  deliver abc12@cam.ac.uk
+  deliver def34@cam.ac.uk
+endif
+
+# forward anything else sent to mysoc-[anything]@srcf.net
+# or mysoc@srcf.net to the committee mailing list:
+
+if not delivered then
+  deliver soc-mysoc-committee@lists.cam.ac.uk
+endif
+</pre>
+
+<!--#include virtual="../inc/footer.html" -->

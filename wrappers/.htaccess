@@ -1,0 +1,12 @@
+<Files ~ php(my|pg)admin.cgi>
+AuthType Ucam-WebAuth
+AADescription "SRCF database administration"
+AuthDBMGroupFile /var/local/htgroup.dbm
+<IfVersion > 2.4.0>
+Require dbm-group srcfusers
+</IfVersion>
+<IfVersion !> 2.4.0>
+Require group srcfusers
+</IfVersion>
+AARequiredPtags none
+</Files>

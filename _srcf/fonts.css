@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "D-DIN";
+    src: url("vendor/fonts/D-DIN.woff2") format("woff2"),
+         url("vendor/fonts/D-DIN.woff") format("woff"),
+         url("vendor/fonts/D-DIN.ttf") format("truetype"),
+         url("vendor/fonts/D-DIN.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "D-DIN";
+    src: url("vendor/fonts/D-DIN-Bold.woff2") format("woff2"),
+         url("vendor/fonts/D-DIN-Bold.woff") format("woff"),
+         url("vendor/fonts/D-DIN-Bold.ttf") format("truetype"),
+         url("vendor/fonts/D-DIN-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "D-DIN";
+    src: url("vendor/fonts/D-DIN-Italic.woff2") format("woff2"),
+         url("vendor/fonts/D-DIN-Italic.woff") format("woff"),
+         url("vendor/fonts/D-DIN-Italic.ttf") format("truetype"),
+         url("vendor/fonts/D-DIN-Italic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Iosevka";
+    src: url("vendor/fonts/iosevka-fixed-regular.woff2") format("woff2"),
+         url("vendor/fonts/iosevka-fixed-regular.woff") format("woff"),
+         url("vendor/fonts/iosevka-fixed-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("vendor/fonts/iosevka-fixed-bold.woff2") format("woff2"),
+         url("vendor/fonts/iosevka-fixed-bold.woff") format("woff"),
+         url("vendor/fonts/iosevka-fixed-bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("vendor/fonts/iosevka-fixed-italic.woff2") format("woff2"),
+         url("vendor/fonts/iosevka-fixed-italic.woff") format("woff"),
+         url("vendor/fonts/iosevka-fixed-italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("vendor/fonts/iosevka-fixed-bolditalic.woff2") format("woff2"),
+         url("vendor/fonts/iosevka-fixed-bolditalic.woff") format("woff"),
+         url("vendor/fonts/iosevka-fixed-bolditalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 600;
+}

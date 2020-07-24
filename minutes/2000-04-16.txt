@@ -1,0 +1,82 @@
+Minutes SRCF committee meeting Mon Apr 16 2000
+
+Venue: The Bun Shop
+
+Present:
+    Peter Clay
+    Martin Keegan
+    Jock Busuttil
+    Hanna Wallach
+
+1.	Matters arising
+
+Approval of minutes: 
+
+-- minutes of the meeting held Thursday 24 March 2000 still needed to be confirmed.  With an amendment from Martin to replace the phrase 'the status of the box that was donated' with 'this' in the paragraph relating to training, these were confirmed.
+
+-- the implications of Mark Waller reclaiming his donated box were discussed.  Although it was noted that we don't want to make a fuss over this (especially in the light of recent donations), it was agreed that we have an obligation to investigate this, if only for the purposes of clear accounting (donated boxes don't just disappear).  It was resolved that Martin would write an email to Matthew Vernon (who had previously been in possession of the box on behalf of the SRCF), cc'ed to the Senior Treasurer, to establish what was going on.
+
+-- it was noted that Matthew Vernon's resignation as admin has now been accepted.  Jock is to contact him to make this known.
+
+-- the SRCF now has a bank account at Barclays.  The Secretary and Junior Treasurer are both signatories and both are required to sign instructions to the bank.  The primary contact for the bank is Hanna at her Newnham College address and phone number.  The secondary contact is CUSU.  All money and cheques have been deposited into the account.  It was noted that there is still a debt outstanding to Peter.
+
+-- Matthew Vernon is now back up in Cambridge.  Jock volunteered to retrieve the backup tapes from him that were bought last term.
+
+The minutes from the last meeting (Friday 10 March) were confirmed.
+
+2.	Donations
+
+Since last meeting the following items have been donated:
+-- Travan TR4 IDE tape drive [80 GBP] and tapes [20 GBP](by Martin and Jock)
+-- snook - a new box for training purposes [175 GBP] (by Jock)
+-- Zeus webserver software (to be confirmed by Zeus Technology)
+
+Martin has also been pestering Sun for possible donations of kit.
+
+3.	Accounts
+
+They are finished (and take into account the recent hardware that has actually been donated).  Hanna is going to prettify them and send them via UMS to Bob, our revered Senior Treasurer.
+
+4.	Membership fees
+
+It was proposed to remove membership fees for both normal members and societies.  In their place, the SRCF will be happy to accept 'non-compulsory' donations from those wishing to join, to the tune of 5 GBP for ordinary members and 15 GBP for societies.  The proposal was agreed on with no objections.
+
+Operational considerations were postponed to AOB.
+
+Martin suggested that there should be a constitutional amendment drafted to distinguish between the funding of maintenance (repairs, replacements, etc.) and the buying of new kit.  This is in effect that the existing money from membership fees should be kept to one side for maintenance, and that donations should be sequestered to fund new stuff.  The matter has been postponed to the constitutional amendment discussion that will take place on ucam.societies.srcf.
+
+It was noted that the SRCF should not have its licence to act freely affected by corporate donations.  Again, this will be raised on the newsgroup.
+
+5.	DNS requests
+
+This has not been done yet as the accounts needed to be completed first.  Martin has made initial contact with Ian Jackson, however, and will send an email with all relevant parties cc'ed making these requests.
+
+6.	New admins
+
+Richard Watts and Andy Buckley have both expressed an interest in adminning for the SRCF.  It was proposed that (if they were still interested) Andy might like to admin general stuff on kern, and Richard might like to be responsible for snook, the new training box.
+
+It was noted that although there are roles for the admins, there should be nothing to stop other admins dealing with requests outside of their role if they have the inclination to do so.
+
+Hanna said she will call an admin meeting between now and Thursday.
+
+It was agreed that Jock should draft an email for review by the committee formally asking David Carter to be an emergency mail admin.
+
+7.	Arrangements with CUSU
+
+Alan Bird is keen to have a meeting with the SRCF regarding the relationship between the SRCF and CUSU.  Jock is organise a meeting and advertise it to the committee.
+
+8.	people.ucam.org
+
+It was noted that the service was still in the development stages.  The website is a little spartan, and will be made writable for other admins.  This will be dealt with further at the forthcoming admin meeting.
+
+9.	AOB
+
+Peter Benie and Ian Jackson: previously it was resolved to contact these as emergency mail admin and security consultant respectively.  As Peter Benie has left the university, he is no longer eligible to admin, and as regards security, there seems to be little in the way of security issues that would justify asking Ian to fill this post.
+
+Canonical membership list: this should be created and should live in the shared committee space on student.  It was noted that adding people to this list should be done by means of a script by the Secretary, not the admins.  The admins would then act upon this.
+
+Extra-CUDNal box: Martin, Jock, Julian Midgley and Matt Kern have chipped together to fund a box called pling that will live on the network outside of the CUDN.  Use of this will facilitate the SRCF running services that are currently not permitted by CS rules within the CUDN, such as mail redirection for members of the university that are not _in statu pupillari_.
+
+Snook: will be daisychained off kern and currently needs a network card, video card and some sort of hard drive.  Kern therefore needs another network card also.  Snook will netboot off kern and run lots of different OSes (booting into a different one each day); everyone will have root access to it as it is a training box (the password will be published on the website for comedy value), and as the kernels will live on student, they can trash snook as often as they like; it was suggested that Richard would make a good admin for this box.
+
+The meeting closed at 22:04.

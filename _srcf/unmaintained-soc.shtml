@@ -1,0 +1,6 @@
+<!--#set var="TITLE" value="Unmaintained society website" -->
+<!--#include virtual="inc/err-header.html" -->
+<p>The society website you are attempting to access is no longer maintained and has consequently been taken offline.</p>
+<p>If you think this is a mistake, you may <a href="https://www.srcf.net/contact-addresses">contact the sysadmins</a> for any assistance.</p>
+<!--#set var="NOFOOTER" value="1" -->
+<!--#include virtual="inc/err-footer.html" -->

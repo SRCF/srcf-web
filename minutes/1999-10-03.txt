@@ -1,0 +1,97 @@
+Minutes SRCF committee meeting held Sun Oct 3 1999
+
+Venue: Matthew Vernon's room
+
+Present:
+
+      Matthew Vernon
+      Peter Clay
+      Sophie Tatham
+
+In attendance:
+
+      Peter Corbett
+      Martin Keegan
+
+Apologies:
+
+      Jock Busuttil
+
+Meeting declared quorate and constitutional.
+
+1. Constitutional amendments
+
+Point 9, to be copied verbatim from the template constitutions' clause on
+the dissolution of the society.
+
+Point 8 re: Senior Treasurer; the phrase about liability to be copied
+from the template constitution.
+
+Amendments proposed, seconded and passed on a show of hands (no
+objections).
+
+2. Motion: that the Committee be appointed as follows:
+
+  Matthew Vernon: Chairman
+  Peter Clay:     Secretary
+  Sophie Tatham:  Treasurer
+  Jock Busuttil:  Publicity
+
+  Proposed by Matthew and seconded by Peter
+
+The motion was passed with no objections.
+
+3. Training
+
+Martin raised the point that training had been one of the potential
+goals of the society. It was agreed that, for the moment, the society
+should focus on getting its core operation working; Matthew would bring
+training back on the agenda when he thought appropriate.
+
+[A short disturbance re: arrival of lasagne]
+
+4. Julian Midgely's annoyance
+
+Martin reported having mollified Julian Midgely by giving him accounts on
+various Jesus machines to make up for losing root on kern.
+
+5. Appointment of admins
+
+The Committee appointed admins as follows:
+
+  Matthew as "Debianmeister", and with official right to change root password.
+  Peter to "do stuff"
+  Hanna Wallach to administer users
+  Jock as webadmin, without the root password
+
+6. Policy regarding admins and root password
+
+Matthew noted that, although he alone does official changes to the root
+password, in the event of an "emergency" any admin can and should do
+anything necessary to deal with the box being hacked, including
+changing the root password; as a general principle, any admin can and
+should fix anything "broken".
+
+7. Naming scemes
+
+Our first box should be called "kern" as requested
+by Julian; Matthew suggested assigning names to other boxes from Beowulf.
+
+8. Box space
+
+In CUSU, a box called "heffalump" will be going into a space on the
+ground floor that is currently occupied by societies fair stuff. We need to
+hijack this for kern and possibly other boxes.
+
+9. Societies fair
+
+Peter to turn up, Matthew Corbett to bring penguin.
+
+10. Joint squash with CUCS
+
+It was agreed to have a joint squash with CUCS. 5:30-8:00pm, Trinity Junior
+Parlor, Saturday.
+
+11. AOB
+
+Matthew to give talk on Linux to CUCS: Wed. 27 Oct, 8pm

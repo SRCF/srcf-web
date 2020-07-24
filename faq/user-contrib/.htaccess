@@ -1,0 +1,2 @@
+AddHandler default-handler .php
+AddType text/plain .php

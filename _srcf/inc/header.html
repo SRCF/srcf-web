@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ TITLE }}</title>
+    <link href="/_srcf/vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/_srcf/vendor/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/_srcf/srcf-bs.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16 24x24">
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    {{ EXTRAHEAD }}
+  </head>
+  <body class="layout-footer">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+        <h1 class="navbar-brand">
+          <a href="{{ DOMAIN_WEB }}/">
+            <img src="/_srcf/images/logo.svg">
+            <span>
+              <span class="text-danger">Student-Run</span>
+              <span class="text-primary">Computing Facility</span>
+            </span>
+          </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="{{ DOMAIN_CONTROL }}/"><i class="fa fa-fw fa-wrench"></i> Control Panel</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ DOMAIN_WEB }}/services"><i class="fa fa-fw fa-cubes"></i> Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://docs.srcf.net"><i class="fa fa-fw fa-info-circle"></i> Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ DOMAIN_WEB }}/donate"><i class="fa fa-fw fa-heart"></i> Donate</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ DOMAIN_CONTROL }}/signup"><i class="fa fa-fw fa-user"></i> <strong>Join</strong></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main role="main" class="container">

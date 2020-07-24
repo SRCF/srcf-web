@@ -1,0 +1,15 @@
+/_blog
+/_blog_draft
+/_docs
+
+/_srcf/inc/*.ssi.html
+
+/inc/vms.html
+/inc/motd.txt
+/inc/counts.html
+/inc/ubuntuversion.html
+
+/socs/*
+
+membershipgraph.png
+membershipgraph-hires.svg

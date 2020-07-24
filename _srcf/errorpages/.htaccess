@@ -1,0 +1,4 @@
+Options +Includes
+AddOutputFilter Includes html
+Order allow,deny
+Allow from all

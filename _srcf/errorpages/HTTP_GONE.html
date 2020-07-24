@@ -1,0 +1,9 @@
+<!--#set var="TITLE" value="Resource no longer available" -->
+<!--#include virtual="../inc/err-header.html" -->
+<p>The requested URL is no longer available on this server and there is no forwarding address.</p>
+<!--#if expr="$HTTP_REFERER" -->
+<p>Please inform the author of the <a href="<!--#echo encoding="url" var="HTTP_REFERER" -->">referring page</a> that the link is outdated.</p>
+<!--#else -->
+<p>If you followed a link from a foreign page, please contact the author of this page.</p>
+<!--#endif -->
+<!--#include virtual="../inc/err-footer.html" --> 

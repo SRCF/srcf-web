@@ -1,0 +1,30 @@
+<!--#set var="title" value="Minutes of SRCF committee meeting held Tuesday 22nd April 2003" -->
+<!--#include virtual="../inc/header.html" --> 
+<h1>Minutes of SRCF committee meeting held Tuesday 22nd April 2003</h1>
+
+<p>The agenda was looked at.</p>
+<p>The matter of keys to the CUSU building was discussed.<br/>
+It was decided that someone should followup CUSU's email on this topic.<br/>
+Desirable to have 2 keys, one for chairman and one for a sysadmin.</p>
+
+<p>The matter of the compromise of kern's security was discussed.<br/>
+This was caused by an unknown person gaining unauthorized access via a compromised user account and using a bug in ptrace to gain root privelages.<br/>
+It was pointed out that there were three ways of fixing the bug which makes the exploit possible. Two of these are undesirable as they reduce stability or functionality. The solution used was to disable auto-loading of modules by modifying the /proc filesystem. It is not certain whether this fixes the vulnerability completely. It was suggested that the kernel should be recompiled to prevent autoloading of modules as it is not a necessary feature for kern. The sysadmins also intend to install tripwire(currently in Debian unstable).<br/>
+It was pointed out that many users who used kern as their primary mailbox were unable to receive mail including the message with their new password. It was decided that it would be desirable to have a special exim suffix that gets sent to the hermes emails that don't get filetered.</p>
+<p>The topic of having a keysigning/talk was discussed. It was decided that it would be best to have a talk and keysigning as soon as possible and a keysigning at the garden party.</p>
+<p>The matter of finding out who was no longer an authorised user of the CUDN was discussed. It was pointed out that there is a service on Jackdaw which can confirm or deny whether any particular crsid is currently active. CUSU has access to Jackdaw and it may be possible to get them to check for us?<br/>
+Currently accounts are disabled merely by setting their shell to /bin/false.</p>
+<p>The matter of what to do with dead societies was discussed. It was decided to have a grace period.</p>
+<p>The Chairman decided he no longer wanted to be membership secretary and asked for candidates to stand for the post. Jeff Snyder accepted the post.</p>
+<p>The matter of the UPS was discussed. Kern is currently connected to the CUSU UPS. The floor of the room housing kern is not suitable for heavy loads and there are concerns about the number of machines in that room.
+It was suggested that some use should be found for snook and that it should be moved elsewhere. Also that the old kern should become the new snook. It was suggested the SRCF purchase a UPS(cost ~GBP150) which would provide power for long enough to cleanly shut down kern in the event of a power failure.<br/>
+The matter of purchasing an AC system with CUSU was also discussed.</p>
+<p>The matter of the bank account was discussed. Bob Dowling has agreed to be a signatory to the new bank account.<br/>
+The chairman secretary and treasurer will arrange to meet Mr. Dowling to open the new bank account.</p>
+<p>It was suggested that the garden of a Churchill residence be used for this years garden party. Other options are Newnham or Whychfield.</p>
+<p>The matters of the licensing of the custom software used to admin kern and SRCF2 were discussed. All admin software which is written by sysadmins for use on kern should be licensed under a DFSG compliant license, preferably GPL. SRCF2 is to be hosted in Manchester by a private limited company called AllShells.</p>
+<p>compsoc.org.uk was discussed.</p>
+<p>The sysadmin raised the matter of automation of day to day tasks such as creation of user accounts authorised by the membership secretary. It was decided to keep everything manual for the moment as this provides a useful amount of sanity checking.</p>
+<p>It was suggested that the SRCF should have a pgp key for the purposes of authenticating sysadmins. The questionof how to keep the key secure was discussed. A consensus was reached that the president should keep the SRCF private key physically seperate from any computer network except when needed.</p>
+<p>The meeting was adjourned.</p>
+<!--#include virtual="../inc/footer.html" -->

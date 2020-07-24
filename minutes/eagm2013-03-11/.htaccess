@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /minutes/eagm2013-03-11/
+RewriteRule ^$ agenda.html [R=permanent]

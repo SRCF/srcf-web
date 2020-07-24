@@ -1,0 +1,25 @@
+<!--#set var="title" value="SRCF Projects" -->
+<!--#include virtual="inc/header.html" -->
+<h1>SRCF Projects</h1>
+
+<p>The SRCF has various ongoing projects. <a href="/get-involved">Come talk to us</a> if you are interested in working on any of them, or if you want to propose new projects.</p>
+
+<section>
+<h2>SRCF Control Panel</h2>
+<p>When the SRCF first started, users had to email us for all requests, e.g. resetting their passwords and setting up a custom domain. We then acted on these requests manually by running appropriate scripts. At the end of 2017, we successfully launched a <a href="https://control.srcf.net/">control panel</a> to let users manage their accounts directly without having to go through the sysadmins. The frontend part of the code is on <a href="https://github.com/SRCF/control-panel">GitHub</a>.</p>
+
+<p>While the control panel is already in use, there is still development work to do:</p>
+<ul>
+  <li><p>We still run the scripts by hand every now and then. We are currently working on <code>srcflib</code>, which will act as a backend for both the control panel and the manual scripts to avoid duplicating to logic.</p></li>
+  <li><p>There are some functionality that are yet to be integrated with the control panel, such as getting letsencrypt certificates for custom domains. Implementing these would be a good way to learn how the control panel works.</p></li>
+</ul>
+</section>
+<section>
+<h2>Ansible setup</h2>
+<p>Historically, SRCF machines are set up by hand. Unfortunately, this often means the documentation for the setup only exists in one person’s head. It is also cumbersome to reinstall machines when we have to. We have automated some of this via the <a href="https://launchpad.net/~srcf/+archive/ubuntu/serveradmin"><code>srcf-server</code></a> package that does the setup common to all our VMs, but individual setups are largely poorly documented.</p>
+
+<p>We are now moving towards using <a href="https://www.ansible.com/">Ansible</a> to set up our VMs. This lets us write config files that describe how a system should be set up, instead of running commands by hand. These can be version controlled and passed on to future sysadmins. Moreover, this allows us to test our configuration and changes on a staging machine before deploying.</p>
+
+<p>At the moment, our user service server <a href="https://github.com/SRCF/downpour-ansible"><code>downpour</code></a> (which hosts, e.g. Mattermost) has all its services set up via ansible, and we hope to expand this to more and more of our machines.</p>
+</section>
+<!--#include virtual="inc/footer.html" -->

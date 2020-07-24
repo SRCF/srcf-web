@@ -1,0 +1,41 @@
+Initial Meeting
+---------------
+
+Venue: Castle Inn, 3 Jun 1999
+
+Julian King (UCS)
+Richard Watts (CUCS)
+Julian Midgley (THCS)
+Martin Keegan (CUSU, JCN)
+
+Notes: Julian will donate a machine; CUSU can host
+
+Second Meeting
+--------------
+
+Venue: Castle Inn, 4 Jun 1999
+
+Matthew Vernon
+Richard Watts (CUCS)
+Julian Midgley (THCS)
+Martin Keegan (CUSU, JCN)
+Jock Busuttil (CUSU, JCN)
+Peter Clay (CUCS)
+Peter Benie (CO)
+Matthew Lavy (IT Syndicate)
+Mike Wells (THCS)
+Bob Dowling (UCS)
+Jonathan Amery (THCS)
+Moray Allan (JCN)
+Christophe Rhodes (JCN)
+Matthew Byng Maddick
+Dave Mansell
+Jon Peatfield (CO)
+Ian Grant (CO)
+M Webb
+
+Notes: establish a society called the Student Computer Facility
+       for hosting and training; abandon distributed networking idea
+
+       initial committee: Matthew Vernon, Peter Clay, Jonathan Amery,
+       Jock Busuttil; Bob Dowling as Senior Treasurer

@@ -1,0 +1,8 @@
+<!--#set var="TITLE" value="Server error" -->
+<!--#include virtual="../inc/err-header.html" -->
+<p>The server encountered an internal error and was unable to complete your request.</p>
+<!--#if expr="-z $REDIRECT_ERROR_NOTES" -->
+<!--#else -->
+<p>Either the server is overloaded or there was an error in a CGI script.</p>
+<!--#endif -->
+<!--#include virtual="../inc/err-footer.html" -->

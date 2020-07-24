@@ -1,0 +1,151 @@
+Minutes SRCF committee meeting Thu Feb 24 2000
+
+Venue: The Bun Shop
+
+Present:
+	Martin Keegan
+	Hanna Wallach
+	Peter Clay
+	Jock Busuttil
+
+1.	Matters arising
+
+It was noted that the minutes from Tue 18 Jan 2000 have not been 
+approved yet in the light of Matthew Vernon’s proposed amendments.  
+As there was no consensus on his proposals, the committee resolved 
+to approve them without amendment and to review his proposals at a 
+later date   It was noted that, in general, minutes should not be 
+posted on the website until they are formally approved by the 
+committee.
+
+Martin pointed out that he was not ‘present’, but ‘in attendance’ at 
+the meeting Thu Feb 17 2000.
+
+Peter is to send an email to Ian Jackson formally recognising him as 
+Security Consultant, and to Peter Benie to confirm his role as an 
+admin (crisis management).  He will be given root to allow himself 
+to familiarise himself with the system.  They are both to be added 
+to soc-srcf-admin@lists.cam.ac.uk.
+
+Hanna asked for assistance with the HSBC back account application 
+form.  Peter offered to help her, and they will arrange to meet for 
+an hour at some unspecified time.  Presumably to go through the 
+form.
+
+The minutes from Thu 17 Feb 2000 were approved with the above 
+amendments.
+
+2.	AGM Stuff
+
+Peter is to post the constitution and the question of membership 
+fees for discussion on appropriate newsgroups.
+
+The committee notes that there was the post of chair on the admin 
+committee.  However, given that in the future there may be more than 
+one set of admins, the committee resolved
+
+-- to remove any formal committee structure (i.e. no longer any 
+chair)
+-- that the current SysAdmin roles (Package Management, 
+User/Accounts, Website, ‘Everything Else’) should remain unchanged
+-- to change the name of the admin committee to ‘the SysAdmins 
+group’ to avoid confusion as to their collective role
+-- to assert its responsibility for the creation and/or 
+reorganisation of SysAdmins’ roles
+
+3.	Long Term Objectives
+
+The committee resolved to deal with this after item (4.) on the 
+agenda.
+
+4.	Short Term Stuff
+
+Confidentiality/public access: although emails between committee 
+members can be specifically flagged up as ‘confidential’ or ‘for 
+publication’ (via Peter), they should be thought of as publicly 
+accessible by default (i.e. they may be forwarded on to non-
+committee members without their explicit approval).
+
+DNS changes: the DNS changes (A record, PTR record) wrt 
+foo.srcf.societies.cam.ac.uk will be requested by Hanna.
+
+Role-based email: it was resolved to use the role-based email 
+addresses (@srcf.ucam.org) on the soc-srcf-committee@lists mailing 
+list.
+
+Email alias files: it was noted that the alias files have been split 
+up into ‘system’, ‘roles’ and ‘vanity’.  Vanity addresses should be 
+discouraged, but applications for them may be submitted to the 
+committee for approval.  Jock asked where www-data@srcf.ucam.org was 
+delivered.  Hanna said she would make it point towards the 
+webmaster, and Peter volunteered to alter the apache configuration 
+so that outgoing emails were posted as webmaster.
+
+Co-option of Matthew Lavy: the committee resolved to co-opt Matthew 
+Lavy as External Liaison Officer.
+
+Society membership: the committee noted that Matt Kern and Julian 
+Midgley are both members of the SRCF.
+
+Canonical membership list: Hanna said that she would manage this and 
+would make its location known to the rest of the committee.
+
+people.ucam.org: this is a service involving homepage redirection.  
+The committee resolved to go ahead with this service.  Peter is to 
+publicise the service and somebody should be found to maintain it.
+
+Training stuff: Hanna is to oversee the training programme for 
+SysAdmins.  She is to contact Matthew Vernon about this and report 
+back to the committee.
+
+Delegated projects: in the situation where we have lots of active 
+projects, the committee may choose to co-opt people specifically to 
+oversee them.  This will be done on a case-by-case basis.
+
+CUSU: Jock reported that CUSU would be happy for the IT side of 
+societies (email, mailing lists, website hosting) to be delegated to 
+the SRCF, providing that the SRCF undertook to provide tech support 
+of the sort that the present CUSU IT team does.  Nothing has been 
+formally agreed as yet; Alan Bird (CUSU Services Officer) would like 
+to wait until his successor has been elected before entering into 
+formal discussions.
+
+Mail forwarding: to be able to provide this service, the committee 
+notes that an extra-CUDN box or a proxy JANET licence would be 
+needed.  It resolved to investigate this service further.
+
+The CS and societies: the committee resolves to see what 
+improvements (if any) the CS is making to the existing PWF system 
+before making any decisions as to their own course of action.
+
+3.	Long Term Objectives
+
+Martin suggested that the SRCF should provide a generalised managed 
+web service, that it should aim to cultivate a community of clueful 
+people throughout the university and that the SRCF should provide 
+some kind of support for JCRs that do not have as developed IT 
+structures as other colleges’.
+
+Jock suggested that the SRCF should strive to earn a reputation for 
+sane and reliable computing in general.
+
+It was resolved that the SRCF should not involve itself with 
+providing recruitment opportunities for companies as the society 
+would have to be of equal or greater stature to other organisations 
+such as CUIS before we could attract interested companies.
+
+5.	Changes/additions to Services
+
+The committee noted that the relevant details were to be found in 
+changelogs on the server.
+
+Peter is to publicise the services that have been recently added 
+(TrustedCVS, SSIN, etc.).
+
+6.	AOB
+
+There was no other business.
+
+The meeting closed at 19:16.
+
+

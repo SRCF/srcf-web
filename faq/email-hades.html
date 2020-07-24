@@ -1,0 +1,95 @@
+<!--#set var="title" value="Frequently Asked Questions" -->
+<!--#include virtual="../inc/header.html" -->
+<h2>Frequently Asked Questions: Hades Email</h2>
+
+<h3 id="what">What is Hades?</h3>
+
+<p>SRCF Hades is a modern, standards-compliant email service, introduced in October 2018 for two reasons:</p>
+<ul>
+	<li>The old SRCF email service was <a href="email-pip#mbox-sucks">in need of modernisation</a>, and</li>
+	<li>Many people joining the University this year are only offered a <a href="https://help.uis.cam.ac.uk/service/email/exchange-online">proprietary messaging service</a> which cannot be used from many modern email apps.</li>
+</ul>
+
+<h3 id="migration-srcf">How do I move to using Hades for my <tt>@srcf.net</tt> or <tt>@srcf.ucam.org</tt> address?</h3>
+
+<p>Use the <a href="https://control.srcf.net/member">Control Panel</a>.  When you choose to switch your email to Hades, the Control Panel will explain the consequences which depend upon your current configuration.  You will have a chance to cancel the migration after seeing this information.</p>
+
+<h3 id="migration-cam">How do I move to using Hades for my <tt>@cam.ac.uk</tt> address?  I miss Hermes.</h3>
+
+<p>You can set your @cam.ac.uk email address to deliver mail into your SRCF Hades inbox, thus making Hades the service you use to read your University email.</p>
+
+<p><b>First,</b> make sure that you have switched your SRCF email to Hades on the <a href="https://control.srcf.net/member">Control Panel</a>.  <b>It is very important</b> that you make sure that your SRCF email does not forward to your @cam.ac.uk address <b>before</b> you proceed!</p>
+
+<p>Then, go to <a href="https://www.lookup.cam.ac.uk/self">your page on the University lookup service</a>, Edit it, and change your "@cam delivery address" to your SRCF email address (for example <tt>spqr2@srcf.net</tt>).</p>
+
+<h3 id="reading">How do I read my SRCF Hades email?</h3>
+
+<p class="alert alert-warning"><b>This applies only if you have already switched your SRCF mail to use Hades.</b>  You can check which email service you are using, or switch to Hades, on the <a href="https://control.srcf.net/member">Control Panel</a>.</p>
+
+<h4 id="webmail">Webmail</h4>
+<p>The easy way to read your email: <b><a href="https://webmail.hades.srcf.net/">webmail.hades.srcf.net</a></b>.</p>
+
+<h4 id="imap">In an app: using IMAP</h4>
+<p>To configure any standards-compliant mail app to read your email, you will need the following details:</p>
+<ul>
+	<li>Incoming server:
+		<ul>
+			<li>Server type: <b>IMAP</b></li>
+			<li>IMAP server: <b>hades.srcf.net</b></li>
+			<li>Security: <b>STARTTLS</b> (or SSL/TLS)</li>
+			<li>Username: <b>your SRCF username, e.g. spqr2</b> (<i>not</i> your email address)</li>
+			<li>Password: <b>your SRCF password</b> (<i>not</i> your Raven password)</li>
+		</ul>
+	</li>
+	<li>Outgoing server:
+		<ul>
+			<li>SMTP server: <b>smtp.srcf.net</b></li>
+			<li>Security: <b>STARTTLS</b></li>
+			<li>Port: <b>587</b></li>
+			<li>Username: <b>your SRCF username, e.g. spqr2</b> (<i>not</i> your email address)</li>
+			<li>Password: <b>your SRCF password</b> (<i>not</i> your Raven password)</li>
+		</ul>
+	</li>
+</ul>
+
+<p>Some email apps such as Thunderbird will automatically configure this for you after you fill in your SRCF email address &mdash; provided that you have already enabled Hades email via the <a href="https://control.srcf.net/member">Control Panel</a>.</p>
+
+<p>If you're looking for an app to get your Hades email on an Android phone, we suggest <a href="https://k9mail.github.io/download.html">K-9 Mail</a>.</p>
+
+<h3 id="forwarding">How do I set up mail forwarding?</h3>
+
+<p>You have two options:</p>
+
+<ul>
+	<li><b>Bypassing Hades:</b> On the <a href="https://control.srcf.net/member">Control Panel</a> you can configure your @srcf.net email address to forward mail to another address.  This is the simplest option.</li>
+	<li><b>Using Hades filters:</b> You can add a <a href="#mailfilter">filtering rule (see below)</a> which forwards all your email elsewhere (with or without keeping a copy in your Hades mailbox).</li>
+</ul>
+
+<h3 id="mailfilter">How do I set up mail filtering?</h3>
+
+<p class="alert alert-warning"><b>This applies only if you have already switched your SRCF mail to use Hades.</b>  You can check which email service you are using, or switch to Hades, on the <a href="https://control.srcf.net/member">Control Panel</a>.</p>
+
+<ol>
+	<li>Log into <a href="https://webmail.hades.srcf.net/">Hades Webmail</a></li>
+	<li>Click "Settings"</li>
+	<li>Click "Filters"</li>
+	<li>Add a filter by clicking the "+" button at the bottom of the "Filters" panel</li>
+	<li>Choose a name for the filter, a set of conditions to match (e.g. "all messages") and an action (e.g. "Move message to folder")</li>
+	<li>Click "Save"</li>
+</ol>
+
+<p>You can add as many filters as you want, and drag them around to change the order in which they are run.  You can optionally have multiple filter sets, although only one of those can be active at once (for example you could have an alternate filter set, normally disabled, to handle your email when you are on holiday).</p>
+
+<p>Alternatively, you can write your own <a href="http://sieve.info/">Sieve script</a> and upload it as a <i>filter set</i>: click the "+" button at the bottom of the "Filter sets" panel.  (Note that Sieve filters use a different syntax to the <tt>.forward</tt> Exim filters available on pip, although the capabilities are similar.)</p>
+
+<p class="text-muted"><i>Aficionados of the old Hermes webmail system, Prayer, can also configure Sieve on our Prayer webmail system, <a href="https://old-webmail.hades.srcf.net/">old-webmail.hades.srcf.net</a>!</i></p>
+
+<h3 id="backups">Do I need to back up my email?</h3>
+
+<p><b>Yes.</b>  The SRCF does not guarantee to have backups of user data.  <b>You must take your own backups.</b></p>
+
+<p>You might find an IMAP synchronisation tool such as <a href="http://isync.sourceforge.net/">isync (a.k.a. mbsync)</a> useful.  The Arch Wiki has a <a href="https://wiki.archlinux.org/index.php/Isync">handy guide to setting up isync</a>.</p>
+
+<p>At times we might have disaster-recovery backups which include a snapshot of your mailbox.  If you've lost data and your own backups have failed, try asking the sysadmins if we can help &mdash; but we might not be able to.</p>
+
+<!--#include virtual="../inc/footer.html" -->

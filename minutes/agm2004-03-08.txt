@@ -1,0 +1,87 @@
+20:10 meeting opened by Matthew Johnson
+
+1. Ratification of Minutes from previous AGM.
+   The previous Minutes were read aloud by Matthew Garrett
+   The previous Minutes were ratified.
+
+20:17
+
+2. Matthew Johnson - Chairman's report.
+   We have a new replacement bank account with HSBC
+   In April kern was hacked but this was quickly noticed and dealt with.
+   Also in April we exceeded 1000 users for the first time.
+   All of the custom admin scripts were audited and made free software.
+   A webmail service using squirrelmail was started.
+   In July and August kern was compromised again. The offender has since been
+   arrested and the chairman has made a statement to the police.
+   It was discovered that the tape drive had died and we had no recent backups.
+   Consequently all the sysadmin procedures were reviewed.
+   Thanks are due to Matthew Garrett and Martin Keegan for helping out as
+   temporary sysadmins during this.
+   We now have a valid ssl certificate signed by cacert.org
+   Since November we actually have actual backups using a hard-drive in old kern
+   Within the last month another attempt at compromising the system was noticed
+   while it was in progress and prevented.
+
+   Hannah Wallach and Lauri Ora have stepped down from being sysadmins.
+   Stephen Murdoch and Ross Church have been appointed as new sysadmins.
+
+   We currently have 1131 active accounts, 1479 members and 421 society accounts.
+   It was noted that in the first week of March there were over 200 distinct users logging in to shell accounts.
+   We currently have 2 machines being used and another machine with which we have not yet decided what to do.
+
+20:29
+2b. Sysadmins report. Phil Cowans
+   "Our primary achievement was being rooted twice."
+   We have implemented a lot of stuff which makes the machine more secure.
+   It was pointed out that the position of membership secretary is a major
+   bottleneck and that there is now too much work for one person to do.
+   Stephen Murdoch suggested moving the user account information over to a
+   database system.
+   It is more important than rewriting everything to implement a set of
+   guidelines.
+   The web server configuration needs some serious cleaning up.
+
+20:40
+3. Treasurer's report - Olly Madge.
+   Started last year with nothing but a cheque.
+   Opened new bank account with HSBC.
+   Received a lot of donations after kern overheated a lot during the summer.
+   An air conditioning unit was ordered in conjunction with CUSU but this
+   never materialized.
+   CUSU may be moving at some point in the near future to better offices with
+   air conditioning. There is not much confidence in the likelihood of this.
+   The condition of the floor at CUSU was discussed again.
+   We have purchased new hardware including hard-drives and a network card,
+   totalling GBP 113.24
+   The hardware depreciation formula has been changed so that hardware loses
+   all of it's value after 3 years rather than a third per year.
+   The balance sheet was read aloud.
+
+20:51
+4. Elections.
+   Nominations for positions:
+      Chairman: Jeff Snyder
+      Chairman: Matthew Garrett
+      Secretary: Robert Bradford
+      Publicity Officer: Malcom Scott
+      Treasurer: Sean Furey
+      Treasurer: Immad Akhund
+
+   Malcom Scott and Robert Bradford were elected to the posts of Publicity Officer and Secretary without vote due to being unopposed and without objection.
+   Sean Furey was elected to the post of treasurer over Immad Akhund by an overwelming majority.
+   Matthew Garrett was elected by a show of hands to the post of Chairman.
+
+21:28
+5. AOB
+   It was suggested that an amendment to the constitution be proposed at some
+   point in the future to allow for the emergency appointment of sysadmins and
+   their automatic retirement.
+   There should be some method of recording appointments to positions and the
+   term limits of such appointments.
+   It was resolved that delegated officers should have publicly stated term
+   limits but may be reappointed by the committee.
+
+21:33 The AGM was closed by Matthew Johnson.
+
+   Martin Lucas-Smith volunteered to refactor the website

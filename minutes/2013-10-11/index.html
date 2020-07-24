@@ -1,0 +1,440 @@
+<!--#set var="title" value="Minutes of SRCF executive meeting, 11th October 2013" -->
+<!--#include virtual="../../inc/header.html" -->
+<h1><!--#echo encoding="none" var="title" --></h1>
+
+<p>The meeting was held on Friday 11th October 2013, between 7:30pm and 10pm, at The Granta, Newnham Rd, Cambridge.</p>
+
+<p>In Attendance:</p>
+
+<ul>
+    <li>Matthew Ireland (Chair, <code>mti20</code>)</li>
+    <li>Daniel Richman (Secretary, Sysadmin, <code>djr61</code>)</li>
+    <li>Charles Board (Junior Treasurer, Sysadmin, <code>cvrb2</code>)</li>
+    <li>Richard Whitehouse (Sysadmin, <code>rjw201</code>)</li>
+    <li>Malcolm Scott (Sysadmin, <code>mas90</code>)</li>
+    <li>Andrew Cooper (Sysadmin, <code>amc96</code>)</li>
+    <li>Edward Lilley (New Sysadmin, <code>ejl44</code>)</li>
+    <li>Matt Boyd (New Sysadmin, <code>mab211</code>)</li>
+    <li>Joshua Hunt (New Sysadmin, <code>jh861</code>)</li>
+</ul>
+
+<p>Apologies for absence:</p>
+
+<ul>
+    <li>Daniel Thomas (Sysadmin, <code>drt24</code>)</li>
+    <li>Michael Hsu (Sysadmin, <code>mh701</code>)</li>
+</ul>
+
+<p>Before the meeting, members of the current sysadmin team met potential new sysadmins Matt Boyd, Joshua Hunt and Edward Lilley to chat to them about what we do and discuss whether to invite them to join the team. Actual decisions were part of the meeting and are therefore minuted below.</p>
+
+<h3>Matters arising from previous meeting:</h3>
+
+<ul>
+    <li>The Minutes of the previous meeting were approved.</li>
+    <li>
+        Actions assigned to "executive" (sysadmins and committee):
+        <ul>
+            <li>
+                Go through opt-out emails, attempt to identify why they left, and update <code>ex-members.txt</code> as appropriate.
+                <ul>
+                    <li>Not yet done.</li>
+                    <li>This action was clarified: when people ask to unsubscribe from the mailing list we must terminate their membership. We offer "do what we do to people that graduate" (retain membership, forwarding, but without ability to login) or "forget about you as much as feasibly possible" - terminated refers to the latter.</li>
+                    <li><b>Action</b> (Andrew).</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Matthew's Actions:
+        <ul>
+            <li>
+                Email ThirdLight Re: sponsorship.
+                <ul>
+                    <li>ThirdLight replied, however, we want to get more details on what hardware is available first.</li>
+                    <li><b>Action</b> (Matthew): Email again, requesting more specific details on hardware offered.</li>
+                    <li><b>Action</b> (Amar): Investigate a cash donation.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Sysadmins' Actions:
+        <ul>
+            <li>
+                Add symlinks to logs in users'/societies' home directories.
+                <ul>
+                    <li>Not yet done.</li>
+                    <li><b>Action</b> (Richard).</li>
+                </ul>
+            </li>
+            <li>
+                Keep eye on logs for referers to work out who links to <code>www.srcf.ucam.org</code> URLs.
+                <ul>
+                    <li>Unnecessary; see <code>www.srcf.ucam.org</code> deprecation discussion below.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Daniel R's Actions:
+        <ul>
+            <li>
+                Collect stats on how many societies use PHP, other CGI, just static content, Apache-specific features (<code>.htaccess</code>), ...
+                <ul>
+                    <li><a href="website_stats.txt">Results</a></li>
+                    <li>Daniel noted that these figures do not take into consideration the old practise of putting a placeholder page in <code>public_html</code>; this will have caused false positives.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Exceptional Items:</h3>
+
+<ul>
+    <li>
+        Ratification of new sysadmins
+        <ul>
+            <li>It was proposed that we don't give new sysadmins (in general) access to <code>pyro</code>, <code>ash</code> and <code>woozle</code> until they have been a sysadmin for 1 year - damage limitation, should something bad happen. There were no objections.</li>
+            <li>
+                Michael Hsu
+                <ul>
+                    <li>Daniel met him at end of Easter term 2013, and became a sysadmin. He has been active, processing requests to the shared mailbox.</li>
+                </ul>
+            </li>
+            <li>Matt Boyd</li>
+            <li>Joshua Hunt</li>
+            <li>
+                Edward Lilley
+                <ul>
+                    <li>Having met all three before the meeting, it was agreed that all could join the sysadmin team.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Provision of VM to CU Eco Racing
+        <ul>
+            <li>They have offered to donate money in return.</li>
+            <li>
+                CUER would like a custom Apache config ...
+                <ul>
+                    <li>We should only offer VMs when that's the best solution to their problem.</li>
+                    <li>Do we want to set a precedent?</li>
+                    <li><b>Action</b> (Daniel): Email to find out what they actually are trying to do with Apache <i>(completed on the spot)</i>.</li>
+                </ul>
+            </li>
+            <li>
+                ... and have 50GB of storage for an open source Dropbox style application.
+                <ul>
+                    <li>We have sufficient space on pip to give this to them immediately.</li>
+                    <li>Approved, pending donation.</li>
+                    <li><b>Action</b> (Daniel): Email them to agree (to quota increase) and ask for a donation <i>(completed on the spot)</i>.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Existing sysadmins: are there any that we should get in contact with?
+        <ul>
+            <li><b>Action</b> (sysadmins): Email inactive sysadmins and ask them if they would like help in order to get started with common sysadmin tasks.</li>
+            <li><b>Action</b> (sysadmins): Disable "-adm" accounts that have never logged in (and hence have never had their password changed), as they constitute a security vulnerability <i>(completed on the spot)</i>.</li>
+        </ul>
+    </li>
+    <li>
+        Dinner (8<sup>th</sup> December)
+        <ul>
+            <li>
+                Menu &amp; wine
+                <ul>
+                    <li>No canapes on account of cost.</li>
+                    <li>In the past, we have had two options for each of starter, main course and desert - one of which was vegetarian. The vegetarian options were not chosen by anyone last year.</li>
+                    <li><b>Action</b> (executive): read through the menu options (<a href="trinityhall_dining_menus.pdf">food</a> <a href="trinityhall_winelist.pdf">wine</a>) post-meeting, and then the committee will arrange some sort of email based discussion or vote. It was stressed that this must be done ASAP.</li>
+                </ul>
+            </li>
+            <li>
+                Publicity
+                <ul>
+                    <li>We don't want to harass our members, the majority of which would not be interested.</li>
+                    <li>We don't have much capacity: inviting 7000+ members is infeasible.</li>
+                    <li>
+                        Two phases of "inviting" were proposed:
+                        <ol>
+                            <li>Invite {past present} &times; {sysadmins committee}.</li>
+                            <li>Open up remaining places to public/members.</li>
+                        </ol>
+                    </li>
+                    <li><b>Action</b> (Amar): Invite people to the dinner.</li>
+                </ul>
+            </li>
+            <li>
+                Sponsorship
+                <ul>
+                    <li>We would like to keep the ticket price under &#163;40.</li>
+                    <li>We are happy to state that the dinner is sponsored by <code>&lt;company&gt;</code>, to a reasonable extent.</li>
+                </ul>
+            </li>
+            <li>
+                Miscellaneous
+                <ul>
+                    <li><b>Action</b> (Charles): Investigate whether we need to pay VAT.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Replacement hard drives and capacity
+        <ul>
+            <li>
+                Our current situation:
+                <ul>
+                    <li>We have 4 500GB drives in RAID10 (giving 1TB of usable space).</li>
+                    <li>When a drive fails, we replace it with a spare, and then buy a new 500GB spare.</li>
+                </ul>
+            </li>
+            <li>We need more disk space.</li>
+            <li>
+                Proposed strategy:
+                <ul>
+                    <li>As disks fail, replace them with bigger disks, initially only using the first 500GB of the larger disk.</li>
+                    <li>Once we've replaced the full set, enlarge the raid.</li>
+                    <li>We may want more expensive "enterprise" drives since they are more reliable.</li>
+                    <li>
+                        Ballpark figures:
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>500GB</td>
+                                <td>1TB</td>
+                                <td>2TB</td>
+                                <td>3TB</td>
+                            </tr>
+                            <tr>
+                                <td>Standard, with 2-year warranty</td>
+                                <td>&pound;40</td>
+                                <td>&pound;50</td>
+                                <td>&pound;70</td>
+                                <td>&pound;90</td>
+                            </tr>
+                            <tr>
+                                <td>"Enterprise" drives with a 5-year warranty</td>
+                                <td></td>
+                                <td>&pound;75</td>
+                                <td>&pound;105</td>
+                                <td>&pound;150</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>The above strategy using 3TB non-enterprise disks was approved by the Treasurer. We did not discuss the enterprise-drives option fully.</li>
+                    <li><b>Action</b> (executive): Having decided which disks to use, start implementing the above strategy.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Precise schedule for discontinuing support for <code>http://*.srcf.ucam.org/</code>
+        <ul>
+            <li>We need to transition websites currently hosted at <code>www.srcf.ucam.org</code>, thereby making <code>name.{user,soc}.srcf.net</code> the primary address.</li>
+            <li>New users/societies have <code>srcf.net</code> URLs only.</li>
+            <li>Opt-in transition to <code>srcf.net</code> has been available via a control panel for a while now.</li>
+            <li>
+                Plan:
+                <ul>
+                    <li>Pester societies that have not yet migrated to do so.</li>
+                    <li>After the deadline of 1<sup>st</sup> January, we will forcefully migrate the remaining societies. This will probably break their websites.</li>
+                </ul>
+            </li>
+            <li>We intend to keep <code>ucam.org</code> redirects for as long as we can.</li>
+            <li><b>Action</b> (Malcolm): Give Matthew the list of societies that should be mailed (i.e., societies that have not yet migrated).</li>
+            <li><b>Action</b> (Matthew): Pester those societies.</li>
+        </ul>
+    </li>
+    <li>
+        Tux was photographed. <br />
+        <img src="tux_scaled.jpg" />
+    </li>
+</ul>
+
+<h3>Any Other Business:</h3>
+
+<ul>
+    <li>
+        Mythic Beasts
+        <ul>
+            <li>... offered us two old servers, which we gratefully accepted.</li>
+            <li>One is sat in CUSU not in the rack.</li>
+            <li>One has become "pyro".</li>
+            <li>Woozle is now used solely for CUSU - they need the space.</li>
+        </ul>
+    </li>
+    <li>
+        ThirdLight
+        <ul>
+            <li>... have offered hardware and/or a cash donation.</li>
+            <li>Matthew has emailed to ask if we could have more time to decide what their sponsorship would be best used on.</li>
+        </ul>
+    </li>
+    <li>
+        Freshers' squash
+        <ul>
+            <li>Daniel &amp; Andrew apologised for their absence.</li>
+            <li>All preparations bar food have been made.</li>
+            <li><b>Action</b> (Charles): Get food for the squash.</li>
+        </ul>
+    </li>
+    <li>
+        Control panel
+        <ul>
+            <li>We would like a control panel.</li>
+            <li>Initial plan: cut down sysadmin work by checking basics before emailing <code>sysadmins@</code>, rather than having the control panel actually perform any administrative actions.</li>
+            <li>
+                <b>Action</b> (Richard):
+                <ul>
+                    <li>talk to Andrew Ryrie about the progress he's made.</li>
+                    <li>merge Malcolm's, Andrew's and others' work on control panels in various forms.</li>
+                    <li>move the new society page into the control panel.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        "Anything but CGI" (hydra et al.)
+        <ul>
+            <li><b>Action</b> (sysadmins): Think about creating a test environment and plan a migration strategy.</li>
+        </ul>
+    </li>
+    <li>
+        "Rewriting pip"
+        <ul>
+            <li>This refers to rewriting the SRCF's infrastructure from scratch (so named on account of the majority of our services being hosted on pip).</li>
+            <li>Amar was thinking of / has created a plan to rewrite pip.</li>
+            <li>It was noted that while originally this was intended to be "while we virtualise it", these are largely independent tasks and should be considered separately.</li>
+            <li>There may be tasks where the ratio of effort to benefit to users or sysadmins is higher.</li>
+        </ul>
+    </li>
+    <li>
+        Virtualising pip
+        <ul>
+            <li>It was noted that the discussion of four things seems to come under this banner and they should be considered separately.</li>
+            <li>
+                "virtualise pip"
+                <ul>
+                    <li>This would be convenient for various maintenance tasks.</li>
+                    <li>
+                        It was proposed to <a href="http://en.wikipedia.org/wiki/Blue_Pill_(software)">Blue Pill</a> pip - i.e., a single XenServer hosting a single VM, with the same hardware and storage as we currently use.
+                        <ul>
+                            <li>This would incur (significant) downtime.</li>
+                            <li>This would be better than what we have currently.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Should we have a dedicated <code>/home</code> NFS server / filer?</li>
+            <li>
+                Split off services into separate virtual machines (shell, web, databases, email, ...)
+                <ul>
+                    <li>
+                        Malcolm noted that our current setup is not necessarily bad:
+                        <ul>
+                            <li>We want a VM responsible for hosting our /home NFS; a role currently served by pip.</li>
+                            <li>It makes sense to have high load services on that server to reduce overhead; i.e., web and email.</li>
+                            <li>This quickly approaches a description of our current setup.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        There are no longer any "low hanging fruit" services to move into VMs.
+                        <ul>
+                            <li>
+                                mailman?
+                                <ul>
+                                    <li>We would have to hub/multiplex mail. A plan involving transitioning to <code>lists.srcf.net</code> was suggested.</li>
+                                    <li>This causes very little load anyway.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                MySQL? Postgres?
+                                <ul>
+                                    <li>Should be fairly straightforward.</li>
+                                </ul>
+                            </li>
+                            <li>No timeline was set / intention expressed to do this, and this is therefore deferred until the next meeting.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Use the current 'pip' hardware to offer VMs to users.</li>
+        </ul>
+    </li>
+    <li>
+        News server
+        <ul>
+            <li>... has been broken for ages.</li>
+            <li>It has fairly little use. Should we remove it?</li>
+            <li>This was deferred until the next meeting.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Actions Summary:</h3>
+
+<ul>
+    <li>
+        Amar
+        <ul>
+            <li>Investigate a cash donation from ThirdLight.</li>
+            <li>Invite people to the dinner.</li>
+        </ul>
+    </li>
+    <li>
+        Andrew
+        <ul>
+            <li>Go through opt-out emails, attempt to identify why they left, and update ex-members.txt as appropriate.</li>
+        </ul>
+    </li>
+    <li>
+        Charles
+        <ul>
+            <li>Get food for the squash.</li>
+            <li>Investigate whether we need to pay VAT for the dinner.</li>
+        </ul>
+    </li>
+    <li>
+        Daniel
+        <ul>
+            <li>Email CUER to agree to quota increase and ask for a donation.</li>
+            <li>Email CUER to find out what they actually are trying to do with Apache.</li>
+        </ul>
+    </li>
+    <li>
+        Malcolm
+        <ul>
+            <li>Give Matthew the list of societies that should be mailed about migrating their websites to <code>srcf.net</code>.</li>
+        </ul>
+    </li>
+    <li>
+        Matthew
+        <ul>
+            <li>Email ThirdLight again, requesting more specific details on hardware offered.</li>
+            <li>Pester societies about migrating their websites to <code>srcf.net</code>.</li>
+        </ul>
+    </li>
+    <li>
+        Richard
+        <ul>
+            <li>Add symlinks to logs in users'/societies' home directories.</li>
+            <li>Merge Malcolm's, Andrew's and others' work on control panels in various forms.</li>
+            <li>Move the new society page into the control panel.</li>
+            <li>Talk to Andrew Ryrie about the progress he's made on the control panel.</li>
+        </ul>
+    </li>
+    <li>
+        Sysadmins
+        <ul>
+            <li>Disable "-adm" accounts that have never logged in (and hence have never had their password changed), as they constitute a security vulnerability <i>(completed on the spot)</i>.</li>
+            <li>Email inactive sysadmins and ask them if they would like help in order to get started with common sysadmin tasks.</li>
+            <li>Think about creating a test environment and plan a migration strategy.</li>
+        </ul>
+    </li>
+</ul>
+
+<!--#include virtual="../../inc/footer.html" -->

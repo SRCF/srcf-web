@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="50" viewBox="0 0 125 50">
+	<defs>
+		<style>
+			/* Age and treachery will always triumph over youth and skill. */
+			text {
+				fill: #fff;
+			}
+			rect {
+				display: none;
+			}
+			/* *** */
+			@font-face {
+				font-family: "D-DIN";
+				src: url("data:font/woff2;base64,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") format("woff2");
+				unicode-range: U+20,U+43,U+46,U+50,U+52,U+53,U+62,U+64,U+65,U+68,U+6f,U+72,U+74,U+77,U+79;
+			}
+			text {
+				font-family: D-DIN;
+			}
+		</style>
+		<clipPath id="a">
+			<path d="M120.726,24.746v4.76H101.383V28.4a8.218,8.218,0,0,0-1.137-4.318A7.577,7.577,0,0,0,97,21.169a10.6,10.6,0,0,0-4.667-.991c-.047,0-.091,0-.137,0h0v4.264c.048,0,.088-.009.137-.009a4.857,4.857,0,0,1,3.39,1.081A3.64,3.64,0,0,1,96.883,28.4v1.1H80.092V3.9h40.634V20.486H108.894v4.26Z" style="fill: none"/>
+		</clipPath>
+		<clipPath id="b">
+			<path d="M80.128,46.1V20.829l.1,1.091a8.344,8.344,0,0,0,2.67,5.8,9.192,9.192,0,0,0,6.114,1.985h3.3c-.008,0-.045-4.187-.045-4.187H89.3c-2.927,0-4.352-1.17-4.62-3.792l-.092-.9H121V46.1" style="fill: none"/>
+		</clipPath>
+	</defs>
+	<rect width="125" height="50" rx="6"/>
+	<text transform="translate(6 20)" style="font-size: 18px">Powered <tspan x="20" y="20">by the</tspan></text>
+	<g style="font-size: 34.236px">
+		<g style="clip-path: url(#a)">
+			<text transform="translate(80.092 28.506)">SR</text>
+		</g>
+		<g style="clip-path: url(#b)">
+			<text transform="translate(81.756 45.112)">CF</text>
+		</g>
+	</g>
+</svg>

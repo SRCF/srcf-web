@@ -1,0 +1,32 @@
+--- old.html	2013-10-29 15:17:49.156177846 +0000
++++ new.html	2013-10-29 15:09:21.007175592 +0000
+@@ -41,7 +41,7 @@
+     The time and venue of this meeting shall be publicised by the Committee at
+     least fourteen days beforehand.
+     PGP-Signed email shall be considered a valid way of making such official
+-    announcements to the society, and the chair's PGP key should be used in
++    announcements to the society, and the Chair's PGP key should be used in
+     such matters.
+    </li>
+    <li>
+@@ -74,17 +74,17 @@
+   seconder and nominee, or PGP signed by all three parties.
+   Any member of the society may be nominated for any Committee post (proposer
+   and seconder are needed).
+-  The Chairman of the AGM shall appoint two tellers at the AGM.
++  The Chair of the AGM shall appoint two tellers at the AGM.
+   The Committee may co-opt additional Committee members as it sees fit, and
+   shall be responsible for the appointment of system administrators, who shall
+   be responsible to the Committee.
+   The Committee must have a majority of members who are current CU
+   undergraduate or postgraduate students or are members of the Regent House and
+-  the majority of principal officers: Chairman, Secretary and Junior Treasurer
++  the majority of principal officers: Chair, Secretary and Junior Treasurer
+   must be current students.
+  </li>
+  <li>
+-  The Committee shall consist of Chairman, Secretary, Junior Treasurer, and PR
++  The Committee shall consist of Chair, Secretary, Junior Treasurer, and PR
+   officer.
+   It shall meet at least once per term, and may invite any other persons to
+   attend Committee meetings as it sees fit.

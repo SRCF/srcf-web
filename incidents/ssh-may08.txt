@@ -1,0 +1,102 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Executive summary:  connecting to the SRCF may result in a security warning 
+which you will have to act to solve; read below for the solution.  Also you 
+really should CHANGE YOUR PASSWORD.
+
+- ----------------------------------------------------------------------
+
+Detail:
+- -------
+
+Secure connections to the SRCF (using SSH (PuTTY etc.), SCP or SFTP (WinSCP, 
+iXplorer, FileZilla, etc.)) are protected by a "host key" held only by the 
+SRCF, which ensures that your data and passwords cannot be read by anyone 
+else whilst in transit between your computer and the SRCF.
+
+The host keys on the SRCF servers were insecure due to a software fault [1] 
+which may have caused them to be obtainable by an intruder. This means that 
+any data sent over a SSH connection to our servers recently has an outside 
+chance of being readable by anyone, including any passwords typed.
+
+As a precaution, it is strongly recommended that you CHANGE YOUR SRCF 
+PASSWORD and any passwords for other systems which you may have typed via a 
+SRCF server.
+
+- ----------------------------------------------------------------------
+
+What To Do About The Scary Errors:
+- ----------------------------------
+
+As a result of this potential security breach, the host keys have been 
+changed, and you will likely see a warning message to this effect when 
+connecting via SSH to the SRCF server:
+
+"WARNING - POTENTIAL SECURITY BREACH!
+
+The server's host key does not match the one PuTTY has cached. This means 
+that either the server administrator has changed the host key, or you have 
+actually connected to another computer pretending to be the server.
+
+The new rsa2 key fingerprint is: (...)
+
+If you were expecting this change and trust the new key, press "Accept" to 
+update PuTTY's cache and continue connecting. (etc.)"
+
+(The exact appearance of the message will vary depending on the software you 
+are using; the above quoted message is from PuTTY.)
+
+If presented with such a message, you should VERIFY CAREFULLY that the 
+fingerprint shown in the message matches one of the ones quoted below. 
+Only then should you follow the instructions given to remove the message 
+(e.g. click 'Accept' if using PuTTY).  If using Linux, you can run 
+'ssh-keygen -R pip.srcf.ucam.org' or similar to remove the record of the old 
+host key.
+
+- ----------------------------------------------------------------------
+
+New host key fingerprints:
+- --------------------------
+
+pip.srcf.ucam.org / kern.srcf.ucam.org / www.srcf.ucam.org:
+
+RSA: 8a:cb:8c:d9:57:99:ab:b4:b5:97:ff:e6:7b:ac:96:0d
+or   xodat-bipin-cigoh-mumic-hefuz-bezuv-tiryz-ruzat-tadyc-cokid-muxux
+DSA: 11:1c:52:89:c6:a2:e8:eb:65:68:24:b7:47:5d:be:58
+or   xetem-fadad-kukut-racud-fygah-rucef-kihip-fagyt-ladap-mofez-vixux
+
+cyclone.srcf.ucam.org / nx.srcf.ucam.org (SRCF desktop service):
+
+RSA: 6a:3b:86:a6:a1:92:d5:79:77:8c:72:f8:3e:15:71:72
+or   xecor-kugyg-kabib-tomez-rokas-muvim-gicis-rozun-bapuv-vegez-pexax
+DSA: b3:fe:81:2b:0b:67:d5:c7:83:cb:01:56:c5:7d:59:15
+or   xurer-pilyb-cecil-zefof-lumoc-zidal-budyp-dymeg-gulyz-zugut-dyxux
+
+- ----------------------------------------------------------------------
+
+Please note that this problem is NOT specific to the SRCF; almost any Linux 
+server running Debian or Ubuntu will have to change its keys.  If you run 
+your own Linux system with an affected SSH server, please refer to 
+http://www.srcf.ucam.org/~mjj29/openssl.txt for more information.
+
+- ----------------------------------------------------------------------
+
+If you have any queries regarding the security of your data or our servers, 
+please do not hesitate to get in touch.  Thanks for your understanding in 
+this matter, and apologies for the inconvenience the key change will cause.
+
+- -- 
+Malcolm Scott
+SRCF secretary and system administrator
+http://www.srcf.ucam.org/
+
+[1] http://www.ubuntu.com/usn/usn-612-1
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIKftsqXLspnRCg0oRAqYxAJ9kPk2CT+NCD98VDIc7bgze08FFbgCfTaKl
+Tg6//PPSYgawRmzVeBZ8+VE=
+=2eMw
+-----END PGP SIGNATURE-----

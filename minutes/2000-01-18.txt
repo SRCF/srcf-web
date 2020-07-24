@@ -1,0 +1,84 @@
+Minutes SRCF committee meeting Tue Jan 18 2000
+
+Venue: Matthew Vernon's room
+
+Present:
+	Matthew Vernon
+	Peter Clay
+	Jock Busuttil
+
+In attendance:
+	Hanna Wallach
+	Jonathan Amery
+
+1 	Formalisms 
+
+The meeting was quorate. The committee voted to approve the minutes of the previous meeting.
+
+2.	Committee status 
+
+Matthew Vernon wanted to make it clear that he had never formally offered to resign, merely that he had been considering it due to lack of time; he wishes to remain Chairman for the time being.
+
+Towards the end of last term, Sophie Tatham asked to resign as Junior Treasurer. The committee recognises her resignation and has appointed Hanna Wallach as Acting Junior Treasurer until the AGM.
+
+3.	Financial status
+
+Hanna was asked to email the committee regarding our financial status. She believes we have approximately 120 pounds from subscriptions. 
+
+4. 	AGM 
+
+The committee members agreed that they should all look for a venue to hold the AGM. We provisionally agreed to hold the AGM on the 6th of February, in the afternoon. 
+
+We agreed not to coopt any more committee members before the AGM, but would like to formally suggest that the new committee consider coopting an "Officer without portfolio". 
+
+Note that the venue needs to be found before Sunday 23rd.
+
+5.	Ian Jackson's complaint
+
+We note that there has been very poor communication here, especially between the committee members. 
+
+Matthew was asked to post lists of the canonical committee to ucam.comp.student-run.announce and ucam.societies.srcf. 
+
+He is to reply to Ian clarifying who is and who is not a representative of the SRCF, and submit this reply to the committee for pre-approval.
+
+All committee members are asked to forward all mail relevant to the SRCF which they have received to soc-srcf-committee@lists.cam.ac.uk
+
+6.	Mail domain
+
+Matthew Vernon is to formally ask Ian Jackson and David Carter to arrange that an MX record for srcf.ucam.org to be created, and mail to this domain to be routed to ppsw.cam.ac.uk, and thence to the SRCF machine. He is also to ask that www.srcf.ucam.org be created as a CNAME to our machine. 
+
+The admins for this mail domain are to be appointed by the admin committee. Matthew is to approach Ian Jackson and ask for his services as a security consultant and backup mail admin; Peter is to ask Peter Benie to be a backup mail admin. 
+
+(Any other admin appointments must be approved in advance by the committee) 
+
+7.	DNS server
+
+It was noted that BIND has a poor security record, and that CS policy makes running a nameserver difficult. It was unanimously voted that a nameserver should not be run. 
+
+8.	IRC server
+
+It was noted that there exists a IRC network in Cambridge calling itself UcamNet; we are to find out whether this has official permission or not. 
+
+If we are asked to run a local IRC server, the admins may set one up. The committee approved any future peering arrangement with Chiark, but refused to peer with any JCN hosts, citing the potential security risk. 
+
+9.	Email addresses
+
+soc-srcf-admin (for machine admin and technical discussion) &amp; soc-srcf-committee (the committee) have been set up, and are to be used accordinly. In particular, soc-srcf-committee is to be publicised as our contact email address. 
+
+Their memberships are currently the same, and are:
+	mcv21
+	pjc50
+	hmw26
+	jmb73
+
+Hanna is to check that soc-srcf has all our membership included on it. If Ian or Peter Benie are recruited, they are to be added to srcf-admin. 
+
+10.	AOB
+
+Hannah pointed out that we don't have a bank account. The committee asked her to go to HSBC and organise one before the AGM. 
+
+Many people have expressed the opinion that our charges are too high, especially for societies. The committee voted to move to abolish charging from the end of the academic year. 
+
+We have been donated a machine, which is sitting in Matthew's room. He is going to investigate putting it in a cupboard in Selwyn. 
+
+Hanna asked how our policy on account cancellation would be affected by abolishing charging; we voted to postpone debate on this issue as it would not become relevant for several months. 

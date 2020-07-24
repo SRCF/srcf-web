@@ -1,0 +1,137 @@
+<!--#set var="title" value="Services" -->
+<!--#include virtual="inc/header.html" -->
+<h2>Services</h2>
+
+<p>We offer the same services to both users and societies.  The term
+<em>society</em> here is a misnomer &ndash; what we call society accounts are
+simply any form of shared, non-personal account.  They do not have to represent
+a college or university society, this is merely how they are commonly used.</p>
+
+<p>The guiding motivation behind most SRCF system administration policies is to
+provide as much flexibility to users as possible, within the constraints of
+security, manageability and affordability.  These policies can often be amended
+quickly to accommodate the unforeseen needs of individuals and groups trying to
+do something novel.</p>
+
+<p>If you feel that there is a service or application that is not provided at
+the moment, please feel free to <a href="contact">request it from the
+sysadmins</a>.</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Web hosting</h4>
+        <ul>
+          <li>subdomain URLs:
+            <ul>
+              <li><strong><span class="var">CRSid</span>.user.srcf.net</strong> for users</li>
+              <li><strong><span class="var">society</span>.soc.srcf.net</strong> for societies</li>
+            </ul>
+          </li>
+          <li>use your own domain with a site hosted by us</li>
+          <li>server-side scripting in PHP, Perl, Python and Ruby</li>
+          <li>a liberal CGI environment (compared to most other hosting in the University, and the internet industry at large)</li>
+          <li>Apache server-side includes and <em>.htaccess</em> files</li>
+          <li>simple Raven authentication via <em>mod_ucam_webauth</em></li>
+          <li>HTTPS certificates to secure your site</li>
+          <li>lifelong web address forwarding after you leave the university</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><a href="https://timeout.srcf.net" target="_blank">Video conferencing (beta)</a></h4>
+        <ul>
+          <li>Core video conferencing capabilities (video, audio)</li>
+          <li>Live screensharing</li>
+          <li>A fully functional web client</li>
+          <li>Interacive live polling</li>
+          <li>Interactive whiteboard</li>
+          <li>Ability to split groups into breakout rooms</li>
+          <li>Read more about this at <a href="https://docs.srcf.net/#timeout" target="_blank">our documentation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Shell and files</h4>
+        <ul>
+          <li><!--#include virtual="default-quota.html" --> of space for files and web content (and more if required)</li>
+          <li><a href="ssh://shell.srcf.net">SSH access</a> to an Ubuntu shell server, so you can experiment with a Linux box to your heart's content</li>
+          <li>graphical desktop access via VNC and SSH</li>
+          <li>SCP and SFTP access to your files</li>
+          <li>a <a href="https://www.srcf.net/terminal/">web-based terminal</a>, so you can access the server and your files with only a web browser</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Email</h4>
+        <ul>
+          <li>base email addresses:
+            <ul>
+              <li><strong><span class="var">CRSid</span>@srcf.net</strong> for users</li>
+              <li><strong><span class="var">society</span>@srcf.net</strong> for societies</li>
+            </ul>
+          </li>
+          <li>a local mailbox with IMAP and <a href="https://webmail.srcf.net">web-based</a> access</li>
+          <li>simple forwarding of mail to an external address</li>
+          <li>additional addresses (e.g. <span class="var">CRSid</span>-<span class="var">something</span>@srcf.net) or advanced filtering via forwarding rules</li>
+          <li>Mailman mailing lists, with <a href="https://lists.srcf.net/mailman">web-based administration</a></li>
+          <li>lifelong email forwarding after you leave the university</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><a href="https://mattermost.srcf.net" target="_blank">Mattermost</a></h4>
+        <p>Mattermost is a flexible, open source messaging platform
+          that enables secure team collaboration. You can use it for your society, with friends or for any group.</p>
+        <ul>
+          <li>Real-time collaboration</li>
+          <li>Organized conversations in teams and channels</li>
+          <li>File, image and link sharing</li>
+        </ul>
+        <p>Learn more about Mattermost <a href="https://mattermost.com" target="_blank">here</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Miscellaneous</h4>
+        <ul>
+          <li>MySQL and PostgreSQL databases, with <a href="https://www.srcf.net/phpmyadmin/">phpMyAdmin</a> and <a href="https://www.srcf.net/phppgadmin/">phpPgAdmin</a> for web-based management</li>
+          <li>an <a href="irc://irc.srcf.net/srcf">IRC server</a> and <a href="https://webchat.srcf.net">web interface</a>, to chat with other members and sysadmins</li>
+          <li>a <a href="gopher://gopher.srcf.net">Gopher server</a>, if a web server is too mainstream for you</li>
+          <li>friendly and helpful sysadmins and support to help with any issues</li>
+        </ul>
+      </div>
+    </div>
+    <p class="lead">All for <em>free</em>?  <strong>Yes</strong> <i class="fa fa-smile-o"></i></p>
+  </div>
+</div>
+
+<h3>Personal and society accounts</h3>
+
+<p>Each user of the SRCF has a personal account they can use to login to most
+services (shell, files, webmail, and so on).  Prospective members can
+<a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup">
+join the SRCF</a> to create their account.</p>
+
+<p>Society accounts provide a separate space for one or more people (the
+account <em>administrators</em>) to share control over hosting files or a
+website.  We have no objections with (and indeed encourage) individuals to
+become members of the SRCF if only to host a website for a society or a group
+of people.</p>
+
+<p>Any existing user may go ahead and
+<a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup/society">
+create a new society account</a>.  We recommend all society accounts name at
+least two administrators &ndash; this will help to maintain continuity of the
+account should one of the administrators leave the university.  Admins may be
+added or removed at any time, but new admins will need to sign up for a
+personal SRCF account if they don't already have one.</p>
+
+<!--#include virtual="inc/footer.html" -->

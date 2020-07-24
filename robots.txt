@@ -1,0 +1,24 @@
+User-agent: NextGenSearchBot
+Disallow: /
+
+User-agent: Ultraseek (webmaster@ucs.cam.ac.uk)
+Disallow: /~
+
+User-agent: Ultraseek (internal search; webmaster@ucs.cam.ac.uk)
+Disallow: /~
+
+User-agent: Ultraseek (search development; webmaster@ucs.cam.ac.uk)
+Disallow: /~
+
+User-agent: *
+Crawl-delay: 5
+Disallow: /cgi-bin/
+Disallow: /doc/
+Disallow: /minutes/
+Disallow: /signup/
+Disallow: /srcf-admin/
+Disallow: /~cuspaceflight/websvn/
+Disallow: /cuspaceflight/websvn/
+Disallow: /phpmyadmin/
+Disallow: /phppgadmin/
+Disallow: /terminal/

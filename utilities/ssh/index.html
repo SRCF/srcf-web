@@ -1,0 +1,133 @@
+<!--#set var="title" value="SSH clients" -->
+<!--#include virtual="../../inc/header.html" -->
+
+<p>
+Quick links: 
+[
+ <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Windows SSH PuTTY package</a>
+|
+ <a href="/utilities/mindterm/">SRCF Java SSH client webpage</a>
+|
+ <a href="/shellinabox/">SRCF ajax terminal</a>
+]
+
+<h2>Introduction</h2>
+
+<p>
+  Interactive access to the SRCF machine is normally done over a
+  series of networks (e.g., a College network, the University's
+  network, then CUSU's network, where the server resides). It is
+  possible to intercept data travelling over a network and examine it
+  or tamper with it. There is a small risk that someone could
+  intercept data users send to the SRCF server, and if that data
+  includes a user's password, then the "attacker" can gain access to
+  the SRCF machine, appearing to be that user -- the typical case is
+  where the "attacker" breaks into a machine connected to a network,
+  and uses it to listen to the network so as to intercept passwords,
+  then uses these passwords for further breakins. The SRCF wishes to
+  minimise this risk for its users.
+<p>
+  Network interception of passwords and other potentially confidential
+  data can be rendered infeasible by the use of encryption. Some
+  access software which is used to connect to the SRCF will encrypt
+  data sent over the network. The SRCF encourages all users to
+  choose such software over non-encrypting alternatives.
+<p>
+  
+  <table align="center" border="1">
+   <tr>
+    <td bgcolor="#d0d0d0">Encrypting ("secure")</td>
+    <td bgcolor="#d0d0d0">Non-encrypting ("insecure")</td>
+   </tr>
+   <tr>
+    <td valign="top">
+     <ul>
+      <li>ssh</li>
+      <li>PuTTY</li>
+      <li>MindTerm</li>
+     </ul>
+    </td>
+    <td valign="top">
+     <ul>
+      <li>telnet</li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+   <td valign=top>
+   <ul>
+   <li>scp ("Secure Copy")</li>
+   <li>pscp</li>
+   <li>WinSCP</li>
+   <li>sFTP</li>
+   <li>Fugu</li>
+   </ul>
+   </td>
+   <td valign=top><ul><li>FTP</li></ul></td>
+   </tr>
+  </table>
+
+<p>
+  The <a href="http://www.cam.ac.uk/cs/">University Computing
+  Service</a> also strongly recommend SSH over Telnet for remote
+  logins to systems within the University as insecure user logins can
+  put the whole system at risk. If you aren't running a Windows system
+  and want to get an SSH client, the computing service issue an <a
+  href="http://www-uxsup.csx.cam.ac.uk/CD/">SSH CD</a> (for free)
+  which contains SSH clients for many platforms. If you are running a
+  Windows system, it's probably easiest to download the preconfigured
+  set from here.
+</p>
+
+
+
+<h2>Getting the software</h2>
+
+<h3>Windows</h3>
+
+Windows users may use PuTTY to access the SRCF service. 
+
+<ul>
+ <li><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Official version of PuTTY</a></li>
+</ul>
+
+<p>Information about how to upload your webpages without exposing your 
+password to potential attackers can be found in our 
+<a href="/faq/basics">FAQ</a>.</p>
+
+<!--<p>The putty package includes the command line secure copy tool,
+pscp. However, windows users may feel more comfortable using the
+graphical <a href="http://winscp.vse.cz/eng/">WinSCP</a> tool.-->
+
+<h3>Linux / UNIX</h3>  
+
+Most Linux and UNIX systems have ssh installed on them. Ask your local
+sysadmin if just typing `<tt>ssh yourusername@shell.srcf.net</tt>'
+doesn't do the right thing. 
+
+<ul>
+ <li><a href="http://www-uxsup.csx.cam.ac.uk/CD/">UCS Unix Support's SSH CD</a></li>
+</ul>
+
+<h3>MacOS</h3>
+
+<p><a href="http://rsug.itd.umich.edu/software/fugu/">Fugu</a> is a nice SFTP client for MacOS X</p>
+
+<h3>Java</h3>
+
+<p>
+Particularly useful in cybercafes where new software is difficult or
+infeasible to install, MindTerm is a small programme which a web browser
+may download. It is a Java applet, and as such runs inside the browser,
+with permission to connect back to the webserver over the network.
+</p>
+
+<p>
+Luckily, the SRCF webserver and the SRCF interactive login service are both
+currently hosted on the same machine. 
+This is in the process of being resolved -- we ideally want role addresses, 
+so "ssh www.srcf.net" should be wrong, and we want "ssh shell.srcf.net".
+</p>
+<a href="/utilities/mindterm/">SRCF MindTerm page</a>
+
+<!--#include virtual="../../inc/footer.html" -->

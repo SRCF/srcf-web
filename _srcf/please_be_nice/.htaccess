@@ -1,0 +1,4 @@
+RewriteEngine on
+ErrorDocument 403 /_srcf/please_be_nice/please_be_nice.shtml
+RewriteRule please_be_nice.shtml$ - [last]
+RewriteRule .* - [forbidden,last]

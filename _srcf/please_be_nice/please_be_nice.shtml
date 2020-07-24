@@ -1,0 +1,9 @@
+<!--#set var="TITLE" value="Request denied"
+--><!--#include virtual="../inc/err-header.html" -->
+<p>Your request has not been allowed, as it looks similar to some automated requests
+we've seen which were intended to find weaknesses in our users' websites' security.
+If you're not a robot, we apologise for our mistake.</p>
+<p>It might be worth trying to make your request in a different way.  For
+example, if you were using a bookmark to access a particular page, try starting at the
+front page instead.</p>
+<!--#include virtual="../inc/err-footer.html" -->

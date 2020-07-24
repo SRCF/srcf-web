@@ -1,0 +1,62 @@
+AddDefaultCharset utf-8
+AddHandler server-parsed .html
+
+# NB: this .htaccess is inherited by other vhosts e.g. docs, blog
+# Try to make things vhost-specific
+
+Options +FollowSymLinks +ExecCGI
+
+<Files "robots.txt">
+  Header set Cache-Control "public, must-revalidate, max-age=7200"
+</Files>
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www|docs|blog).srcf.net$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
+
+# Make the rest of this file only apply to the main website
+RewriteCond ${HTTP_HOST} ^(docs|blog).srcf.net$
+RewriteRule .* - [L]
+
+# NB: there was historically a permanent redirect from webmail.srcf.net to www.srcf.net/squirrelmail
+# which we should expect users to cache indefinitely -- so keep this pointing at something useful
+RewriteRule ^squirrelmail(\.html)?(/.*)? https://www.srcf.net/webmail [R,L]
+
+RewriteRule ^ssh-may08.txt$ https://www.srcf.net/incidents/ssh-may08.txt [R]
+
+RewriteRule ^contact-addresses$  https://www.srcf.net/contact  [R]
+RewriteRule ^services(\.html)?/$ https://www.srcf.net/services [R]
+
+RewriteRule ^signup/newsoc/?$ https://control.srcf.net/signup/society [R]
+RewriteRule ^signup/?$        https://control.srcf.net/signup         [R]
+
+# Blame eb677
+RewriteRule ^status/2019-02-18 https://youtu.be/C7sE0agEVNg         [R]
+
+# Internal rewrite to avoid specifying the docs domain every time (not public)
+# Use :: in place of # as the latter isn't available even within internal rewrites
+RewriteRule ^_docs_rd/(.*)::(.+)$ https://docs.srcf.net/$1#$2 [R,L,NE]
+RewriteRule ^_docs_rd/(.*)$       https://docs.srcf.net/$1    [R,L]
+# Redirect legacy FAQs to docs
+RewriteRule ^faq/basics(\.html)?$                /_docs_rd/index.html::shell-and-files
+RewriteRule ^faq/cgi(\.html)?$                   /_docs_rd/web-hosting/cgi-php.html
+RewriteRule ^faq/databases(\.html)?$             /_docs_rd/services/databases.html
+RewriteRule ^faq/email-hades(\.html)?$           /_docs_rd/email/hades.html
+RewriteRule ^faq/email-pip(\.html)?$             /_docs_rd/email/pip.html
+RewriteRule ^faq/email(\.html)?$                 /_docs_rd/email/summary.html
+RewriteRule ^faq/inappropriate-content(\.html)?$ /_docs_rd/read-first/important.html
+RewriteRule ^faq/irc(\.html)?$                   /_docs_rd/services/irc.html
+RewriteRule ^faq/managing-account(\.html)?$      /_docs_rd/index.html::personal-accounts
+RewriteRule ^faq/memberlists(\.html)?$           /_docs_rd/personal-accounts/soc-srcf-lists.html
+RewriteRule ^faq/managing-socaccount(\.html)?$   /_docs_rd/index.html::society-accounts
+RewriteRule ^faq/news(\.html)?$                  /_docs_rd/services/usenet.html
+RewriteRule ^faq/obtaining-account(\.html)?$     /_docs_rd/personal-accounts/start.html
+RewriteRule ^faq/other-services(\.html)?$        /_docs_rd/index.html::more-services
+RewriteRule ^faq/socmail(\.html)?$               /_docs_rd/email/societies.html
+RewriteRule ^faq/troubleshooting(\.html)?$       /_docs_rd/shell-and-files/ssh.html::passwordless-ssh
+RewriteRule ^faq/web-hosting(\.html)?$           /_docs_rd/index.html::web-hosting
+# Redirect about to its new home
+RewriteRule ^faq/about(\.html)?$ /about [R,L]
+# Generically redirect FAQ pages with no obvious docs equivalent
+RewriteRule ^faq/(blogging|misc|programming|user-contributed)(\.html)?$ /faq/ [R,L]

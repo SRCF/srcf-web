@@ -1,0 +1,87 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear SRCF user,
+
+Executive summary: IF YOU TYPED *ANY* PASSWORD whilst connected to a SRCF 
+computer between 4pm Tuesday 21st April and 11am Thursday 23rd April, YOU 
+MUST CHANGE THAT PASSWORD URGENTLY and any other passwords similar to it.
+
+You will also likely see warnings when connecting to the SRCF via SSH or 
+SFTP; these warnings should _not_ be ignored.  Read on for information on 
+how to deal with them.
+
+======
+
+Detail:
+
+As you are probably aware, the SRCF servers were unavailable between 10am on 
+Thursday morning and early this morning.  This is because it was discovered 
+that an attacker had broken into the main server at 16:26 on Tuesday 21st 
+April, and had gained total access to it and all data stored on it or 
+passing through it.
+
+We have endeavoured to get the machine back up as quickly as possible and 
+apologise for the inconvenience caused.
+
+The attacker obtained the contents of SSH connections to the main SRCF 
+server (pip.srcf.ucam.org, a.k.a. www.srcf.ucam.org, a.k.a. 
+kern.srcf.ucam.org, etc.).  In other words, anything displayed in your 
+terminal window whilst you were connected to the SRCF will have been 
+recorded by the attacker, as will anything you typed into the terminal 
+window.
+
+This includes any passwords you typed when making onward connections from 
+the SRCF server -- if, from the SRCF, you used a password to make a 
+connection to another service (e.g. email, ssh, ftp, irc) then your password 
+to that service is probably compromised and should be changed.  This does 
+not include your SRCF password, unless you typed it into an application 
+running on the SRCF for whatever reason after logging in: for example a 
+terminal locking program, or an onward connection.  For this reason we have 
+not reset your SRCF password, although we can of course do so on request if 
+desired.
+
+If you are unsure about the safety of a given password, it is a good idea to 
+change it just in case it has been compromised.
+
+======
+
+Furthermore:  when you next login to the SRCF via SSH or SFTP you will be 
+greeted with a scary warning informing you that the SSH host keys of the 
+SRCF server have changed.
+
+You should manually compare the fingerprint shown with the new fingerprints 
+given below (it should match one) and follow the instructions given by your 
+SSH client.
+
+New SSH key fingerprints for pip.srcf.ucam.org:
+
+   RSA:  4d:da:7f:b2:99:9d:42:8b:10:b4:e5:37:d5:bd:43:b4
+    or   xizef-zenun-kobem-zacut-tybob-damiv-cageb-lymar-fetom-vucec-zixux
+    or   xifet-pezur-dekon-tabum-rigar-gynof-loher-teber-gexix
+   DSA:  12:8f:8a:1c:e4:f7:a2:9d:80:a3:ef:85:f8:79:a4:ed
+    or   xevaf-zahet-cypac-heser-rihyv-zeril-tanap-lezys-zanyl-kamyp-pixox
+    or   xegim-zadyc-sonuz-lomyn-tibop-farim-havul-niniv-tyxax
+
+If none of these match the fingerprint you see on connecting, you should 
+inform us immediately and do NOT continue to connect.
+
+======
+
+If you have any concerns or questions, please get in touch and we will do 
+our best to help.
+
+Regards,
+
+- -- 
+Malcolm Scott
+SRCF system administrator
+http://www.srcf.ucam.org/
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAknxRtIACgkQqXLspnRCg0oG3ACdH2eSrw477jY26pPElLClcUut
+feIAn1HsKqW3If6uocUSBTzhjzMJ25ip
+=LGwg
+-----END PGP SIGNATURE-----

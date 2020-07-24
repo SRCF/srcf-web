@@ -1,0 +1,9 @@
+3731 public_html directories
+
+                                htaccess    wordpress   php
+nonempty            1965        821         209         1041
+recently_visited    1455        679         199         839
+
+Private apache2 process:        1       cuyc
+Django                          2       wolfsonje   chmayball
+Tomcat                          1       caiusmayball

@@ -1,0 +1,8 @@
+ExpiresActive On
+# 12 hours
+ExpiresDefault A43200
+ExpiresByType image/gif "access plus 6 month"
+ExpiresByType image/jpg "access plus 6 month"
+ExpiresByType image/jpeg "access plus 6 month"
+ExpiresByType image/png "access plus 9 month"
+ExpiresByType image/ico "access plus 1 year"

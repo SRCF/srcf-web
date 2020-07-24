@@ -1,0 +1,66 @@
+Minutes SRCF committee meeting Tue Feb 20 2001
+
+Venue: the SRCF bunker
+
+Present:
+
+	Jock Busuttil
+	Martin Keegan
+
+Apologies:
+
+	Hanna Wallach
+	Peter Clay
+
+
+1. Matters arising
+
+The minutes from the last meeting (Mon 6 November 2000) were not
+confirmed.  It was decided that this should be done subsequent to
+consultation with the other members of the committee.
+
+2. AGM
+
+It was noted that the AGM must take place this term, and that its date
+and venue should be published with fourteen days' notice according to
+the SRCF constitution.  It was resolved that Jock would set about
+booking a room for the provisional date Friday 16 March, at 7pm (last
+day of full term).
+
+Hanna should be given warning to have the accounts prepared for the
+AGM.
+
+Appropriate notification to SRCF members and the newsgroups will be
+sent out by Martin when the room booking is confirmed.
+
+3. AOB
+
+Constitutional amendments: it was noted that whatever discussion there
+had been on the subject of constitutional amendments has long since
+expired from the newsgroups.  It was resolved that discussions should
+be reopened prior to the AGM to give sufficent time for amendments to
+be drafted and submitted to Jock for inclusion on the agenda.
+
+User administration: it was noted that the administration of new users
+and societies has been particularly smooth, even given their volume
+over recent months.
+
+Hosted societies: it was noted that current society admins should be
+contacted next term to provide an easy transition for those who happen
+also to be graduating at the end of the year.
+
+Relationship with the CS: it was noted that we have managed to avoid
+the wrath of the Computing Service.  This is a Good Thing (TM).  More
+importantly, it was proposed that, given this delicate relationship
+with the CS, future SRCF committees should be aware of the
+responsibilities they have to maintain critical systems such as email.
+
+Relationship with CUSU: it was noted that no formal agreement has yet
+been established with CUSU to safeguard the hosting of kern and snook
+in 11/12 Trumpington Street.  This should be done, preferably before
+the AGM, but certainly before Jock and Martin cease to be responsible
+for computing at CUSU.
+
+
+
+The meeting closed at 20:35.

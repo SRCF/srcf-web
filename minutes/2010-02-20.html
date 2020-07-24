@@ -1,0 +1,356 @@
+<!--#set var="title" value="Minutes of SRCF Committee meeting of Saturday 2010-02-20" -->
+<!--#include virtual="../inc/header.html" --> 
+<h1><!--#echo encoding="none" var="title" --></h1>
+
+<p><b>Venue:</b> Starbucks
+Market Square</p>
+<p><b>Time:</b>
+10:00-11:39</p>
+<p><b>In attendance:</b>
+Daniel Thomas (drt24, PR Officer), Malte Schwartzkopf (ms705,
+Chairman), Fergus Ross Ferrier (frf21, Junior Treasurer)</p>
+<p><b>Apologies:</b>
+Han-Ley Tang (crisis (via Malte, received 04:24))</p>
+<p>Minutes taken by Daniel
+Thomas.</p>
+<h2>Absence of Sysadmins from the meeting</h2>
+<ul>
+	<li><p>Malcolm couldn't
+	come as he was involved (since those responsible tried to access his
+	account) and Kristian is currently in Dubai, Ian is in Scotland,
+	Ross is in Sweden. Others are busy.</p>
+	<li><p>We need more
+	Sysadmins.</p>
+	<ul>
+		<li><p>The recent issue
+		with spam being sent from the SRCF made this abundantly clear.</p>
+		<li><p>Recent flamewars
+		on #srcf have reduced its usefulness as a communication medium as
+		some sysadmins and committee have ceased to read it as a result.</p>
+		<li><p>[For this reason
+		I (drt24) may apply /kick et al. in future.]</p>
+	</ul>
+</ul>
+<h2>Password Harvesting + ToS violation Incident
+involving Oliver Stannard (os289), Matvey Soloviev (ms900) and
+Frankie Robertson (fr272)</h2>
+<ul>
+	<li><p>Daniel summarised
+	what had happened based on discussions had and the recollection of
+	the following information from sysadmins.</p>
+</ul>
+<ol>
+	<li><p>(10th Feb, 11:39)
+	os289 logs in from 128.232.159.143</p>
+	<li><p>os289 su's to
+	ms900</p>
+	<li><p>ms900 runs a
+	password search (terminating it early)</p>
+	<li><p>...and finds,
+	alas, an unimportant world-readable password in mas90's home
+	directory (that password won't provide access to anything on the
+	SRCF)</p>
+	<li><p>(11:49) fr272 logs
+	in from the same IP address, 128.232.159.143</p>
+	<li><p>fr272 immediately
+	re-reads the file containing the password then tries to su to mas90
+	(Malcolm's unprivileged account) and then mas90-adm (Malcolm's
+	privileged sysadmin account), presumably using that password --
+	unsuccessfully of course.</p>
+	<li><p>fr272 then runs
+	another (simpler) password search in /home (terminating early again)</p>
+	<li><p>...and then starts
+	reading through various PHP files found by the search</p>
+	<li><p>...and then
+	successfully logs into MySQL several times using one society's
+	account (CUPS, the Physics society - Their password has been reset
+	and the account admins have been notified)</p>
+	<li><p>fr272 then starts
+	the search again in the background, redirecting to a file in his
+	home directory</p>
+	<li><p>fr272 then copies
+	one other user's data into his home directory for good measure, and
+	logs out</p>
+	<li><p>fr272 logs back in
+	from Girton (131.111.216.247) at 21:52 and 23:09 to check on the
+	status of his backgrounded search</p>
+	<li><p>Another user
+	noticed the search running when looking at the output of 'top' this
+	morning (2010-02-11), and notified the sysadmins</p>
+</ol>
+<ul>
+	<li><p>Daniel has had
+	discussions with both Frankie and Matvey.</p>
+	<li><p>Oliver Stannard
+	(os289) only provided access to the SRCF</p>
+	<li><p>Matvey's actions
+	were essentially equivalent to Ximin Luo's actions</p>
+	<li><p>Frankie's actions
+	were worse.</p>
+	<ul>
+		<li><p>Fergus suggested
+		that the same actions should be applied to both of them as were
+		applied to Ximin.</p>
+		<li><p>Daniel suggested
+		that Frankie's actions were worse and so he should have his
+		membership terminated and be allowed to reapply after two years.</p>
+		<li><p>Malte suggested
+		that it was better to apply the same actions to both as to Ximin as
+		this is in-line with precedent and shows that we are being
+		completely fair.</p>
+		<li><p>Oliver Stannard
+		did not appear to have been involved and the other two have
+		admitted to all actions.</p>
+		<ul>
+			<li><p>He should have
+			his account reinstated and be given a stern warning to be more
+			careful who he allows to su from his account in future.</p>
+			<li><p>Vote on this
+			motion: <b>Motion passed unanimously</b></p>
+		</ul>
+	</ul>
+	<li><p>As per standard
+	procedures, the matter was reported to CERT</p>
+	<li><p>Matvey and Frankie
+	will both have the same punishment applied: their membership will be
+	terminated and they will be allowed to reapply for membership at the
+	start of the next academic year (subject to the approval of the
+	committee at the time).</p>
+	<ul>
+		<li><p>Vote on this
+		motion: <b>Motion passed
+		unanimously</b></p>
+	</ul>
+	<li><p>Questions to be
+	resolved:</p>
+	<ul>
+		<li><p>Are failed su
+		attempts emailed to sysadmins?</p>
+		<li><p>Has Ian emailed
+		CERT?</p>
+		<li><p>What is CERT's
+		response.</p>
+	</ul>
+</ul>
+<h2>World-readable /home - security risk?</h2>
+<h3>Michael Darling's (md510) proposal to improve
+user's security</h3>
+<p>"To: committee@srcf</p>
+<p>Subject: World-readable /home - security risk?</p>
+<p>Hey,<br><br>I'd like
+to put forward the issue of /home being world-readable by default. It
+seems there's been at least two cases of people running password
+searches on said open directories, and thus being banned as a result.
+I'm not arguing in terms of rules, but evidently this kind of thing
+does happen, so you can't just trust your users not to do anything
+wrong.<br><br>The problem I can see is that there’s no foreseeable
+reason to allow every user to see every other user’s files by
+default. Many society admins hosting on the SRCF doubtless don’t
+have enough technical expertise to know how to make stuff private,
+and so they’re at risk just by signing up for an account and
+uploading some files. I can’t imagine it being too difficult to
+implement either – a default install of apache won’t mind /home
+having 711 permissions (which is what I’m doing on my own personal
+server, with multiple users and vhosts, so can attest to it working).
+Failing that, having a 755 public_html and a 711 ~ would do, though
+would take a little more effort to implement. At the moment it seems
+just like a security risk, though I’m open to hearing why the
+current setup helps.<br><br>Thanks,<br><br>Michael"</p>
+<h3>Response from sysadmins:</h3>
+<p>This particular
+solution has not been discussed at length because it's achieves
+nothing. <br>Making /home 0711 helps nothing; guess a CRSID and
+you've got past the &quot;security&quot;.<br><br>Making each person's
+~ 0711 (well, presumably 0771 for society accounts) is even worse.
+You can still index within public_html, which is where the
+world-readable passwords will be.<br><br>Basically, this is a
+non-starter; Apache must be able to read public_html, so unless
+Apache gets special rights (very hairy) everyone else must be able to
+as well.”</p>
+<p><br>
+</p>
+<ul>
+	<li><p>This indicates
+	there are good technical reasons why Michael's proposals do not work
+	in practice.</p>
+</ul>
+<ul>
+	<li><p>Richard Whitehouse
+	(rjw201) has indicated that he may submit a more complicated
+	solution that might work. This involved having twice as many groups
+	such that there are socname-apache and crsid-apache groups which
+	have the apache user in them as well as the normal users. He will
+	submit a proper proposal in due course.</p>
+	<li><p>Fergus suggested
+	it might be possible to do something using mod_suexec involving
+	apache serving files as a different user and group</p>
+</ul>
+<ul>
+	<li><p>We should ask
+	sysadmins to investigate possible solutions</p>
+</ul>
+<h2>Cron job that looks for world readable files
+containing passwords?</h2>
+<ul>
+	<li><p>Concerns about
+	false positives</p>
+	<ul>
+		<li><p>surely people
+		will ignore them</p>
+		<li><p>We would need a
+		.password_ignore to deal with false positives (or people would be
+		spammed every week).</p>
+	</ul>
+	<li><p>We have had 4
+	detected cases of people searching for passwords in the past two
+	years.</p>
+	<ul>
+		<li><p>We should
+		politely request that the sysadmins write a script to deal with
+		this problem.</p>
+		<li><p>Our next email to
+		users should remind them to check that any files they have
+		containing passwords are not world readable.</p>
+	</ul>
+	<li><p>If such a script
+	is written we should not publicise the fact that we have done this</p>
+	<ul>
+		<li><p>If we did we
+		would have problems with false negatives as people might rely on it
+		finding any world readable passwords that they might have.</p>
+	</ul>
+	<li><p>Such as script
+	would not be equivalent to what Ximin did as it would not quote the
+	password in the file and would not cc sysadmins (or anyone else)
+	only the society or user in question and it would  quote only the
+	file name not the password.</p>
+	<li><p>This solution
+	doesn't need to be perfect but there should be something</p>
+	<li><p>Ask the sysadmins
+	to implement this basic script as a matter of semi-priority as a
+	possible (imperfect) solution preferably before the AGM and to
+	investigate a more complicated or complete system to replace it as
+	time allows.</p>
+	<ul>
+		<li><p><b>Motion Passed
+		unanimously.</b></p>
+	</ul>
+</ul>
+<h2>Appoint Nick Stenning (nhs27, borior) as a
+sysadmin?</h2>
+<ul>
+	<li><p>Kristian has
+	spoken to him and approves of his becoming a sysadmin however as yet
+	none of the other sysadmins have.</p>
+	<li><p>Approve of Nick
+	Stenning becoming a sysadmin pending approval of a majority of the
+	sysadmins (which should be sought as a matter of urgency).</p>
+	<li><p><b>Motion passed
+	unanimously.</b></p>
+</ul>
+<h2>AGM</h2>
+<ul>
+	<li><p>AGM 18:00 on 9<sup>th</sup>
+	March.</p>
+	<li><p>We must ensure
+	that there are no uncontested positions at the AGM</p>
+</ul>
+<ul>
+	<li><p>We should
+	encourage potential sysadmins to come to the AGM
+	(committee/sysadmins can talk to them at the curry afterwards about
+	becoming a sysadmin).</p>
+	<li><p>Encourage
+	potential committee people to come to the AGM and to stand for
+	positions.</p>
+	<li><p>We will announce
+	the sale of old servers at the AGM as we have the blessing of Third
+	Light to sell them (It should be noted that Third Light are
+	awesome).</p>
+	<li><p>We may announce
+	upgraded desktop service at the AGM if the sysadmins have time to
+	implement it by then.</p>
+	<li><p>Should srcf.net be
+	on the agenda of the AGM?</p>
+	<ul>
+		<li><p>Yes.</p>
+	</ul>
+</ul>
+<h3>Curry</h3>
+<ul>
+	<li><p>Do we need to book
+	anything? 
+	</p>
+	<ul>
+		<li><p>No.</p>
+	</ul>
+	<li><p>Work out where we
+	are going? 
+	</p>
+	<ul>
+		<li><p>No: Ask the AGM.</p>
+	</ul>
+	<li><p>Malte noted that
+	the place we went to last year was no particularly good or cheap.</p>
+</ul>
+<p><br>
+</p>
+<p>Meeting closed at 11:39</p>
+<H1>Actions arising</H1>
+<p>Committee:</p>
+<ul>
+	<li><p>Obtain more sysadmins</p>
+	<li><p>Ensure that there are no uncontested
+	positions at the AGM, encourage potential committee people to stand
+	and potential sysadmins to come (in order to discuss this with them
+	over curry afterwards)</p>
+	<li><p>Finish the agenda of the AGM this weekend.</p>
+</ul>
+<p>Daniel:</p>
+<ul>
+	<li><p>Ensure that #srcf is a useful communication
+	channel.</p>
+</ul>
+<p>Malte:</p>
+<ul>
+	<li><p>Email Oliver Stannard (os289) informing him
+	that his account has been reinstated and that he should take care
+	who he allows to su from his account in future</p>
+	<li><p>Email Matvey Soloviev (ms900) and Frankie
+	Robertson (fr272) informing them that their membership has been
+	terminated and they will be allowed to reapply for membership at the
+	start of the next academic year (subject to the approval of the
+	committee at the time)</p>
+</ul>
+<p>Sysadmins:</p>
+<ul>
+	<li><p>Reinstate the account of os289 (as a matter
+	of priority)</p>
+	<li><p>Agree on whether Nick Stenning should be a
+	sysadmin and if agreement is reached appoint him as a sysadmin
+	(preferably before the AGM)</p>
+</ul>
+<ul>
+	<li><p>Please could a
+	basic script to inform users of world readable password files be
+	implemened as a matter of semi-priority as a possible (imperfect)
+	solution preferably before the AGM and a more complicated or
+	complete system to replace it be investigated as time allows.</p>
+</ul>
+<ul>
+	<li><p>Inform the committee as to whether failed su
+	attempts are emailed to the sysadmins.</p>
+</ul>
+<ul>
+	<li><p>Please could
+	possible solutions to reducing the use of world readable permissions
+	on user files be investigated.</p>
+</ul>
+<p>Ian:</p>
+<ul>
+	<li><p>Inform the
+	committee as to whether the CERT have been emailed and what their
+	response (if any) is.</p>
+</ul>
+
+<!--#include virtual="../inc/footer.html" -->

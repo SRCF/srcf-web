@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule utilities/ssh/secure_imap.html faq/email#reading [R=permanent]
+RewriteRule utilities/ssh/package.html http://www.chiark.greenend.org.uk/~sgtatham/putty/ [R=permanent]

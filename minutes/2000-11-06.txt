@@ -1,0 +1,209 @@
+Minutes SRCF committee meeting Mon 6 Nov 2000
+
+Venue: the SRCF bunker
+
+Present:
+
+	Peter Clay
+	Hanna Wallach
+	Jock Busuttil
+	Martin Keegan
+        
+
+In attendance:
+
+	Colin Watson
+
+1. Matters arising
+
+The minutes from the last meeting (Thu 27 April 2000) were confirmed.  
+
+It was noted that Jock now asks for explicit permission to store
+information on our server in accordance with Bob Dowling's
+recommendations from the Data Protection Act.  This takes the form of
+a stock email sent out to new users and societies before their
+accounts are created.
+
+It was noted that the deadline for the Societies Syndicate was missed.
+
+We have not yet got ourselves on to the CS mailing lists, as was suggested in the previous meeting.
+
+Jock was given root access on kern and has been using the access primarily for quick account creation.
+
+www.srcf.ucam.org has now been added to the list of sites indexed by the university.  In addition, the link from www.cam.ac.uk/societies/ has been pointed at www.srcf.ucam.org.
+
+2. SoCT document
+
+Martin presented a document to the committee outlining his thoughts on possible directions for the SRCF to take at a technical level.  This document is reproduced in full below.  Following much discussion of the document, no resolutions were made to implement any of the details at this time, largely due to time constraints on the sysadmins from academic commitments.
+
+SRCF SoCT document
+
+         Version 1.0  -- first release (MK, 25/10/2000)
+
+This document is a formal statement of the contents of discussions held over
+the past few months between the Chairman, Secretary, sysadmins and other
+relevant people within the SRCF. It is intended to give the Committee,
+sysadmins and members an overview of the current thinking, and allow
+us an easy mechanism for planning new undertakings (as people can now
+say "I propose that we implement section 3 of the Statement of Current
+Thinking v1.2, without s3.7, and get it done by the end of Term" and
+everyone will know what they're talking about.
+
+We're not committing to anything here. Below are found multiple mutually
+contradictory ways of doing the same thing, in some cases. This is just
+a way of making sure we're able to keep track of where we think we're going.
+This is basically a request for discussion. There's a lot of material
+here, and it is probably a good idea to have it all in one place.
+
+The document is organised into five sections, in no useful order
+whatsoever (in fact, most of the interesting stuff is at the bottom of
+each logical unit).  They are Skills and Documentation (1), Structures
+(2), Services (3), Administration (4), Sysadmin (5). A lot of issues
+overlap between the sections, and unavoidably so. Most of the wording
+is "We should do X".  This is intended to mean "Assuming the relevant
+people have no objection after they've been told about X, X is going
+to happen". The pros and cons of various courses of action are not
+detailed here, nor are the lines of thought leading up to them; it's
+expected that these will be brought up as necessary.
+
+Practically everything in here would need to be ratified by the Committee
+or the sysadmins.
+
+
+1. Skills and Documentation
+   ========================
+
+As the SRCF grows more complex, it's going to get well past the state where
+a single individual knows everything about how it is configured and run.
+The best (and possibly only) way to deal with this is to document the
+systems we have in place. We should have brief notes on how to perform
+each function that we carry out (e.g., adding mailing lists, creating
+users, manipulating aliases), with a little bit of detail about how things
+work underneath; in addition, all local modifications to standard subsystems
+(e.g., modifications to the exim.conf file) should be documented.
+
+1.1 Material for the website
+    ------------------------
+
+1.1.1 Policies up on web
+
+
+1.1.2 Services list up on web
+
+authoritativeness; also classified as to how much they're advertised
+or emphasised
+
+1.1.3 Philosophy up on the web
+
+
+1.2 Things the sysadmins need to know
+    ---------------------------------
+
+1.2.1 LDAP
+1.2.2 SSL
+1.2.3 userv
+1.2.4 nroff
+
+1.3 Man pages
+    ---------
+
+1.3.1 Local programmes
+
+1.3.2 TODO lists and general doco
+
+
+1.4 Committee information
+    ---------------------
+
+Mailing list decisions in addition to meeting minutes
+
+
+2. Structures
+   ==========
+
+2.1 KGB (colleges, cusu, cucs)
+
+2.2 IWJ10
+
+2.3 admin specialisation / split by machine
+
+2.4 publicity
+
+2.5 monitoring (societies, etc), cusu system
+
+3. Services
+   ========
+
+3.1 CS consultation / advice for users and groups
+
+3.2 portfolio definition
+
+3.3 SSL / security services
+
+3.4 bulletin boards
+
+3.5 snook
+
+3.6 excession
+
+3.7 acctmgr (and for Socs)
+
+3.8 web based membership application and information
+
+3.9 experimental VPN
+
+3.10 IPv6 experimental
+
+3.11 secure mail / news system
+
+4. Administration
+   ==============
+
+4.1 policy on running services
+
+4.2 sell the tapes
+
+Either the tapes should be sold
+
+4.3 backups
+
+4.4 funding / broadening / sponsorship
+
+4.5 image / Lavism
+
+5. Sysadmin Issues
+   ===============
+
+5.1 Firewall / ipacct rules
+
+We might well want to stick in IP accounting rules so that we can compare
+our bandwith usage with that claimed by the University (not that any
+discrepancy is anticipated), which figures are hard to come by.
+
+5.2 LDAP
+
+The nameservice used for passwd and group and email lookups should move
+from `files' to `ldap'. MK has undertaken to write a document about this.
+
+5.3 SMB/NCP/CODA
+
+The potential provision of these filesharing systems should be
+investigated and undertaken if feasible.
+
+5.4 mailconfig
+
+5.5 /users/
+
+5.6 monitoring
+
+5.7 mailing lists
+
+5.8 sysnews
+
+There should exist a user configurable facility for seeing which system
+update news has occurred since last login (as opposed to the current
+system whereby everyone sees the last five messages)
+
+5.9 admin sessions
+
+The meeting closed at 23:15.

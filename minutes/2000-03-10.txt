@@ -1,0 +1,38 @@
+Minutes SRCF committee meeting Fri Mar 10 2000
+
+Venue: The Bun Shop
+
+Present:
+    Martin Keegan
+    Jock Busuttil
+    Hanna Wallach
+    Peter Clay
+
+1. Matters arising
+
+Hanna is in the process of compiling the accounts to present to Bob, the Senior Treasurer.
+
+It was noted that there remains a 'grey area' over the status of Mark Waller's donated box (he has reclaimed it).
+
+The following is quoted verbatim from the Barclays Bank application form for a Society Account and was passed with no objections.
+
+    "It was resolved:
+
+    1. a) to appoint Barclays Bank PLC (the Bank) as the Association's bankers, or
+       b) to cancel the Association's existing mandates to the bank (except in relation to items and instructions given before the Bank receives this resolution);
+
+    2. that the Association enter into the Barclays Customer Agreement and Bank Card Agreement (the conditions for which the Bank has provided); and
+
+    3. that the authorised signatories names below can, on behalf of the Association:
+       a) together sign (i) the Customer Agreement and Bank Card Agreement; and (ii) any other agreements for banking products or services which they consider to be in the interests of the Association from time to time: and
+       b) individually or with one or more authorised signatories (as set out below), give instruction to the Bank in writing and set up security procedures for giving instructions by telephone or computer."
+
+2. Matthew Vernon's resignation
+
+This has not been accepted due to the legal implications of his use of root after 'resigning' and his repeated lack of response to emails.
+
+3. Backup tapes
+
+It was noted that Matthew has been reimbursed for the tape media he bought for the SRCF, though we need to retrieve them and their receipt for the purpose of accounting.  Hanna volunteered to do this.
+
+It was also noted that we need to know what kind of tape drive Matthew had been using for our backups so that we can research our own permanent backup solution.

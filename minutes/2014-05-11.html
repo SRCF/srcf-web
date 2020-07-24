@@ -1,0 +1,210 @@
+<!--#set var="title" value="Minutes of SRCF executive meeting, 11th May 2014" -->
+<!--#include virtual="../inc/header.html" -->
+
+<h1><!--#echo encoding="none" var="title" --></h1>
+
+<p>The meeting was held on Friday 11th May 2014, between 7:30pm and 10pm, at The Castle, Castle St, Cambridge.</p>
+
+<p>In Attendance:</p>
+
+<ul>
+<li>Tejas Guruswamy (Chair, Sysadmin, <code>tg307</code>)</li>
+<li>Daniel Richman (Secretary, Sysadmin, <code>djr61</code>)</li>
+<li>Lev Livnev (Junior Treasurer, <code>ll461</code>)</li>
+<li>Alec Wright (Publicity Officer, Sysadmin, <code>aw570</code>)</li>
+<li>Charles Board (Co-opted, <code>cvrb2</code>)</li>
+<li>Malcolm Scott (Sysadmin, <code>mas90</code>)</li>
+<li>Andrew Cooper (Sysadmin, <code>amc96</code>)</li>
+</ul>
+
+<p>Apologies for Absence:</p>
+
+<ul>
+<li>Michael Hsu (Sysadmin, <code>mh701</code>)</li>
+<li>Souradip Mookerjee (New sysadmin, <code>sm2030</code>)</li>
+<li>Daniel Thomas (Sysadmin, <code>drt24</code>)</li>
+</ul>
+
+<h2>Review of minutes of previous meetings</h2>
+
+<p><a href="agm2014-02-13/minutes">AGM</a></p>
+
+<ul>
+<li>Two 4TB disks are on order: Ian Abel (<code>iga20</code>) bought one; the SRCF bought the other (Lev has reimbursed Malcolm for it).</li>
+<li>The old disks are of little use; they may as well be spares for the machines that still use them.</li>
+<li>To summarise, three of the four 4TB disks were personal donations; one from each of Dominic Benson, Andrew Cooper and Ian Abel.
+<strong>Action</strong> (Tejas): Thank them again.</li>
+</ul>
+
+<p><a href="2014-01-17">Executive meeting of 17th Jan 2014</a></p>
+
+<ul>
+<li><em>CUER</em>: we didn’t give them a VM, we gave them more disk quota on pip.</li>
+<li><em>Removal from mailing list</em>: case closed; Andy and Tejas processed both the outstanding requests and a year or two of backlog.</li>
+<li><em>News server</em>: still pending</li>
+<li><strong>Reminder</strong> (sysadmins): Change the shared mailbox password on the 1<sup>st</sup> Oct each year.</li>
+<li>The <em>Hack day</em> was a success; but we need another one (after exams; before may week). <strong>Action</strong> (Daniel): Doodle poll the sysadmins.</li>
+</ul>
+
+<p><a href="2013-10-11">Executive meeting of 11th Oct 2013</a></p>
+
+<ul>
+<li><code>http://www.srcf.ucam.org/</code> <em>deprecation</em>
+<ul>
+<li>We still haven’t told users.</li>
+<li>People are liable to ignore warnings now (exams) and over the summer. We could break websites advertised at the societies fair, but we really don’t want to wait until after it.</li>
+<li><strong>Action</strong> (Malcolm): Using the web logs or otherwise, figure out which higher-traffic sites are liable to break.</li>
+<li><strong>Action</strong> (Tejas): Tell users that we’re going to deprecate <code>srcf.ucam.org</code> on the 1<sup>st</sup> July…</li>
+<li>…then we’ll actually do it a month later (after warning people again).</li>
+</ul></li>
+</ul>
+
+<h2>Exceptional Items</h2>
+
+<p>Garden party</p>
+
+<ul>
+<li>We will have to explicitly book a back up room.</li>
+<li>Proposed dates are the Thurs &amp; Fri before May Week (12th &amp; 13th). Avoiding clashes is infeasible, so we should just go ahead and organise it.</li>
+<li>We’re planning to acquire Pimms from Trinity Hall, and Pizza from Perfect Pizza.</li>
+<li>Having a Key Signing Party at the Garden Party was proposed.</li>
+<li><strong>Action</strong> (Charles): Investigate booking with Trinity Hall.</li>
+</ul>
+
+<p>Bank mandate forms, etc.</p>
+
+<ul>
+<li>The relevant forms were signed by the Chair and Junior Treasurer.</li>
+<li>They need to be signed by the Senior Treasurer; Lev will visit Bob soon.</li>
+</ul>
+
+<p>SSL certificate renewal</p>
+
+<ul>
+<li>… has been done by Malcolm, as has the reimbursement of its cost.</li>
+</ul>
+
+<p>Cancellation of expired accounts</p>
+
+<ul>
+<li>We’ve almost run out of people to ask at the UCS; they have all told us to use LDAP…</li>
+<li>LDAP: Only about a dozen people will be a problem. We’ll have to maintain a whitelist of people and how long they are staying / how long the exception lasts.</li>
+<li>The UCS don’t seem to see this as a big issue(?).</li>
+<li>Proposed new membership policy:
+<ul>
+<li>You can join, and become a user if you’re a current university member.</li>
+<li>We cancel your account (remove user-ship; keep membership) if we can no longer contact you. If you change your SRCF email address to a non-cam one, this will mean you keep your account / user status after you leave (an intended consequence).</li>
+<li>Practically, this would be implemented by us (only) cancelling people when we get bounces to emails sent to the maintenance lists.
+It would require development of some bounce handling.</li>
+</ul></li>
+<li>If we later have to change our mind we’re going to annoy people.</li>
+<li>… <strong>Action</strong> (Malcolm): Talk to Bob (since Lev needs to talk to him in person anyway); be open about our plans and see what he thinks.</li>
+<li>The UCS is being renamed (to the UIS), and is getting new management. Their policy is liable to change soon.</li>
+<li>Interim decision
+<ul>
+<li>Whatever we decided to do in the future, users to which emails bounce will be cancelled.</li>
+<li>…so we can start doing this now, not least because receiving such bounces is annoying.</li>
+<li>Sysadmins aren’t obliged to act on bounces if they can’t be bothered.</li>
+<li>Sysadmins that decide to cancel in response to a bounce should forward the relevant bounce to the shared mailbox, along with a note.</li>
+</ul></li>
+</ul>
+
+<p>Possible stash order</p>
+
+<ul>
+<li>People are keen for T-shirts.</li>
+<li>Last time payments was a bit messy; we should be more organised and demand money in advance.</li>
+<li>Keep it simple: logo and black t shirts.</li>
+<li><strong>Action</strong> (Alec): Investigate, possibly using PANDIS, acquiring a new logo and/or re-branding. If it fits on the current website / is within the existing colour scheme, that would be easier, but an overhaul could be possible.</li>
+<li><strong>Action</strong> (Alec): (having done the above) figure out what should be on the stash.</li>
+</ul>
+
+<p>New servers</p>
+
+<ul>
+<li>We have two new servers.</li>
+<li>They officially belong to Frank Stajano.</li>
+<li>In practice one belongs to us; we would like something in writing documenting this on the wiki.</li>
+<li>Malcolm has summarised the state of affairs as we see it in an email to to Frank, who replied to say “yes, that’s correct”.</li>
+<li>The new servers are substantially better than pip.</li>
+<li>The current plan: the box owned by us becomes pip (via moving pip’s hard-drives into it), and the old pip hardware is added the XenServer pool. </li>
+<li>This gives us a backup plan if pip breaks: move the disks back.</li>
+<li>The rack is now full, but:
+<ul>
+<li>this doesn’t need to be a problem,</li>
+<li>we can remove Tyan boxes from the XenServer pool without issue.</li>
+</ul></li>
+<li>The other one is being set up as a security playground: currently, it only has a bare XenServer install.</li>
+</ul>
+
+<h2>Any other business</h2>
+
+<ul>
+<li><code>executive@</code> has spiked in spam; we’re on a really awful list.</li>
+<li><code>ez232</code>’s quota:
+<ul>
+<li>She’s on Maternity leave and has been over quota for ages.</li>
+<li>The cause is a 500MB logfile.</li>
+<li><strong>Action</strong> (Sysadmins): <code>gzip</code> it, <code>SIGHUP</code> her server and tell her what we’ve done.</li>
+</ul></li>
+<li>We have hefty sysadmin inconsistencies; the following do not match:
+<ul>
+<li><code>srcf-web</code>, <code>srcf-admin</code> and <code>executive</code> group accounts on pip</li>
+<li><code>-adm</code> accounts</li>
+<li>the list on the website</li>
+<li>minutes from meetings / committee ratification of new sysadmins</li>
+</ul>
+<strong>Action</strong> (Tejas): Figure out what the truth is, and update all the above to match.</li>
+<li><strong>Action</strong> (Executive): Consolidate passwords (internet banking, PayPal, etc.) and then (using something equivalent to symmetric encryption) store them in one location, to make it easier to hand over to new treasurers.</li>
+</ul></p>
+
+<h2>Actions Summary</h2>
+
+<p>Tejas</p>
+
+<ul>
+<li>Thank all those that have donated 4TB disks for pip.</li>
+<li>Tell users that we’re going to deprecate <code>srcf.ucam.org</code> on the 1<sup>st</sup> July.</li>
+<li>Resolve inconsistencies in various sysadmin lists.</li>
+</ul>
+
+<p>Malcolm</p>
+
+<ul>
+<li>Using the web logs or otherwise, figure out which higher-traffic sites are liable to be broken by the <code>srcf.ucam.org</code> deprecation.</li>
+<li>Talk to Bob about user cancellation; be open about our plans and see what he thinks.</li>
+</ul>
+
+<p>Daniel</p>
+
+<ul>
+<li>Doodle poll the sysadmins; organise a new hack day.</li>
+</ul>
+
+<p>Charles</p>
+
+<ul>
+<li>Investigate bookings at Trinity Hall for the Garden Party.</li>
+</ul>
+
+<p>Alec</p>
+
+<ul>
+<li>Investigate, possibly using PANDIS, acquiring a new logo and/or re-branding.</li>
+<li>(having done the above) figure out what should be on the stash.</li>
+</ul>
+
+<p>Sysadmins</p>
+
+<ul>
+<li><code>gzip</code> <code>ez232</code>’s large log file, <code>SIGHUP</code> her server and tell her what we’ve done.</li>
+<li>Change the shared mailbox password on the 1<sup>st</sup> Oct each year.</li>
+</ul>
+
+<p>Executive</p>
+
+<ul>
+<li>Consolidate passwords (internet banking, PayPal, etc.) and then (using something equivalent to symmetric encryption) store them in one location, to make it easier to hand over to new treasurers.</li>
+</ul>
+
+<!--#include virtual="../inc/footer.html" -->

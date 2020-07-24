@@ -1,0 +1,1 @@
+<!--#set var="desktop" value="gnome" --><!--#include virtual="session-template.nxs" -->
