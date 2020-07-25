@@ -13,3 +13,6 @@
 
 membershipgraph.png
 membershipgraph-hires.svg
+
+.idea/
+.venv/
