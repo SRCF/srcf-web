@@ -11,6 +11,9 @@ URLs under `faq` (except for `index.html`) will be directed to the appropriate
 documentation page.
 
 ## Development build
+Please note: you don't need to build the pages locally in order to make edits 
+to the content. Just edit the HTML files and view changes in your browser.
+
 The website is largely vanilla HTML but uses server-side includes (SSI) run 
 by the Apache web server at runtime to add header and footer information. 
 Dynamic information is added to some of the pages, such as the number of users 
