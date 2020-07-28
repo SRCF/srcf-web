@@ -27,3 +27,7 @@ To build the pages run from the project's root:
 `$ make`
 
 Then navigate to `index.html` in your browser.
+
+## Contributing
+
+All contributions are more than welcome! See something you don't like or think could be improved? Open an issue or better yet submit a pull request. Thanks!
