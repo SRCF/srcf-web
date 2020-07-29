@@ -1,5 +1,5 @@
 <?php
-require_once('/societies/srcf-web/paypal/donate-mysql.inc.php');
+require_once('/groups/srcf-web/paypal/donate-mysql.inc.php');
 $conn = mysqli_connect($mysql_server, $mysql_username, $mysql_password);
 mysqli_select_db($conn, $mysql_database);
 
