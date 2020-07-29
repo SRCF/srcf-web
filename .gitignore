@@ -16,3 +16,7 @@ membershipgraph-hires.svg
 
 .idea/
 .venv/
+
+*~
+*.swp
+*.swo
