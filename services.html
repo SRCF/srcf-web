@@ -2,10 +2,14 @@
 <!--#include virtual="inc/header.html" -->
 <h2>Services</h2>
 
-<p>We offer the same services to both users and societies.  The term
-<em>society</em> here is a misnomer &ndash; what we call society accounts are
-simply any form of shared, non-personal account.  They do not have to represent
-a college or university society, this is merely how they are commonly used.</p>
+<p>We offer the same services to both individuals (personal accounts) and groups (group accounts).</p>
+
+<p>Historically group accounts were called 'society accounts', but we changed the
+  name to 'group accounts' in 2020 to better reflect their intended usage. Group
+  accounts can be used as a shared, non-personal account by any group of individuals
+  who hold personal accounts. Group accounts are commonly used by college or
+  university societies, but they might also be used to manage research or degree
+  projects, social events, academic networks, and any other collaboration.</p>
 
 <p>The guiding motivation behind most SRCF system administration policies is to
 provide as much flexibility to users as possible, within the constraints of
@@ -25,8 +29,8 @@ sysadmins</a>.</p>
         <ul>
           <li>subdomain URLs:
             <ul>
-              <li><strong><span class="var">CRSid</span>.user.srcf.net</strong> for users</li>
-              <li><strong><span class="var">society</span>.soc.srcf.net</strong> for societies</li>
+              <li><strong><span class="var">CRSid</span>.user.srcf.net</strong> for personal accounts</li>
+              <li><strong><span class="var">groupname</span>.soc.srcf.net</strong> for group accounts</li>
             </ul>
           </li>
           <li>use your own domain with a site hosted by us</li>
@@ -73,8 +77,8 @@ sysadmins</a>.</p>
         <ul>
           <li>base email addresses:
             <ul>
-              <li><strong><span class="var">CRSid</span>@srcf.net</strong> for users</li>
-              <li><strong><span class="var">society</span>@srcf.net</strong> for societies</li>
+              <li><strong><span class="var">CRSid</span>@srcf.net</strong> for personal accounts</li>
+              <li><strong><span class="var">groupname</span>@srcf.net</strong> for group accounts</li>
             </ul>
           </li>
           <li>a local mailbox with IMAP and <a href="https://webmail.srcf.net">web-based</a> access</li>
@@ -113,22 +117,21 @@ sysadmins</a>.</p>
   </div>
 </div>
 
-<h3>Personal and society accounts</h3>
+<h3>Personal and group accounts</h3>
 
 <p>Each user of the SRCF has a personal account they can use to login to most
 services (shell, files, webmail, and so on).  Prospective members can
 <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup">
 join the SRCF</a> to create their account.</p>
 
-<p>Society accounts provide a separate space for one or more people (the
+<p>Group accounts provide a separate space for one or more people (the
 account <em>administrators</em>) to share control over hosting files or a
-website.  We have no objections with (and indeed encourage) individuals to
-become members of the SRCF if only to host a website for a society or a group
-of people.</p>
+website.  We encourage individuals to become SRCF members in order to host a
+  website for a society or group of people.</p>
 
 <p>Any existing user may go ahead and
 <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup/society">
-create a new society account</a>.  We recommend all society accounts name at
+create a new group account</a>.  We recommend all group accounts name at
 least two administrators &ndash; this will help to maintain continuity of the
 account should one of the administrators leave the university.  Admins may be
 added or removed at any time, but new admins will need to sign up for a
