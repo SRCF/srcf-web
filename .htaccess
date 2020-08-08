@@ -16,7 +16,7 @@ RewriteCond %{HTTP_HOST} ^(www|docs|blog).srcf.net$
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
 
 # Make the rest of this file only apply to the main website
-RewriteCond ${HTTP_HOST} ^(docs|blog).srcf.net$
+RewriteCond %{HTTP_HOST} ^(docs|blog).srcf.net$
 RewriteRule .* - [L]
 
 # NB: there was historically a permanent redirect from webmail.srcf.net to www.srcf.net/squirrelmail
