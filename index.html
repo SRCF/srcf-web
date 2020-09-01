@@ -6,17 +6,9 @@
     <div class="card-body">
       <h4 class="card-title">Quick links</h4>
       <ul class="fa-ul">
-        <li><a href="<!--#if expr=" ${domain_control}" -->
-            <!--#echo var="domain_control" -->
-            <!--#endif -->/signup"><i class="fa fa-li fa-user"></i> <strong>Join the SRCF</strong></a></li>
-        <li><a href="<!--#if expr=" ${domain_control}" -->
-            <!--#echo var="domain_control" -->
-            <!--#endif -->/signup/society"><i class="fa fa-li fa-users"></i> Create group account</a></li>
+        <li><a href="<!--#if expr=" ${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup"><i class="fa fa-li fa-user"></i> <strong>Create an account</strong></a></li> 
       </ul>
       <ul class="fa-ul">
-        <li><a href="<!--#if expr=" ${domain_control}" -->
-            <!--#echo var="domain_control" -->
-            <!--#endif -->/"><i class="fa fa-li fa-wrench"></i> Control panel</a></li>
         <li><a href="https://webmail.srcf.net"><i class="fa fa-li fa-envelope-o"></i> Webmail</a></li>
         <li><a href="https://lists.srcf.net"><i class="fa fa-li fa-bullhorn"></i> Mailing lists</a></li>
         <li><a href="https://www.srcf.net/terminal/"><i class="fa fa-li fa-terminal"></i> Web terminal</a></li>
@@ -24,25 +16,18 @@
       </ul>
       <ul class="fa-ul">
         <li><a href="https://docs.srcf.net"><i class="fa fa-li fa-info-circle"></i> Documentation & help</a></li>
-        <li><a href="<!--#if expr=" ${domain_web}" -->
-            <!--#echo var="domain_web" -->
-            <!--#endif -->/services"><i class="fa fa-li fa-cubes"></i> List of services</a></li>
         <li><a href="https://status.srcf.net"><i class="fa fa-li fa-toggle-on"></i> Server status</a></li>
 
       </ul>
       <ul class="fa-ul">
-        <li><a href="<!--#if expr=" ${domain_web}" -->
-            <!--#echo var="domain_web" -->
-            <!--#endif -->/donate"><i class="fa fa-li fa-heart"></i> Donate</a></li>
-        <li><a href="<!--#if expr=" ${domain_web}" -->
-            <!--#echo var="domain_web" -->
-            <!--#endif -->/get-involved"><i class="fa fa-li fa-code-fork"></i> Get involved</a></li>
+        <li><a href="<!--#if expr=" ${domain_web}" --><!--#echo var="domain_web" --><!--#endif -->/donate"><i class="fa fa-li fa-heart"></i> Donate</a></li>
+        <li><a href="<!--#if expr=" ${domain_web}" --><!--#echo var="domain_web" --><!--#endif -->/get-involved"><i class="fa fa-li fa-code-fork"></i> Get involved</a></li>
         <li><a href="https://blog.srcf.net"><i class="fa fa-li fa-rss"></i> Blog</a></li>
       </ul>
       <ul class="fa-ul">
         <li><i class="fa fa-li fa-terminal"></i> SSH: <strong>shell.srcf.net</strong></li>
         <li><i class="fa fa-li fa-folder-open-o"></i> SCP: <strong>files.srcf.net</strong></li>
-        <li><i class="fa fa-li fa-comments-o"></i> IRC: <strong>irc.srcf.net</strong> <strong>#srcf</strong></li>
+        <li><i class="fa fa-li fa-comments-o"></i><a href="<!--#if expr=" ${domain_web}" --><!--#echo var="domain_web" --><!--#endif -->/get-involved#community"><strong>Community</a></strong>  </li>
       </ul>
     </div>
   </div>
@@ -53,14 +38,10 @@
   and network services, for University of Cambridge staff and students of
   all degrees of ability.</p>
 <p>Individuals may
-  <a href="<!--#if expr=" ${domain_control}" -->
-    <!--#echo var="domain_control" -->
-    <!--#endif -->/signup">
+  <a href="<!--#if expr=" ${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup">
     join the SRCF</a> as members, which provides user access to our servers.
   For any groups of people wanting to collaborate, we offer shared
-  <a href="<!--#if expr=" ${domain_control}" -->
-    <!--#echo var="domain_control" -->
-    <!--#endif -->/signup/society">
+  <a href="<!--#if expr=" ${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup/society">
     group accounts</a> with all the same services.</p>
 <h3>Available services</h3>
 <p>All user and group accounts come with:</p>
@@ -75,12 +56,8 @@
 </ul>
 <p>...and much much more &ndash; see <a href="/services">Services</a> for more details.</p>
 <p>All for <em>free</em>? <strong>Yes</strong> <i class="fa fa-smile-o"></i></p>
-<p><a href="<!--#if expr=" ${domain_control}" -->
-    <!--#echo var="domain_control" -->
-    <!--#endif -->/signup" class="btn btn-lg btn-outline-primary">Join the SRCF</a>
-  <a href="<!--#if expr=" ${domain_control}" -->
-    <!--#echo var="domain_control" -->
-    <!--#endif -->/signup/society" class="btn btn-lg btn-outline-danger">Create group account</a></p>
+<p><a href="<!--#if expr=" ${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/signup" class="btn btn-lg btn-outline-primary">Create an account</a>
+</p>
 
 <p>Need help or want to get started? <a href="https://docs.srcf.net" target="_blank">Read the docs.</a></p>
 
