@@ -1,5 +1,5 @@
 <?php
-require_once('/societies/srcf-web/paypal/donate-mysql.inc.php');
+require_once('/groups/srcf-web/paypal/donate-mysql.inc.php');
 $conn = mysqli_connect($mysql_host, $mysql_username, $mysql_password);
 mysqli_select_db($conn, $mysql_database);
 $result = mysqli_query($conn, "SELECT SUM(amount) FROM donations WHERE ts >= NOW() - INTERVAL 1 YEAR");
