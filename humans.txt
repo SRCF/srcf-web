@@ -1,0 +1,13 @@
+The Student-Run Computing Facility is a community of volunteers -- mainly
+students, but alumni and staff too -- at the University of Cambridge.
+
+If you'd like to become one of them, see https://www.srcf.net/get-involved
+
+For the names of those who have made their mark before you, of whom there are
+too many to list here, see:
+
+  https://github.com/SRCF -- see contributors to every repository. We are
+    grateful to each and every one of them.
+
+  https://www.srcf.net/committee -- system administrators and committee
+    members since the SRCF's inception in 1999.
