@@ -1,52 +1,5 @@
-<!--#set var="title" value="Welcome to the SRCF" -->
+<!--#set var="title" value="Home" -->
 <!--#include virtual="inc/header-base.html" -->
-
-<!-- <div class="sidebar">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Quick links</h4>
-      <ul class="fa-ul">
-        <li><a href="<!--#if expr="${domain_control}" -->
-<!--#echo var="domain_control" -->
-<!--#endif -->/signup"><i class="fa fa-li fa-user"></i> <strong>Join the SRCF</strong></a></li>
-<li><a href="<!--#if expr=" ${domain_control}" -->
-    <!--#echo var="domain_control" -->
-    <!--#endif -->/signup/society"><i class="fa fa-li fa-users"></i> Create group account</a></li>
-</ul>
-<ul class="fa-ul">
-  <li><a href="<!--#if expr=" ${domain_control}" -->
-      <!--#echo var="domain_control" -->
-      <!--#endif -->/"><i class="fa fa-li fa-wrench"></i> Control panel</a></li>
-  <li><a href="https://webmail.srcf.net"><i class="fa fa-li fa-envelope-o"></i> Webmail</a></li>
-  <li><a href="https://lists.srcf.net"><i class="fa fa-li fa-bullhorn"></i> Mailing lists</a></li>
-  <li><a href="https://www.srcf.net/terminal/"><i class="fa fa-li fa-terminal"></i> Web terminal</a></li>
-  <li><a href="https://timeout.srcf.net/"><i class="fa fa-li fa-commenting-o"></i> Timeout conferencing</a></li>
-</ul>
-<ul class="fa-ul">
-  <li><a href="https://docs.srcf.net"><i class="fa fa-li fa-info-circle"></i> Documentation & help</a></li>
-  <li><a href="<!--#if expr=" ${domain_web}" -->
-      <!--#echo var="domain_web" -->
-      <!--#endif -->/services"><i class="fa fa-li fa-cubes"></i> List of services</a></li>
-  <li><a href="https://status.srcf.net"><i class="fa fa-li fa-toggle-on"></i> Server status</a></li>
-
-</ul>
-<ul class="fa-ul">
-  <li><a href="<!--#if expr=" ${domain_web}" -->
-      <!--#echo var="domain_web" -->
-      <!--#endif -->/donate"><i class="fa fa-li fa-heart"></i> Donate</a></li>
-  <li><a href="<!--#if expr=" ${domain_web}" -->
-      <!--#echo var="domain_web" -->
-      <!--#endif -->/get-involved"><i class="fa fa-li fa-code-fork"></i> Get involved</a></li>
-  <li><a href="https://blog.srcf.net"><i class="fa fa-li fa-rss"></i> Blog</a></li>
-</ul>
-<ul class="fa-ul">
-  <li><i class="fa fa-li fa-terminal"></i> SSH: <strong>shell.srcf.net</strong></li>
-  <li><i class="fa fa-li fa-folder-open-o"></i> SCP: <strong>files.srcf.net</strong></li>
-  <li><i class="fa fa-li fa-comments-o"></i> IRC: <strong>irc.srcf.net</strong> <strong>#srcf</strong></li>
-</ul>
-</div>
-</div>
-</div> -->
 
 <div class="jumbotron">
   <div class="container">
@@ -60,7 +13,9 @@
         <p>The <em>Student-Run Computing Facility</em>
           is a volunteer-run student society that provides free, useful and flexible computing
           and network services for University of Cambridge staff and students of all degrees of ability.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Create an account &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="<!--#if expr=" ${domain_control}" -->
+            <!--#echo var="domain_control" -->
+            <!--#endif -->/signup" role="button">Create an account &raquo;</a></p>
       </div>
     </div>
   </div>
@@ -69,7 +24,7 @@
 <div class="container mb-4">
   <div class="row">
     <div class="col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Services</h4>
           <p>Our volunteers maintain a selection of free services for thousands of members of the university. To name a
@@ -92,16 +47,19 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
+        <div class="card-header"
+          style="background: linear-gradient(rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5)), url(/images/srcf-cropped.jpg); background-position: center; background-size: cover;">
+          <h4 style="color:white" class="my-3">About us</h4>
+        </div>
         <div class="card-body">
-          <h4 class="card-title">About us</h4>
           <h6 class="card-subtitle mb-2"><a href="/about">Learn more &raquo;</a></h6>
           <p class="mb-0">The Student-Run Computing Facility (SRCF) is a volunteer-run student society at the University
             of Cambridge. We run our own servers hosted in-house within the university and provide computing services
             for thousands of staff and students.</p>
         </div>
       </div>
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Donate</h4>
           <p>The SRCF is funded largely by donations from its users, for which we are very grateful. We can only spend
@@ -113,35 +71,38 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
         <div class="card-body">
-          <h4 class="card-title">Become a volunteer</h4>
-          <p>Does managing large Linux systems sound interesting? Or perhaps getting your hands dirty with servers and
-            hardware? Or even programming web apps and Python libraries? Whatever your interest in tech is, there's
-            definitely a place for you in the SRCF.
+          <h4 class="card-title">Volunteering</h4>
+          <p>Do you ❤ open source like we do? Does managing large Linux systems sound interesting? Or perhaps getting your hands dirty with servers and
+            hardware? Or even programming web apps and Python libraries?
           </p>
-          <p>As a completely independent student-run society, we're always looking for interested volunteers to help us
-            out. We welcome everyone regardless of technical background at any point during term. Come hang around in
-            our Discord even if you're not sure!</p>
+          <p>As a completely independent student-run society, we rely on the generous help of interested volunteers to
+            keep the SRCF going. We welcome everyone regardless of technical background at any point during term. Come
+            talk to us even if you're not sure!</p>
+            <ul>
+              <li><a href="https://lists.srcf.net/mailman/listinfo/srcf-volunteers">Join our mailing list</a></li>
+              <li>Attend our weekly meetings</li>
+              <li>Chat with us on <a href="https://mattermost.srcf.net/">Mattermost</a>, <a href="https://discord.com/invite/et353sv">Discord</a> or <a href="https://webchat.srcf.net/?channels=welcome">IRC</a></li>
+              <li>Check out our <a href="https://github.com/srcf">GitHub</a></li>
+            </ul>
           <a class="btn btn-secondary" role="button" href="/get-involved">Get involved &raquo;</a>
         </div>
-        <img class="card-img-bottom" src="/images/srcf-cropped.jpg" alt="Card image cap">
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-4">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h4 class="card-title">Scheduled vulnerable period</h4>
-          <p>To aid in security procedures, the SRCF has a potentially vulnerable period, <b>between 2am and 3am on
-              Sundays</b>. During this time the sysadmins may reboot the server without much prior warning.</p>
+      <div class="card mb-3 shadow-sm">
+        <div class=" card-body">
+          <h4 class="card-title">Weekly meetings</h4>
+          <p>The SRCF committee and members of the volunteer team meet weekly on <strong>Friday at 8PM</strong> to talk about the SRCF, cool ideas and tech. Anyone is welcome to join us, especially if you're interested in learning more! The meetings are virtual and held on Timeout, <a href="https://timeout.srcf.net/executive" target="_blank">here</a>.</p>
         </div>
       </div>
     </div>
     <div class="col-md-8">
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Message of the day</h4>
           <pre><!--#include virtual="/motd" --></pre>
@@ -151,9 +112,9 @@
   </div>
   <!-- https://mdbootstrap.com/support/general/cards-of-same-height-and-footer-bottom-alignment/ -->
   <div class="row">
-    <div class="col-md-8">
-      <div class="card mb-3 h-100">
-        <div class="card-body h-100">
+    <div class="col-md-4">
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
           <h4 class="card-title">Scheduled vulnerable period</h4>
           <p>To aid in security procedures, the SRCF has a potentially vulnerable period, <b>between 2am and 3am on
               Sundays</b>. During this time the sysadmins may reboot the server without much prior warning.</p>
@@ -161,26 +122,22 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3 shadow-sm">
         <div class="card-body">
-          <h4 class="card-title">Message of the day</h4>
-          <pre><!--#include virtual="/motd" --></pre>
+          <h4 class="card-title">Learning & education</h4>
+          <p>You can find a few tutorials made by us in our <a href="https://docs.srcf.net/learn/index.html">documentation learning section</a> (help needed!). Ask us if you're looking for a recommended resource to learn anything, we'll be sharing a few of our favorites soon on a new page.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">Sponsors</h4>
+          <p>Is your company interested in sponsoring the SRCF? We have plenty of benefits to offer as we are one of the largest societies in Cambridge. Read more about that <a href="/sponsors/benefits">here</a>.</p>
+          <a class="btn btn-secondary" role="button" href="/sponsors">Our current sponsors &raquo;</a>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- <div class="col-md-4">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-        massa justo sit amet risus.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div>
-  </div>
 
-  <hr>
-
-</div> <!-- /container -->
-
-<!--#include virtual="inc/footer.html" -->
+  <!--#include virtual="inc/footer-base.html" -->

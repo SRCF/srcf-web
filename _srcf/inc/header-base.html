@@ -2,65 +2,99 @@
 <html lang="en" class="h-100">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta property="og:title" content="The SRCF" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for Cambridge University staff and students of all degrees of ability." />
-  <meta property="og:url" content="{{DOMAIN_WEB}}" />
-  <meta property="og:image" content="/_srcf/images/logo.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="The Student-Run Computing Facility is a volunteer-run student society that provides free, useful and flexible computing and network services for Cambridge University staff and students of all degrees of ability." />
+    <meta property="og:url" content="{{DOMAIN_WEB}}" />
+    <meta property="og:image" content="/_srcf/images/logo.svg" />
 
-  <title>{{ TITLE }}</title>
-  
-  <link href="/_srcf/vendor/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/_srcf/vendor/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/_srcf/srcf-bs.css" rel="stylesheet">
-  <link href="/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16 24x24">
-  <link href="/favicon.svg" rel="icon" type="image/svg+xml">
-  {{ EXTRAHEAD }}
+    <title>{{ TITLE }}</title>
+
+    <link href="/_srcf/vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/_srcf/vendor/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/_srcf/srcf-bs.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16 24x24">
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    {{ EXTRAHEAD }}
 </head>
 
-<body>
-
-  <header>
+<body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand navbar-light fixed-top bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="{{ DOMAIN_WEB }}/">
-          <img src="/_srcf/images/logo.svg" />
-          <span class="d-none d-md-inline">
-            <span class="text-danger">Student-Run</span>
-            <span class="text-primary">Computing Facility</span>
-          </span>
-        </a>
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown ml-auto">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-              <i class="fa fa-fw fa-cubes" aria-hidden="true"></i>
-              <span class="d-none d-md-inline">Services</span>
+        <div class="container">
+            <a class="navbar-brand" href="{{ DOMAIN_WEB }}/">
+                <img src="/_srcf/images/logo.svg" />
+                <span class="d-none d-md-inline">
+                    <span class="text-danger">Student-Run</span>
+                    <span class="text-primary">Computing Facility</span>
+                </span>
             </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{ DOMAIN_CONTROL }}/"><i class="fa fa-fw fa-wrench mr-1"
-                  aria-hidden="true"></i>Control Panel</a>
-              <a class="dropdown-item" href="https://webmail.srcf.net"><i class="fa fa-fw fa-envelope-o mr-1"></i>
-                Webmail</a>
-              <a class="dropdown-item" href="https://lists.srcf.net"><i class="fa fa-fw fa-bullhorn mr-1"></i> Mailing
-                lists</a>
-              <a class="dropdown-item" href="https://www.srcf.net/terminal/"><i class="fa fa-fw fa-terminal mr-1"></i>
-                Web
-                terminal</a>
-              <a class="dropdown-item" href="https://timeout.srcf.net"><i class="fa fa-fw fa-commenting-o mr-1"></i>
-                Timeout</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="{{ DOMAIN_WEB }}/donate"><i class="mr-1 fa fa-fw fa-heart"
-                aria-hidden="true"></i>Donate</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
-  <main role="main">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown ml-auto">
+                    <a class="nav-link dropdown-toggle" href="{{ DOMAIN_WEB }}/services" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">
+                        <i class="fa fa-fw fa-cubes" aria-hidden="true"></i>
+                        <span class="d-none d-md-inline">Services</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ DOMAIN_CONTROL }}/"><i class="fa fa-fw fa-wrench mr-1"
+                                aria-hidden="true"></i>Control Panel</a>
+                        <a class="dropdown-item" href="https://webmail.srcf.net"><i
+                                class="fa fa-fw fa-envelope-o mr-1"></i>
+                            Webmail</a>
+                        <a class="dropdown-item" href="https://lists.srcf.net"><i class="fa fa-fw fa-bullhorn mr-1"></i>
+                            Mailing
+                            lists</a>
+                        <a class="dropdown-item" href="https://www.srcf.net/terminal/"><i
+                                class="fa fa-fw fa-terminal mr-1"></i>
+                            Web
+                            terminal</a>
+                        <a class="dropdown-item" href="https://timeout.srcf.net"><i
+                                class="fa fa-fw fa-commenting-o mr-1"></i>
+                            Timeout</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ml-auto">
+                    <a class="nav-link dropdown-toggle" href="{{ DOMAIN_WEB }}/about" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">
+                        <i class="fa fa-fw fa-users" aria-hidden="true"></i>
+                        <span class="d-none d-md-inline">Society</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ DOMAIN_WEB }}/about"><i class="fa fa-fw fa-bookmark-o mr-1"
+                                aria-hidden="true"></i>About us</a>
+                        <a class="dropdown-item" href="{{ DOMAIN_WEB }}/committee"><i
+                                class="fa fa-fw fa-id-card mr-1"></i>
+                            Committee</a>
+                        <a class="dropdown-item" href="{{ DOMAIN_WEB }}/minutes"><i class="fa fa-fw fa-book mr-1"></i>
+                            Minutes</a>
+                        <a class="dropdown-item" href="{{ DOMAIN_WEB }}/constitution"><i
+                                class="fa fa-fw fa-gavel mr-1"></i>
+                            Constitution</a>
+                        <a class="dropdown-item" href="{{ DOMAIN_WEB }}/roles"><i
+                                class="fa fa-fw fa-university mr-1"></i>
+                            Roles</a>
+                        <a class="dropdown-item" href="https://blog.srcf.net"><i class="fa fa-fw fa-rss mr-1"></i>
+                            Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-1" href="https://docs.srcf.net"><i class="mr-1 fa fa-fw fa-info-circle"
+                            aria-hidden="true"></i><span class="d-none d-md-inline">Docs</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-1" href="{{ DOMAIN_CONTROL }}"><i class="mr-1 fa fa-fw fa-wrench"
+                            aria-hidden="true"></i><span class="d-none d-md-inline">Control Panel</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-1" href="{{ DOMAIN_WEB }}/donate"><i class="mr-1 fa fa-fw fa-heart"
+                            aria-hidden="true"></i><span class="d-none d-md-inline">Donate</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="flex-shrink-0">
