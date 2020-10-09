@@ -24,7 +24,7 @@ EXTRAHEAD = ('<!--#if expr="${extrahead}" -->'
 
 def main():
 
-    if len(sys.argv) < 2 or sys.argv[1] not in ("header", "footer"):
+    if len(sys.argv) < 2 or sys.argv[1] not in ("header", "footer","header-base", "footer-base"):
         exit("Usage: {} {{header,footer}}".format(sys.argv[0]))
 
     sys.stdout.write('<!--#include virtual="vars.html" -->\n')
