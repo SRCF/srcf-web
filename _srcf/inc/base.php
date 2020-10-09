@@ -1,6 +1,6 @@
 <?php
 
-define("DOMAIN_WEB", "http://srcf-dev.mw781.user.srcf.net");
+define("DOMAIN_WEB", "https://www.srcf.net");
 define("DOMAIN_CONTROL", "https://control.srcf.net");
 
 function title() {
