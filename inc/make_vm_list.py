@@ -6,7 +6,7 @@ import json
 
 DOMAIN = "cacophony.srcf.net"
 USER = "server-listing"
-PASSWORD = "Ahc;ei&m4ohv"
+PASSWORD = open("/societies/srcf-web/.xo-user").read().strip()
 
 ws = create_connection("wss://%s/api/" % DOMAIN, header=[
     "Content-Type: application/json",
