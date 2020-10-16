@@ -217,6 +217,7 @@ ol ol > li:before {
 
 .jumbotron {
   padding: 3rem 1rem;
+  margin-bottom: 0;
 }
 
 /* Error pages */
