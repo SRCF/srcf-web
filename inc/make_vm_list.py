@@ -74,22 +74,24 @@ for pool in pools:
         print("<p>{}</p>".format(pool["name_description"]))
 
     print("""\
-<table class="table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Specs</th>
-      <th>Operating System</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>""")
+<div class="table-responsive">    
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Specs</th>
+        <th>Operating System</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>""")
 
     for vm in pool["vms"]:
-        print("    <tr><td>{label}</td><td>{cpu} &times; <i class='fa fa-microchip'></i>&emsp;{ram} GiB <i class='fa fa-sliders'></i></td><td>{os}</td><td>{desc}</td></tr>".format(**vm))
+        print("      <tr><td>{label}</td><td>{cpu} &times; <i class='fa fa-microchip'></i>&emsp;{ram} GiB <i class='fa fa-sliders'></i></td><td>{os}</td><td>{desc}</td></tr>".format(**vm))
 
     print("""\
-  </tbody>
-</table>""")
+    </tbody>
+  </table>
+</div>""")
 
 ws.close()
