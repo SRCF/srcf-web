@@ -145,11 +145,14 @@ h4:target,
   margin-top: -4.5rem;
 }
 
+/* I'm not sure what this does, but it leads to funky margins
+
 main {
-  /* If there's a #target with the margin hack above, make sure things haven't fallen out of the top of the container */
+   If there's a #target with the margin hack above, make sure things haven't fallen out of the top of the container 
   padding-top: 4.5rem;
   margin-top: -4.5rem;
 }
+*/
 
 h1:target::before,
 *:target > h1:first-child::before,
