@@ -7,9 +7,8 @@
 /inc/vms.html
 /inc/motd.txt
 /inc/counts.html
+/inc/grouplist.html
 /inc/ubuntuversion.html
-
-/socs/*
 
 membershipgraph.png
 membershipgraph-hires.svg
