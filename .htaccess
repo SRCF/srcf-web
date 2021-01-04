@@ -19,13 +19,13 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
 RewriteCond %{HTTP_HOST} ^(docs|blog).srcf.net$
 RewriteRule .* - [L]
 
-<Files "groups(\.html)?">
+<FilesMatch "groups(\.html)?">
   AuthType Ucam-WebAuth
   AAAuthService https://auth.srcf.net/wls/authenticate
   AARequiredPtags none
   AAAlwaysDecode on
   Require valid-user
-</Files>
+</FilesMatch>
 
 Redirect permanent /socs/ /groups
 
