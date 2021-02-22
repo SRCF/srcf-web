@@ -1,1 +1,0 @@
-/usr/NX/share/plugin/deployJava.js

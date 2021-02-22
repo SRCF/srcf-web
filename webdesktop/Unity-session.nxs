@@ -1,1 +1,0 @@
-<!--#set var="desktop" value="console" --><!--#set var="cmdline" value="gnome-session --session ubuntu-2d" --><!--#include virtual="session-template.nxs" -->

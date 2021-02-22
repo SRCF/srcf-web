@@ -1,1 +1,0 @@
-<!--#set var="desktop" value="console" --><!--#set var="cmdline" value="/etc/X11/Xsession" --><!--#include virtual="session-template.nxs" -->

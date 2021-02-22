@@ -48,12 +48,18 @@ RewriteRule ^signup/?$        https://control.srcf.net/signup         [R]
 # Blame eb677
 RewriteRule ^status/2019-02-18 https://youtu.be/C7sE0agEVNg         [R]
 
+
 # We don't require committee nominations to be PGP-signed anymore
 RewriteRule ^keys/executive(\.html)?$ - [G]
 
 # We used to provide the webserver's SSH host keys here but this is now done elsewhere
 RewriteRule ^keys/ssh_host_dsa_key\.pub$ https://docs.srcf.net/shell-and-files/ssh.html#available-hosts        [R]
 RewriteRule ^keys/ssh_host_rsa_key\.pub$ https://docs.srcf.net/shell-and-files/ssh.html#available-hosts        [R]
+
+
+# Desktop service was retired in July 2017
+RewriteRule ^desktop(-standalone)?(\.html)?$    https://wiki.srcf.net/News/DesktopServiceClosure [R=302,L]
+RewriteRule ^webdesktop/                        https://wiki.srcf.net/News/DesktopServiceClosure [R=302,L]
 
 # Internal rewrite to avoid specifying the docs domain every time (not public)
 # Use :: in place of # as the latter isn't available even within internal rewrites
