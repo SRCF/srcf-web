@@ -30,6 +30,7 @@ RewriteRule .* - [L]
 Redirect permanent /socs/ /groups
 
 # Block any dotfiles (and implicitly /.git, /.github, etcetera)
+RewriteCond %{REQUEST_URI} !^/?\.well-known/
 RewriteRule (^|/)\. - [forbidden]
 
 # NB: there was historically a permanent redirect from webmail.srcf.net to www.srcf.net/squirrelmail
