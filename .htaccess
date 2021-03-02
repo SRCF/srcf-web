@@ -58,8 +58,8 @@ RewriteRule ^keys/ssh_host_rsa_key\.pub$ https://docs.srcf.net/shell-and-files/s
 
 
 # Desktop service was retired in July 2017
-RewriteRule ^desktop(-standalone)?(\.html)?$    https://wiki.srcf.net/News/DesktopServiceClosure [R=302,L]
-RewriteRule ^webdesktop/                        https://wiki.srcf.net/News/DesktopServiceClosure [R=302,L]
+RewriteRule ^desktop(-standalone)?(\.html)?$    https://blog.srcf.net/posts/desktop-service-closure/ [R=301,L]
+RewriteRule ^webdesktop/                        https://blog.srcf.net/posts/desktop-service-closure/ [R=301,L]
 
 # Internal rewrite to avoid specifying the docs domain every time (not public)
 # Use :: in place of # as the latter isn't available even within internal rewrites
