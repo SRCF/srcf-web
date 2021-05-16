@@ -19,9 +19,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
 RewriteCond %{HTTP_HOST} ^(docs|blog).srcf.net$
 RewriteRule .* - [L]
 
-RewriteCond %{HTTP_HOST} =timeout.srcf.net
-RewriteRule .* https://www.srcf.net/timeout-closure [R=302,L]
-
 <FilesMatch "groups(\.html)?">
   AuthType Ucam-WebAuth
   AAAuthService https://auth.srcf.net/wls/authenticate
