@@ -19,7 +19,6 @@
   </div>
 </div>
 
-
 <section class="bg-dark py-3 text-light">
   <div class="container px-5">
       <h4>Message of the day</h4>
@@ -29,13 +28,30 @@
 
 <div class="container my-4">
   <div class="row">
+    <div class="col-md-12 d-flex align-items-stretch">
+      <div class="card w-100 mb-3 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">Looking for a Hermes replacement? We've got you covered!</h4>
+          <p>The UIS have <a href="https://help.uis.cam.ac.uk/news/hermes-migration-july2020">announced the retirement</a> 
+            of the in-house Hermes email system with the preferred migration being to Microsoft's proprietary
+            Exchange Online system.</p>
+          <p>The SRCF has run its own open-source mail system, called Hades, for many years. It is fully standards 
+            (IMAP/SMTP) compliant and works with any mail client or via the web client, called Roundcube (which is 
+            what Hermes runs). Click below for more information and to forward your Cambridge email address to the 
+            SRCF.</p>
+          <a class="btn btn-secondary" role="button" href="https://docs.srcf.net/email/hades.html">Setup my @cam &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-4 d-flex align-items-stretch">
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Services</h4>
-          <p>Our volunteers maintain a selection of free services for thousands of members of the university. To name a
-            few, these
-            are:
+          <p>Our volunteers maintain a selection of free services for thousands of members of the university. To 
+            name a few, these are:
           <ul>
             <li>website hosting with a rich variety of features</li>
             <li><a href="https://timeout.srcf.net" target="_blank">a video conferencing platform </a></li>
@@ -46,30 +62,28 @@
             <li>hosted Mattermost and Zulip instances</li>
             <li>...and <a href="/services">much more!</a></li>
           </ul>
-          All of these services are available for personal accounts and groups, such as societies.
-          </p>
+          All of these services are available for personal accounts and groups, such as societies.</p>
           <a class="btn btn-secondary" role="button" href="/services">Get started &raquo;</a>
         </div>
       </div>
     </div>
     <div class="col-md-4 d-flex flex-column align-items-stretch">
       <div class="card mb-3 shadow-sm">
-        <div class="card-header"
-          style="background: linear-gradient(rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5)), url(/images/srcf-cropped.jpg); background-position: center; background-size: cover;">
+        <div class="card-header" style="background: linear-gradient(rgba(64, 64, 64, 0.5), rgba(64, 64, 64, 0.5)), url(/images/srcf-cropped.jpg); background-position: center; background-size: cover;">
           <h4 style="color:white;" class="my-2">About us</h4>
         </div>
         <div class="card-body">
-          <p>The Student-Run Computing Facility (SRCF) is a volunteer-run student society at the University
-            of Cambridge. We run our own servers hosted in-house within the university and provide computing services
-            for thousands of staff and students.</p>
+          <p>The Student-Run Computing Facility (SRCF) is a volunteer-run student society at the University of 
+            Cambridge. We run our own servers hosted in-house within the university and provide computing 
+            services for thousands of staff and students.</p>
           <a class="btn btn-primary" role="button" href="/about">Learn what we do &raquo;</a>
         </div>
       </div>
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Donate</h4>
-          <p>The SRCF is funded largely by donations from its users, for which we are very grateful. We can only spend
-            as much as we have, so help us pay for our costs by donating as little as £3.</p>
+          <p>The SRCF is funded largely by donations from its users, for which we are very grateful. We can only 
+            spend as much as we have, so help us pay for our costs by donating as little as £3.</p>
           <button type="submit" class="btn btn-success">
             <i class="fa fa-heart"></i> Donate today
           </button>
@@ -80,12 +94,12 @@
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Volunteering</h4>
-          <p>Do you ❤ open source like we do? Does managing large Linux systems sound interesting? Or perhaps getting
-            your hands dirty with servers and hardware? Or even programming web apps and Python libraries?
-          </p>
-          <p>As a student society that's completely independent from the colleges and university, we rely on the generous
-            help of interested volunteers to keep the SRCF going. We welcome everyone regardless of technical background
-            at any point during term. Come and talk to us even if you're not sure!</p>
+          <p>Do you ❤ open source like we do? Does managing large Linux systems sound interesting? Or perhaps 
+            getting your hands dirty with servers and hardware? Or even programming web apps and Python 
+            libraries?</p>
+          <p>As a student society that's completely independent from the colleges and university, we rely on the 
+            generous help of interested volunteers to keep the SRCF going. We welcome everyone regardless of 
+            technical background at any point during term. Come and talk to us even if you're not sure!</p>
           <ul>
             <li><a href="https://lists.srcf.net/mailman/listinfo/srcf-volunteers">Join our mailing list</a></li>
             <li>Attend our weekly meetings</li>
@@ -103,33 +117,11 @@
   <div class="row">
     <div class="col-md-4 d-flex align-items-stretch">
       <div class="card mb-3 shadow-sm">
-        <div class=" card-body">
-          <h4 class="card-title">Weekly meetings</h4>
-          <p>The SRCF committee and members of the volunteer team meet weekly on <strong>Friday at 8PM</strong> to talk
-            about the SRCF, cool ideas and tech. Anyone is welcome to join us, especially if you're interested in
-            learning more! The meetings are virtual and held on Timeout, <a href="https://timeout.srcf.net/executive"
-              target="_blank">here</a>.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-8 d-flex align-items-stretch">
-      <div class="card w-100 mb-3 shadow-sm">
-        <div class="card-body">
-            <h4 class="card-title">End of Hermes? Fear not!</h4>
-            <p>The SRCF has run its own mail system, called Hades, for many years. It is fully standards (IMAP/SMTP) compliant and works with any mail client or via the web client, called Roundcube (what Hermes runs).</p>
-            <a class="btn btn-secondary" role="button" href="https://docs.srcf.net/email/hades.html">Setup my @cam &raquo;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- https://mdbootstrap.com/support/general/cards-of-same-height-and-footer-bottom-alignment/ -->
-  <div class="row">
-    <div class="col-md-4 d-flex align-items-stretch">
-      <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Scheduled vulnerable period</h4>
-          <p>To aid in security procedures, the SRCF has a potentially vulnerable period, <b>from 10pm to 12 midnight on
-              Saturday nights</b>. During this time the sysadmins may reboot the server without much prior warning.</p>
+          <p>To aid in security procedures, the SRCF has a potentially vulnerable period, <b>from 10pm to 12 
+            midnight on Saturday nights</b>. During this time the sysadmins may reboot servers without much prior 
+            warning.</p>
         </div>
       </div>
     </div>
@@ -137,10 +129,10 @@
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Learning & education</h4>
-          <p>You can find a few tutorials made by us in our <a
-              href="https://docs.srcf.net/learn/index.html">documentation learning section</a> (help needed!). Ask us if
-            you're looking for a recommended resource to learn anything, we'll be sharing a few of our favorites soon on
-            a new page.</p>
+          <p>You can find a few tutorials made by us in our 
+            <a href="https://docs.srcf.net/learn/index.html">documentation learning section</a> (help needed!). 
+            Ask us if you're looking for a recommended resource to learn anything, we'll be sharing a few of our 
+            favorites soon on a new page.</p>
         </div>
       </div>
     </div>
@@ -148,8 +140,8 @@
       <div class="card mb-3 shadow-sm">
         <div class="card-body">
           <h4 class="card-title">Sponsors</h4>
-          <p>Is your company interested in sponsoring the SRCF? We have plenty of benefits to offer as we are one of the
-            largest societies in Cambridge. Read more about that <a href="/sponsors/benefits">here</a>.</p>
+          <p>Is your company interested in sponsoring the SRCF? We have plenty of benefits to offer as we are one 
+            of the largest societies in Cambridge. Read more about that <a href="/sponsors/benefits">here</a>.</p>
           <a class="btn btn-secondary" role="button" href="/sponsors">Our current sponsors &raquo;</a>
         </div>
       </div>
