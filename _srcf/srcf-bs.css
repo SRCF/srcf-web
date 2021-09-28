@@ -292,3 +292,20 @@ body.layout-card {
     columns: 2;
   }
 }
+
+/* Freshers' fair banner */
+div.fresherbar {
+  background: var(--blue);
+  text-align: center;
+  padding: 15px 0;
+}
+
+div.fresherbar a {
+  color: white;
+  text-decoration: underline;
+}
+
+div.fresherbar h4 {
+  margin-bottom: 0;
+}
+
