@@ -2,7 +2,10 @@
 <!--#include virtual="inc/header.html" -->
 <h2>SRCF Webmail</h2>
 
-<p>Starting in October 2018, the SRCF runs <a href="/faq/email">two email services</a>.  Please choose which webmail service you would like.</p>
+<p>Starting in October 2018, the SRCF runs <a href="/faq/email">two email services</a>.  We originally offered webmail access to both, although
+  following a system upgrade to Ubuntu 20.04 we are not in a position to offer SquirrelMail webmail access to the older pip-based email service
+  (via <code>webmail.pip.srcf.net</code>) any more.  However, you can still access pip mailboxes
+  <a href="https://docs.srcf.net/reference/email/legacy-mail-on-pip/">using IMAP</a> and terminal mail clients.</p>
 
 <div class="row">
   <div class="col-md-6">
@@ -20,10 +23,13 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">pip webmail</h4>
-        <p>Before October 2018, the only SRCF mail service was hosted on pip (our shell server).  For older mailboxes, or if you chose to use pip, use this one.</p>
+        <p>Before October 2018, the only SRCF email service was hosted on pip (our shell server).  For older mailboxes, or if you chose to use
+          pip, this is probably where your email is kept.</p>
+        <p>The pip webmail service is no longer available.  You can still access your email through a terminal email client while logged into pip,
+          such as Alpine or Mutt, or by <a href="https://docs.srcf.net/reference/email/legacy-mail-on-pip/">using IMAP</a>.</p>
       </div>
       <div class="card-footer">
-        <a class="btn btn-outline-primary" href="https://webmail.pip.srcf.net/">webmail.pip.srcf.net</a>
+        <a class="btn btn-outline-secondary disabled" aria-disabled="true">webmail.pip.srcf.net</a>
       </div>
     </div>
   </div>
