@@ -66,23 +66,23 @@ RewriteRule ^webdesktop/                        https://blog.srcf.net/posts/desk
 RewriteRule ^_docs_rd/(.*)::(.+)$ https://docs.srcf.net/$1#$2 [R,L,NE]
 RewriteRule ^_docs_rd/(.*)$       https://docs.srcf.net/$1    [R,L]
 # Redirect legacy FAQs to docs
-RewriteRule ^faq/basics(\.html)?$                /_docs_rd/index.html::shell-and-files
-RewriteRule ^faq/cgi(\.html)?$                   /_docs_rd/web-hosting/cgi-php.html
-RewriteRule ^faq/databases(\.html)?$             /_docs_rd/services/databases.html
-RewriteRule ^faq/email-hades(\.html)?$           /_docs_rd/email/hades.html
-RewriteRule ^faq/email-pip(\.html)?$             /_docs_rd/email/pip.html
-RewriteRule ^faq/email(\.html)?$                 /_docs_rd/email/summary.html
-RewriteRule ^faq/inappropriate-content(\.html)?$ /_docs_rd/read-first/important.html
-RewriteRule ^faq/irc(\.html)?$                   /_docs_rd/services/irc.html
-RewriteRule ^faq/managing-account(\.html)?$      /_docs_rd/index.html::personal-accounts
-RewriteRule ^faq/memberlists(\.html)?$           /_docs_rd/personal-accounts/soc-srcf-lists.html
-RewriteRule ^faq/managing-socaccount(\.html)?$   /_docs_rd/index.html::society-accounts
-RewriteRule ^faq/news(\.html)?$                  /_docs_rd/services/usenet.html
-RewriteRule ^faq/obtaining-account(\.html)?$     /_docs_rd/personal-accounts/start.html
-RewriteRule ^faq/other-services(\.html)?$        /_docs_rd/index.html::more-services
-RewriteRule ^faq/socmail(\.html)?$               /_docs_rd/email/societies.html
-RewriteRule ^faq/troubleshooting(\.html)?$       /_docs_rd/shell-and-files/ssh.html::passwordless-ssh
-RewriteRule ^faq/web-hosting(\.html)?$           /_docs_rd/index.html::web-hosting
+RewriteRule ^faq/basics(\.html)?$                /_docs_rd/tutorials/
+RewriteRule ^faq/cgi(\.html)?$                   /_docs_rd/reference/web-hosting/cgi-and-php-scripts/
+RewriteRule ^faq/databases(\.html)?$             /_docs_rd/reference/other-services/sql-databases/
+RewriteRule ^faq/email-hades(\.html)?$           /_docs_rd/reference/email/hades-email-service/
+RewriteRule ^faq/email-pip(\.html)?$             /_docs_rd/reference/email/legacy-mail-on-pip/
+RewriteRule ^faq/email(\.html)?$                 /_docs_rd/reference/email/email-accounts/
+RewriteRule ^faq/inappropriate-content(\.html)?$ /_docs_rd/reference/rules-and-principles/
+RewriteRule ^faq/irc(\.html)?$                   /_docs_rd/reference/other-services/internet-relay-chat-irc/
+RewriteRule ^faq/managing-account(\.html)?$      /_docs_rd/guides/getting-started-users/
+RewriteRule ^faq/memberlists(\.html)?$           /_docs_rd/reference/personal-accounts/srcf-mailing-lists/
+RewriteRule ^faq/managing-socaccount(\.html)?$   /_docs_rd/reference/group-accounts/administrators/
+RewriteRule ^faq/news(\.html)?$                  /_docs_rd/reference/other-services/usenet-nntp/
+RewriteRule ^faq/obtaining-account(\.html)?$     /_docs_rd/guides/getting-started-users/
+RewriteRule ^faq/other-services(\.html)?$        /_docs_rd/reference/
+RewriteRule ^faq/socmail(\.html)?$               /_docs_rd/reference/group-accounts/email/
+RewriteRule ^faq/troubleshooting(\.html)?$       /_docs_rd/index.html::help-and-support
+RewriteRule ^faq/web-hosting(\.html)?$           /_docs_rd/reference/web-hosting/regular-hosting/
 # Redirect about to its new home
 RewriteRule ^faq/about(\.html)?$ /about [R,L]
 # Generically redirect FAQ pages with no obvious docs equivalent
