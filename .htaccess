@@ -48,7 +48,6 @@ RewriteRule ^signup/?$        https://control.srcf.net/signup         [R]
 # Blame eb677
 RewriteRule ^status/2019-02-18 https://youtu.be/C7sE0agEVNg         [R]
 
-
 # We don't require committee nominations to be PGP-signed anymore
 RewriteRule ^keys/executive(\.html)?$ - [G]
 
@@ -56,6 +55,10 @@ RewriteRule ^keys/executive(\.html)?$ - [G]
 RewriteRule ^keys/ssh_host_dsa_key\.pub$ https://docs.srcf.net/shell-and-files/ssh.html#available-hosts        [R]
 RewriteRule ^keys/ssh_host_rsa_key\.pub$ https://docs.srcf.net/shell-and-files/ssh.html#available-hosts        [R]
 
+# We don't provide terminal access by Java web applet anymore (thank goodness!)
+RewriteRule ^utilities/mindterm https://www.srcf.net/terminal/ [R,L]
+RewriteRule ^utilities/mindterm-3.3 https://www.srcf.net/terminal/ [R,L]
+RewriteRule ^utilities/ssh https://docs.srcf.net/reference/shell-and-files/ssh/ [R,L]
 
 # Desktop service was retired in July 2017
 RewriteRule ^desktop(-standalone)?(\.html)?$    https://blog.srcf.net/posts/desktop-service-closure/ [R=301,L]
