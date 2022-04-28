@@ -4,7 +4,7 @@
 # accounts, XSS vulnerabilities and SQL injection vulnerabilities, among
 # others.
 #
-Contact: mailto:soc-srcf-admin@lists.cam.ac.uk
+Contact: mailto:sysadmins@srcf.net
 Expires: 2024-11-11T13:00:00.000Z
 Preferred-Languages: en
 Canonical: https://www.srcf.net/.well-known/security.txt
