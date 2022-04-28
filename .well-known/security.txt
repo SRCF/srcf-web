@@ -1,0 +1,10 @@
+# The SRCF is a volunteer-run student society of the University of
+# Cambridge that operates a variety of shared multi-user systems. Please
+# use the contact details below to report security issues such as hacked
+# accounts, XSS vulnerabilities and SQL injection vulnerabilities, among
+# others.
+#
+Contact: mailto:soc-srcf-admin@lists.cam.ac.uk
+Expires: 2024-11-11T13:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.srcf.net/.well-known/security.txt
