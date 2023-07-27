@@ -18,3 +18,6 @@ motd = news[start:]
 
 for line in motd:
     sys.stdout.write(link.sub(r'<a href="\1">\1</a>', line))
+
+sys.stdout.write("\n")
+sys.stdout.write(open("/etc/info/donors.txt").read())
