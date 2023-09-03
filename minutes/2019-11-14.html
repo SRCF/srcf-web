@@ -1,55 +1,66 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="pandoc" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>SRCF Executive meeting - 14 Nov 2019</title>
-    <link rel="stylesheet" href="/_srcf/vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/_srcf/srcf-bs.css">
-  </head>
-  <body>
-    <main class="container">
-      <h1 class="title">SRCF Executive meeting - 14 Nov 2019</h1>
-      <p><em>Location:</em> The Free Press on Prospect Row</p>
-      <p><em>Present:</em></p>
-      <ul>
-        <li>Edwin Bahrami Balani (<code>eb677</code>), Chair &amp; Sysadmin</li>
-        <li>Jefferson Edralin Chua (<code>jec226</code>), Treasurer &amp; Sysadmin</li>
-        <li>Anik Roy (<code>ar899</code>), Secretary</li>
-        <li>David Horstmann (<code>djh243</code>), Publicity Officer &amp; Sysadmin</li>
-        <li>Malcolm Scott (<code>mas90</code>), Sysadmin</li>
-        <li>Richard Allitt (<code>rsa33</code>), Sysadmin</li>
-      </ul>
-      <p><em>Apologies:</em></p>
-      <ul>
-        <li>Charles Board (<code>cvrb2</code>), Mage</li>
-      </ul>
-      <h2 id="recent-completed-hardware-donations">Recent completed hardware donations</h2>
-      <p>The sysadmins reported that Emmanuel College’s computer office had kindly donated an Intel server, which has been dubbed <code>mist</code> and been tasked with virtual machine hosting in the existing Xen cluster.</p>
-      <h2 id="future-hardware-donations">Future hardware donations</h2>
-      <h3 id="third-light-kit">Third Light kit</h3>
-      <p>The sysadmins reported further that Third Light have offered and prepared a large server and a serial console box, which is ready to be collected or delivered. Edwin commented that the email thread had gone quiet for a couple of months, with the last message being sent from him to our contact at Third Light.</p>
-      <p><strong>Action Edwin:</strong> chase up Third Light.</p>
-      <h3 id="netapps-from-the-cl">NetApps from the CL</h3>
-      <p>The Computer Lab wants to dispose of its multiple NetApp storage servers (and associated hardware, including disk drives). Malcolm has arranged for the SRCF to be given as much of this as the SRCF can take, amounting to one or two NetApps and a large number of disk drives, which would offer about 36 TB of usable networked storage in the SRCF rack, and also allow for offsite backups (with the offsite machine sitting in the CL’s West Cambridge Data Centre rack).</p>
-      <p>Malcolm stressed that the CL computing staff were not in a position to provide support, time, or supervised access to the WCDC, and that the NetApps would be operated without a support contract in place.</p>
-      <h2 id="rack-space-management">Rack space management</h2>
-      <p>With the Third Light and CL NetApp donations, the rack space at CUSU would be depleted almost entirely. Malcolm proposed that <code>nimbus</code> and <code>alto</code> have reached the end of their useful lives by now (with neither being in active service currently), and that they should be removed and recycled.</p>
-      <p>Malcolm further proposed that the next lot of hardware to go should probably be <code>pileus</code> (recycled) and <code>stratus</code> (not thrown away, but kept unracked for now and potentially repurposed in future).</p>
-      <h2 id="social-events">Social events</h2>
-      <p>Edwin noted that attempts to organise a 20th Anniversary Dinner in Michaelmas term had failed, and asked for an extra pair of hands to help with organisation.</p>
-      <h2 id="sysadmins-business">Sysadmins’ business</h2>
-      <p>With the NetApp anticipated to arrive in the rack, offering a new centralised and networked storage for both virtual machine disks and home directories, it would be good to gradually upgrade to 10-gigabit networking in the rack. Malcolm quoted rough estimates at 10-gigabit switched as £160 to £200 for a second-hand one that will do the job, or around £650 for a 40-gigabit switch (where each port can be broken out into 4x 10-gigabit ones).</p>
-      <p>It was noted that a Cambridge instance of The Things Network, an association of community LoRaWAN networks, was to launch in the next few days, and may be of future interest for fun SRCF projects.</p>
-      <h2 id="new-su">New-SU</h2>
-      <p>Edwin updated the Executive on the proposed establishment of a single students’ union, Cambridge SU, formed from an effective merger of CUSU and the GU that has been nicknamed ‘New-SU’ (to rhyme with CUSU). The relevance of this to the SRCF (if it goes ahead, pending a student referendum) would be a need to re-establish the existing arrangement with CUSU in a similar form with Cambridge SU.</p>
-      <p>Edwin and Malcolm reported that the Unions, regardless of the success or failure of New-SU, are seeking to officially merge IT infrastructure, where there has historically been a quasi-converged setup for some years already. It is expected that the SRCF sysadmins, acting as CUSU sysadmins, will inevitably take on responsibility for ex-GU infrastructure that they had previously not dealt with.</p>
-      <h2 id="any-other-business">Any other business</h2>
-      <p>Jefferson noted that he would like an up-to-date register of the Society’s assets for record-keeping and reporting purposes. The sysadmins agreed that they were best placed to gather this information.</p>
-      <p><strong>Action sysadmins:</strong> compile and provide an asset register, including replacement cost of items held.</p>
-      <p>The Executive noted that they had not received an anticipated monetary donation.</p>
-      <p><strong>Action Edwin:</strong> chase up that donation.</p>
-    </main>
-  </body>
-</html>
+<!--#set var="title" value="SRCF Executive meeting - 14 Nov 2019" -->
+<!--#include virtual="../inc/header.html" -->
+<h1><!--#echo encoding="none" var="title" --></h1>
+<p><em>Location:</em> The Free Press on Prospect Row</p>
+<p><em>Present:</em></p>
+<ul>
+  <li>Edwin Bahrami Balani (<code>eb677</code>), Chair &amp; Sysadmin</li>
+  <li>Jefferson Edralin Chua (<code>jec226</code>), Treasurer &amp; Sysadmin</li>
+  <li>Anik Roy (<code>ar899</code>), Secretary</li>
+  <li>David Horstmann (<code>djh243</code>), Publicity Officer &amp; Sysadmin</li>
+  <li>Malcolm Scott (<code>mas90</code>), Sysadmin</li>
+  <li>Richard Allitt (<code>rsa33</code>), Sysadmin</li>
+</ul>
+<p><em>Apologies:</em></p>
+<ul>
+  <li>Charles Board (<code>cvrb2</code>), Mage</li>
+</ul>
+<h2 id="recent-completed-hardware-donations">Recent completed hardware donations</h2>
+<p>The sysadmins reported that Emmanuel College’s computer office had kindly donated an Intel server, which has been
+  dubbed <code>mist</code> and been tasked with virtual machine hosting in the existing Xen cluster.</p>
+<h2 id="future-hardware-donations">Future hardware donations</h2>
+<h3 id="third-light-kit">Third Light kit</h3>
+<p>The sysadmins reported further that Third Light have offered and prepared a large server and a serial console box,
+  which is ready to be collected or delivered. Edwin commented that the email thread had gone quiet for a couple of
+  months, with the last message being sent from him to our contact at Third Light.</p>
+<p><strong>Action Edwin:</strong> chase up Third Light.</p>
+<h3 id="netapps-from-the-cl">NetApps from the CL</h3>
+<p>The Computer Lab wants to dispose of its multiple NetApp storage servers (and associated hardware, including disk
+  drives). Malcolm has arranged for the SRCF to be given as much of this as the SRCF can take, amounting to one or two
+  NetApps and a large number of disk drives, which would offer about 36 TB of usable networked storage in the SRCF rack,
+  and also allow for offsite backups (with the offsite machine sitting in the CL’s West Cambridge Data Centre rack).</p>
+<p>Malcolm stressed that the CL computing staff were not in a position to provide support, time, or supervised access to
+  the WCDC, and that the NetApps would be operated without a support contract in place.</p>
+<h2 id="rack-space-management">Rack space management</h2>
+<p>With the Third Light and CL NetApp donations, the rack space at CUSU would be depleted almost entirely. Malcolm
+  proposed that <code>nimbus</code> and <code>alto</code> have reached the end of their useful lives by now (with
+  neither being in active service currently), and that they should be removed and recycled.</p>
+<p>Malcolm further proposed that the next lot of hardware to go should probably be <code>pileus</code> (recycled) and
+  <code>stratus</code> (not thrown away, but kept unracked for now and potentially repurposed in future).</p>
+<h2 id="social-events">Social events</h2>
+<p>Edwin noted that attempts to organise a 20th Anniversary Dinner in Michaelmas term had failed, and asked for an extra
+  pair of hands to help with organisation.</p>
+<h2 id="sysadmins-business">Sysadmins’ business</h2>
+<p>With the NetApp anticipated to arrive in the rack, offering a new centralised and networked storage for both virtual
+  machine disks and home directories, it would be good to gradually upgrade to 10-gigabit networking in the rack.
+  Malcolm quoted rough estimates at 10-gigabit switched as £160 to £200 for a second-hand one that will do the job, or
+  around £650 for a 40-gigabit switch (where each port can be broken out into 4x 10-gigabit ones).</p>
+<p>It was noted that a Cambridge instance of The Things Network, an association of community LoRaWAN networks, was to
+  launch in the next few days, and may be of future interest for fun SRCF projects.</p>
+<h2 id="new-su">New-SU</h2>
+<p>Edwin updated the Executive on the proposed establishment of a single students’ union, Cambridge SU, formed from an
+  effective merger of CUSU and the GU that has been nicknamed ‘New-SU’ (to rhyme with CUSU). The relevance of this to
+  the SRCF (if it goes ahead, pending a student referendum) would be a need to re-establish the existing arrangement
+  with CUSU in a similar form with Cambridge SU.</p>
+<p>Edwin and Malcolm reported that the Unions, regardless of the success or failure of New-SU, are seeking to officially
+  merge IT infrastructure, where there has historically been a quasi-converged setup for some years already. It is
+  expected that the SRCF sysadmins, acting as CUSU sysadmins, will inevitably take on responsibility for ex-GU
+  infrastructure that they had previously not dealt with.</p>
+<h2 id="any-other-business">Any other business</h2>
+<p>Jefferson noted that he would like an up-to-date register of the Society’s assets for record-keeping and reporting
+  purposes. The sysadmins agreed that they were best placed to gather this information.</p>
+<p><strong>Action sysadmins:</strong> compile and provide an asset register, including replacement cost of items held.
+</p>
+<p>The Executive noted that they had not received an anticipated monetary donation.</p>
+<p><strong>Action Edwin:</strong> chase up that donation.</p>
+<!--#include virtual="../inc/footer.html" -->

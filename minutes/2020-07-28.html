@@ -1,260 +1,244 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>SRCF Committee meeting - 28th of July 2020</title>
-  <link rel="stylesheet" href="/_srcf/vendor/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/_srcf/srcf-bs.css" />
-</head>
-
-<body>
-  <main class="container">
-    <div id="doc" class="markdown-body container-fluid">
-      <h1 id="SRCF-Meeting-Minutes---28072020">SRCF Meeting Minutes - 28/07/2020</h1>
-      <p>Minutes of the meeting held on Thursday the 28 of July 2020 to resolve the uncertainty surrounding the
-        authorization of system administrators to use SRCF systems.</p>
-      <h2 id="Meeting-details">Meeting details</h2>
-      <ul>
-        <li>Date: 28/07/2020</li>
-        <li>Venue: SRCF Mattermost</li>
-        <li>Present:
-          <ul>
-            <li>John-Joseph Gray (<code>jjag3</code>) - Chair</li>
-            <li>Matias Wang Almeida e Silva (<code>mw781</code>) - Junior Treasurer</li>
-            <li>Bilal Chugtai (<code>bc464</code>) - Secretary</li>
-            <li>Michelle Soo (<code>mhws2</code>) - Publicity Officer</li>
-          </ul>
-        </li>
-      </ul>
-      <p><strong>Witnessed, approved and countersigned by those in attendance (full name &amp; date):</strong></p>
-      <p>JOHN-JOSEPH GRAY 28/07/2020<br>
-        MATIAS SILVA 28/07/2020<br>
-        BILAL CHUGHTAI 29/07/2020<br>
-        MICHELLE SOO 28/07/2020</p>
-      <h2 id="Prerequisite">Prerequisite</h2>
-      <p>Historic references to ‘sysadmins’ and ‘system administrators’ refer to the SRCF position of System
-        Administrator, as described on <a href="../roles" target="_blank"
-          rel="noopener">https://www.srcf.net/roles</a> as of Monday 20th July 2020 (below). Item <code>1</code> in
-        these minutes redefines the role of ‘system administrator’. When references to the new role are used, they will
-        mention this item.</p>
-      <blockquote>
-        <p>The job of sysadmin is not particularly a glamorous one, but it is one of the most important: the SRCF could
-          struggle along without a committee, but without the sysadmin team the service would grind quickly to a halt.
-        </p>
-        <p>Much of the day-to-day administration of the SRCF involves responding to user requests, either by running one
-          of the SRCF scripts to create a database or add a user or whatever, or by explaining patiently why what they
-          want is stupid. The simplest requests can be dealt with by anyone with a shell and a keyboard, but
-          occasionally a closer familiarity with what is actually going on, and some greater ingenuity and problem
-          solving, is required.</p>
-        <p>The admins are also responsible for developing and maintaining the scripts and tools to make life easier for
-          both themselves and the users, so software-engineer types will have some opportunity to exercise their skills.
-          The SRCF has been writing scripts for more than a decade, and some 2000-vintage Python and Perl is still in
-          operation, so there’s plenty of modernisation work to do.</p>
-        <p>Since system administration is a shared responsibility, the amount demanded of any individual is not too
-          severe. Each admin is mostly welcome to pick and choose which tasks they are willing and able to deal with,
-          and focus on those. If you do nothing at all, and do not intend to start doing anything, we would appreciate
-          it if you would give up your admin rights to simplify bookkeeping, but as long as you are doing something,
-          even if that’s just approving membership requests or fixing the permissions on a society account, you are
-          freeing up the time of people who can do more involved things, like script development or service deployment.
-        </p>
-        <p>Some experience of system administration is preferable, but of course we realise that the SRCF is a place
-          that many people go to gain that experience; however, knowing your way around the Linux command line is
-          probably essential if you are to carry out any serious administrative work. If you lack that experience but
-          are still keen to help the SRCF, don’t be discouraged – there’s a good chance we will be able to find
-          something else for you to do. Just ask!</p>
-      </blockquote>
-      <h2 id="Items">Items</h2>
-      <h3 id="1-Clarify-What-It-Means-to-Be-a-System-Administrator"><code>1</code> Clarify What It Means to Be a System
-        Administrator</h3>
-      <p>It is evident that the ‘one-size-fits-all’ approach to the administration of SRCF machines is outdated. Newer
-        services such as Timeout and other upcoming projects rely on the help of volunteers that have partial access to
-        these machines and, in some cases, root access on a select few.</p>
-      <p>The committee, therefore, wishes to distinguish between:</p>
-      <ul>
-        <li>a ‘system administrator’, who has root access to all of the SRCF’s machines,</li>
-        <li>and a ‘volunteer’, who may exercise some duties under the capacity of root on some machines. It is at the
-          discretion of the system administrators which machines these volunteers have root access to.</li>
-      </ul>
-      <h3 id="2-Clarify-the-Process-of-Appointing-a-New-System-Administrator"><code>2</code> Clarify the Process of
-        Appointing a New System Administrator</h3>
-      <p>Presently, the <a href="../constitution" target="_blank" rel="noopener">SRCF Constitution
-          §5.2</a> states that:</p>
-      <blockquote>
-        <p>[The committee] shall be responsible for the appointment of system administrators, who shall be responsible
-          to the Committee.</p>
-      </blockquote>
-      <p>The committee recognizes that the procedure for the appointment of system administrators has on occasion been
-        informal, to the extent that it casts doubts as to what the procedure entails. The committee notes that it has
-        always felt that it could intervene in this process if necessary.</p>
-      <p>To improve this process, the following is proposed and will henceforth be the current committee’s
-        implementation of §5.2:</p>
-      <hr>
-      <p>The existing team of system administrators will be free to recruit and vet any potential candidates as they
-        always have.</p>
-      <p>To appoint a new system administrator, a motion should be brought to the committee by email. The motion should
-        contain the following information:</p>
-      <ul>
-        <li>Name of the candidate</li>
-        <li>CRSid of the candidate</li>
-        <li>A comment from the candidate as to why they would like to become a system administrator</li>
-        <li>A recommendation from the system administrator team</li>
-      </ul>
-      <p>The committee will proceed to vote on the motion. The results of the said vote will be provided to the system
-        administrator team.</p>
-      <p>The committee expects that the majority of these motions will be proposed by the existing system administrator
-        team. The committee also notes that there may be a reasonable time delay from the internal appointment of a
-        system administrator to its communication to the public via the minutes.</p>
-      <hr>
-      <h3 id="3-Appointment-of-System-Administrators"><code>3</code> Appointment of System Administrators</h3>
-      <p>The committee wishes to acknowledge that, historically, the appointment of system administrators has been
-        poorly recorded. This has caused some confusion regarding the status of existing system administrators.</p>
-      <p>The committee wishes to clarify that all existing system administrators are, and to the best of the committee’s
-        knowledge, and have always been authorized to perform the functions of a system administrator.</p>
-      <p>The committee agrees to appoint Timo Wilken (<code>tw466</code>) and Daniel Carter (<code>dcc52</code>) as
-        system administrators, as defined in item <code>1</code>. They are two most recent additions to the system
-        administrator team. Their status was previously unclear as there had been no written evidence of their status
-        until now.</p>
-      <h3 id="4-Appointment-of-Volunteers"><code>4</code> Appointment of Volunteers</h3>
-      <p>The committee wishes to approve the following people as ‘volunteers’, as defined in item <code>1</code>:</p>
-      <ul>
-        <li>Matias Silva (<code>mw781</code>)</li>
-        <li>John-Joseph Gray (<code>jjag3</code>)</li>
-        <li>Mary Chester-Kadwell (<code>mec31</code>)</li>
-        <li>Charlie Jonas (<code>chtj2</code>)</li>
-        <li>Daniel Burgess (<code>deb31</code>)</li>
-      </ul>
-      <h3 id="5-Removal-of-Inactive-System-Administrators"><code>5</code> Removal of Inactive System Administrators</h3>
-      <p>At this time, the committee finds it appropriate to update the current system administrator list by removing
-        inactive accounts.</p>
-      <p>The committee has deemed that an active system administrator shall be one that has logged in to the
-        <code>pip</code> server with root privileges at any point in the year preceding 20/07/2020.</p>
-      <p>Deletions in the table below represent the inactive system administrators who will have their root privileges
-        revoked. The remaining names will keep their root privileges.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>CRSid</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>amc96</code></td>
-            <td>Andrew Cooper</td>
-          </tr>
-          <tr>
-            <td><s><code>amr66</code></s></td>
-            <td><s>Andrew Ryrie</s></td>
-          </tr>
-          <tr>
-            <td><s><code>as2193</code></s></td>
-            <td><s>Amar Sood</s></td>
-          </tr>
-          <tr>
-            <td><s><code>bk372</code></s></td>
-            <td><s>Balint Kovacs</s></td>
-          </tr>
-          <tr>
-            <td><s><code>bm380</code></s></td>
-            <td><s>Ben Millwood</s></td>
-          </tr>
-          <tr>
-            <td><code>dcc52</code></td>
-            <td>Daniel Carter</td>
-          </tr>
-          <tr>
-            <td><code>de298</code></td>
-            <td>Dimitrije Erdeljan</td>
-          </tr>
-          <tr>
-            <td><code>dec41</code></td>
-            <td>Dexter Chua</td>
-          </tr>
-          <tr>
-            <td><code>djh243</code></td>
-            <td>David Horstmann</td>
-          </tr>
-          <tr>
-            <td><code>djr61</code></td>
-            <td>Daniel Richman</td>
-          </tr>
-          <tr>
-            <td><code>eb677</code></td>
-            <td>Edwin Bahrami Balani</td>
-          </tr>
-          <tr>
-            <td><code>htp27</code></td>
-            <td>Harrison Pitcher</td>
-          </tr>
-          <tr>
-            <td><code>jec226</code></td>
-            <td>Jefferson Edralin Chua</td>
-          </tr>
-          <tr>
-            <td><s><code>jl945</code></s></td>
-            <td><s>Jeck Lim</s></td>
-          </tr>
-          <tr>
-            <td><s><code>ll461</code></s></td>
-            <td><s>Lev Livnev</s></td>
-          </tr>
-          <tr>
-            <td><code>mas90</code></td>
-            <td>Malcolm Scott</td>
-          </tr>
-          <tr>
-            <td><s><code>mti20</code></s></td>
-            <td><s>Matthew Ireland</s></td>
-          </tr>
-          <tr>
-            <td><s><code>obw20</code></s></td>
-            <td><s>Olivier Wilkinson</s></td>
-          </tr>
-          <tr>
-            <td><s><code>rc516</code></s></td>
-            <td><s>Raf Czlonka</s></td>
-          </tr>
-          <tr>
-            <td><code>rjw201</code></td>
-            <td>Richard Whitehouse</td>
-          </tr>
-          <tr>
-            <td><code>rpc25</code></td>
-            <td>Ross Church</td>
-          </tr>
-          <tr>
-            <td><code>rsa33</code></td>
-            <td>Richard Allitt</td>
-          </tr>
-          <tr>
-            <td><s><code>sjm217</code></s></td>
-            <td><s>Steven Murdoch</s></td>
-          </tr>
-          <tr>
-            <td><s><code>sm2030</code></s></td>
-            <td><s>Souradip Mookerjee</s></td>
-          </tr>
-          <tr>
-            <td><code>tg307</code></td>
-            <td>Tejas Guruswamy</td>
-          </tr>
-          <tr>
-            <td><code>tw466</code></td>
-            <td>Timo Wilken</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>The committee will reach out to the removed system administrators and invite them to participate in further
-        discussions as friends of the SRCF.</p>
-      <p>The committee will also update <a href="http://srcf.net/committee" target="_blank"
-          rel="noopener">srcf.net/committee</a> to reflect the changes made here.</p>
-      <p>For system administrators who have had their access revoked, regaining access will follow the same procedure as
-        adding a new system administrator, as defined in items <code>1</code> and <code>2</code>.</p>
-    </div>
-  </main>
-</body>
-
-</html>
+<!--#set var="title" value="SRCF Meeting Minutes - 28/07/2020" -->
+<!--#include virtual="../inc/header.html" -->
+<h1><!--#echo encoding="none" var="title" --></h1>
+<p>Minutes of the meeting held on Thursday the 28 of July 2020 to resolve the uncertainty surrounding the
+  authorization of system administrators to use SRCF systems.</p>
+<h2 id="Meeting-details">Meeting details</h2>
+<ul>
+  <li>Date: 28/07/2020</li>
+  <li>Venue: SRCF Mattermost</li>
+  <li>Present:
+    <ul>
+      <li>John-Joseph Gray (<code>jjag3</code>) - Chair</li>
+      <li>Matias Wang Almeida e Silva (<code>mw781</code>) - Junior Treasurer</li>
+      <li>Bilal Chugtai (<code>bc464</code>) - Secretary</li>
+      <li>Michelle Soo (<code>mhws2</code>) - Publicity Officer</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Witnessed, approved and countersigned by those in attendance (full name &amp; date):</strong></p>
+<p>JOHN-JOSEPH GRAY 28/07/2020<br>
+  MATIAS SILVA 28/07/2020<br>
+  BILAL CHUGHTAI 29/07/2020<br>
+  MICHELLE SOO 28/07/2020</p>
+<h2 id="Prerequisite">Prerequisite</h2>
+<p>Historic references to ‘sysadmins’ and ‘system administrators’ refer to the SRCF position of System
+  Administrator, as described on <a href="../roles" target="_blank" rel="noopener">https://www.srcf.net/roles</a> as of
+  Monday 20th July 2020 (below). Item <code>1</code> in
+  these minutes redefines the role of ‘system administrator’. When references to the new role are used, they will
+  mention this item.</p>
+<blockquote>
+  <p>The job of sysadmin is not particularly a glamorous one, but it is one of the most important: the SRCF could
+    struggle along without a committee, but without the sysadmin team the service would grind quickly to a halt.
+  </p>
+  <p>Much of the day-to-day administration of the SRCF involves responding to user requests, either by running one
+    of the SRCF scripts to create a database or add a user or whatever, or by explaining patiently why what they
+    want is stupid. The simplest requests can be dealt with by anyone with a shell and a keyboard, but
+    occasionally a closer familiarity with what is actually going on, and some greater ingenuity and problem
+    solving, is required.</p>
+  <p>The admins are also responsible for developing and maintaining the scripts and tools to make life easier for
+    both themselves and the users, so software-engineer types will have some opportunity to exercise their skills.
+    The SRCF has been writing scripts for more than a decade, and some 2000-vintage Python and Perl is still in
+    operation, so there’s plenty of modernisation work to do.</p>
+  <p>Since system administration is a shared responsibility, the amount demanded of any individual is not too
+    severe. Each admin is mostly welcome to pick and choose which tasks they are willing and able to deal with,
+    and focus on those. If you do nothing at all, and do not intend to start doing anything, we would appreciate
+    it if you would give up your admin rights to simplify bookkeeping, but as long as you are doing something,
+    even if that’s just approving membership requests or fixing the permissions on a society account, you are
+    freeing up the time of people who can do more involved things, like script development or service deployment.
+  </p>
+  <p>Some experience of system administration is preferable, but of course we realise that the SRCF is a place
+    that many people go to gain that experience; however, knowing your way around the Linux command line is
+    probably essential if you are to carry out any serious administrative work. If you lack that experience but
+    are still keen to help the SRCF, don’t be discouraged – there’s a good chance we will be able to find
+    something else for you to do. Just ask!</p>
+</blockquote>
+<h2 id="Items">Items</h2>
+<h3 id="1-Clarify-What-It-Means-to-Be-a-System-Administrator"><code>1</code> Clarify What It Means to Be a System
+  Administrator</h3>
+<p>It is evident that the ‘one-size-fits-all’ approach to the administration of SRCF machines is outdated. Newer
+  services such as Timeout and other upcoming projects rely on the help of volunteers that have partial access to
+  these machines and, in some cases, root access on a select few.</p>
+<p>The committee, therefore, wishes to distinguish between:</p>
+<ul>
+  <li>a ‘system administrator’, who has root access to all of the SRCF’s machines,</li>
+  <li>and a ‘volunteer’, who may exercise some duties under the capacity of root on some machines. It is at the
+    discretion of the system administrators which machines these volunteers have root access to.</li>
+</ul>
+<h3 id="2-Clarify-the-Process-of-Appointing-a-New-System-Administrator"><code>2</code> Clarify the Process of
+  Appointing a New System Administrator</h3>
+<p>Presently, the <a href="../constitution" target="_blank" rel="noopener">SRCF Constitution
+    §5.2</a> states that:</p>
+<blockquote>
+  <p>[The committee] shall be responsible for the appointment of system administrators, who shall be responsible
+    to the Committee.</p>
+</blockquote>
+<p>The committee recognizes that the procedure for the appointment of system administrators has on occasion been
+  informal, to the extent that it casts doubts as to what the procedure entails. The committee notes that it has
+  always felt that it could intervene in this process if necessary.</p>
+<p>To improve this process, the following is proposed and will henceforth be the current committee’s
+  implementation of §5.2:</p>
+<hr>
+<p>The existing team of system administrators will be free to recruit and vet any potential candidates as they
+  always have.</p>
+<p>To appoint a new system administrator, a motion should be brought to the committee by email. The motion should
+  contain the following information:</p>
+<ul>
+  <li>Name of the candidate</li>
+  <li>CRSid of the candidate</li>
+  <li>A comment from the candidate as to why they would like to become a system administrator</li>
+  <li>A recommendation from the system administrator team</li>
+</ul>
+<p>The committee will proceed to vote on the motion. The results of the said vote will be provided to the system
+  administrator team.</p>
+<p>The committee expects that the majority of these motions will be proposed by the existing system administrator
+  team. The committee also notes that there may be a reasonable time delay from the internal appointment of a
+  system administrator to its communication to the public via the minutes.</p>
+<hr>
+<h3 id="3-Appointment-of-System-Administrators"><code>3</code> Appointment of System Administrators</h3>
+<p>The committee wishes to acknowledge that, historically, the appointment of system administrators has been
+  poorly recorded. This has caused some confusion regarding the status of existing system administrators.</p>
+<p>The committee wishes to clarify that all existing system administrators are, and to the best of the committee’s
+  knowledge, and have always been authorized to perform the functions of a system administrator.</p>
+<p>The committee agrees to appoint Timo Wilken (<code>tw466</code>) and Daniel Carter (<code>dcc52</code>) as
+  system administrators, as defined in item <code>1</code>. They are two most recent additions to the system
+  administrator team. Their status was previously unclear as there had been no written evidence of their status
+  until now.</p>
+<h3 id="4-Appointment-of-Volunteers"><code>4</code> Appointment of Volunteers</h3>
+<p>The committee wishes to approve the following people as ‘volunteers’, as defined in item <code>1</code>:</p>
+<ul>
+  <li>Matias Silva (<code>mw781</code>)</li>
+  <li>John-Joseph Gray (<code>jjag3</code>)</li>
+  <li>Mary Chester-Kadwell (<code>mec31</code>)</li>
+  <li>Charlie Jonas (<code>chtj2</code>)</li>
+  <li>Daniel Burgess (<code>deb31</code>)</li>
+</ul>
+<h3 id="5-Removal-of-Inactive-System-Administrators"><code>5</code> Removal of Inactive System Administrators</h3>
+<p>At this time, the committee finds it appropriate to update the current system administrator list by removing
+  inactive accounts.</p>
+<p>The committee has deemed that an active system administrator shall be one that has logged in to the
+  <code>pip</code> server with root privileges at any point in the year preceding 20/07/2020.
+</p>
+<p>Deletions in the table below represent the inactive system administrators who will have their root privileges
+  revoked. The remaining names will keep their root privileges.</p>
+<table>
+  <thead>
+    <tr>
+      <th>CRSid</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>amc96</code></td>
+      <td>Andrew Cooper</td>
+    </tr>
+    <tr>
+      <td><s><code>amr66</code></s></td>
+      <td><s>Andrew Ryrie</s></td>
+    </tr>
+    <tr>
+      <td><s><code>as2193</code></s></td>
+      <td><s>Amar Sood</s></td>
+    </tr>
+    <tr>
+      <td><s><code>bk372</code></s></td>
+      <td><s>Balint Kovacs</s></td>
+    </tr>
+    <tr>
+      <td><s><code>bm380</code></s></td>
+      <td><s>Ben Millwood</s></td>
+    </tr>
+    <tr>
+      <td><code>dcc52</code></td>
+      <td>Daniel Carter</td>
+    </tr>
+    <tr>
+      <td><code>de298</code></td>
+      <td>Dimitrije Erdeljan</td>
+    </tr>
+    <tr>
+      <td><code>dec41</code></td>
+      <td>Dexter Chua</td>
+    </tr>
+    <tr>
+      <td><code>djh243</code></td>
+      <td>David Horstmann</td>
+    </tr>
+    <tr>
+      <td><code>djr61</code></td>
+      <td>Daniel Richman</td>
+    </tr>
+    <tr>
+      <td><code>eb677</code></td>
+      <td>Edwin Bahrami Balani</td>
+    </tr>
+    <tr>
+      <td><code>htp27</code></td>
+      <td>Harrison Pitcher</td>
+    </tr>
+    <tr>
+      <td><code>jec226</code></td>
+      <td>Jefferson Edralin Chua</td>
+    </tr>
+    <tr>
+      <td><s><code>jl945</code></s></td>
+      <td><s>Jeck Lim</s></td>
+    </tr>
+    <tr>
+      <td><s><code>ll461</code></s></td>
+      <td><s>Lev Livnev</s></td>
+    </tr>
+    <tr>
+      <td><code>mas90</code></td>
+      <td>Malcolm Scott</td>
+    </tr>
+    <tr>
+      <td><s><code>mti20</code></s></td>
+      <td><s>Matthew Ireland</s></td>
+    </tr>
+    <tr>
+      <td><s><code>obw20</code></s></td>
+      <td><s>Olivier Wilkinson</s></td>
+    </tr>
+    <tr>
+      <td><s><code>rc516</code></s></td>
+      <td><s>Raf Czlonka</s></td>
+    </tr>
+    <tr>
+      <td><code>rjw201</code></td>
+      <td>Richard Whitehouse</td>
+    </tr>
+    <tr>
+      <td><code>rpc25</code></td>
+      <td>Ross Church</td>
+    </tr>
+    <tr>
+      <td><code>rsa33</code></td>
+      <td>Richard Allitt</td>
+    </tr>
+    <tr>
+      <td><s><code>sjm217</code></s></td>
+      <td><s>Steven Murdoch</s></td>
+    </tr>
+    <tr>
+      <td><s><code>sm2030</code></s></td>
+      <td><s>Souradip Mookerjee</s></td>
+    </tr>
+    <tr>
+      <td><code>tg307</code></td>
+      <td>Tejas Guruswamy</td>
+    </tr>
+    <tr>
+      <td><code>tw466</code></td>
+      <td>Timo Wilken</td>
+    </tr>
+  </tbody>
+</table>
+<p>The committee will reach out to the removed system administrators and invite them to participate in further
+  discussions as friends of the SRCF.</p>
+<p>The committee will also update <a href="http://srcf.net/committee" target="_blank"
+    rel="noopener">srcf.net/committee</a> to reflect the changes made here.</p>
+<p>For system administrators who have had their access revoked, regaining access will follow the same procedure as
+  adding a new system administrator, as defined in items <code>1</code> and <code>2</code>.</p>
+<!--#include virtual="../inc/footer.html" -->
