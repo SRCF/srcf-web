@@ -2,22 +2,28 @@
 <!--#include virtual="inc/header.html" -->
 <h2>Contact addresses</h2>
 
-<div class="card">
+<div class="card bg-warning">
   <div class="card-body">
-    <h4 class="card-title">Getting in touch about a site under <code>.user.srcf.net</code> or <code>.soc.srcf.net</code>?</h4>
-    <p>The SRCF hosts many user websites on its systems, and we provide built-in domains of the form
-    <i><span class="var">CRSid</span>.user.srcf.net</i> or <i><span class="var">acronym</span>.soc.srcf.net</i>.</p>
-    <p><strong>The SRCF itself is not immediately responsible for content under these domains.</strong></p>
-    <p>In the first instance, you should direct queries to the owners of the relevant account as follows:</p>
-    <ul>
-      <li>Websites like <b><span class="var">spqr2</span>.user.srcf.net</b>: emails to <b><span class="var">spqr2</span>@srcf.net</b>.</li>
-      <li>Websites like <b><span class="var">cuxs</span>.soc.srcf.net</b>: emails to <b><span class="var">cuxs</span>-webmaster@srcf.net</b>.</li>
-    </ul>
-    <p>For communications relating to infringing copyrighted material or other abuse, please also CC
-    <a href="mailto:soc-srcf-admin@lists.cam.ac.uk">soc-srcf-admin@lists.cam.ac.uk</a>.</p>
-    <p>We also host websites on <i>custom domains</i>, which do not end in <code>.srcf.net</code>.  Please contact the system administrators
-    at <a href="mailto:soc-srcf-admin@lists.cam.ac.uk">soc-srcf-admin@lists.cam.ac.uk</a> if you're getting in touch about a website hosted by
-    us under a custom domain and are unsure how to reach the site's owners.</p>
+    <h4 class="card-title">Before getting in touch...</h4>
+    <p>
+      Please review our
+      <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/reference/common-requests/">common requests</a>,
+      as your query may already be answered there. In particular, queries about
+      user content or access to group accounts should be directed to the owners
+      of that account &ndash; see the linked page for how to contact them.
+    </p>
+    <p>
+      For requests about your own personal or group account, note that many
+      actions, such as resetting passwords, adding additional services and
+      updating personal details, can be done using the
+      <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->/">control panel</a>.
+    </p>
+    <p>
+      For technical help and support, please take a look at our
+      <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/">documentation</a>
+      where we describe how to use our services, as well as maintain tutorials
+      for commonly used software like WordPress and Drupal.
+    </p>
   </div>
 </div>
 
@@ -25,7 +31,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Support team</h4>
+        <h4 class="card-title">Support and documentation</h4>
         <p>Technical assistance:</p>
         <ul>
           <li>how to upload web pages</li>
@@ -35,7 +41,8 @@
         </ul>
       </div>
       <div class="card-footer">
-        <a class="btn btn-outline-primary" href="https://docs.srcf.net">Get help</a>
+        <a class="btn btn-outline-primary" href="mailto:support@srcf.net">support@srcf.net</a>
+        <a class="btn btn-outline-secondary" href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/">docs.srcf.net</a>
       </div>
     </div>
     <div class="card">
@@ -47,12 +54,6 @@
           <li>installing new software</li>
           <li>takedowns e.g. copyright infringement</li>
         </ul>
-        <p class="font-italic">
-        Note that many account actions, such as resetting passwords, adding
-        additional services, updating personal details, <i>etc.</i> can now be carried
-        out on our
-        <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->">Control Panel</a>.
-        </p>
         <p>Reporting security issues:</p>
         <ul>
           <li>hacked accounts</li>
