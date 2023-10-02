@@ -6,30 +6,34 @@
   <div class="card-header bg-warning">
     <h4 class="card-title mb-0">Before getting in touch...</h4>
   </div>
-  <div class="card-body">
-    <p>
-      Queries about user content of websites on a <b>.user.srcf.net</b>
-      or <b>.soc.srcf.net</b> subdomain, or requests for access to group
-      accounts, should be directed to
-      <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/reference/common-requests/">the owners of those accounts</a>.
-    </p>
-    <p>
-      Please review our
-      <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/reference/common-requests/">common requests</a>,
-      as your query may already be answered or explained there.
-    </p>
-    <p>
-      Changes to your own accounts (including password resets, account
-      reactivation, group account handover, updating personal details
-      and so on) can be done using the
-      <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->">control panel</a>.
-    </p>
-    <p>
-      For technical help and support, our
-      <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->">documentation</a>
-      describes how to use our services, and includes tutorials for
-      commonly used software like WordPress and Drupal.
-    </p>
+  <div class="card-body row">
+    <div class="col-lg-6">
+      <p>
+        Queries about user content of websites on a <b>.user.srcf.net</b>
+        or <b>.soc.srcf.net</b> subdomain, or requests for access to group
+        accounts, should be directed to
+        <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/reference/common-requests/">the owners of those accounts</a>.
+      </p>
+      <p>
+        Please review our
+        <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->/reference/common-requests/">common requests</a>,
+        as your query may already be answered or explained there.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <p>
+        Changes to your own accounts (including password resets, account
+        reactivation, group account handover, updating personal details
+        and so on) can be done using the
+        <a href="<!--#if expr="${domain_control}" --><!--#echo var="domain_control" --><!--#endif -->">control panel</a>.
+      </p>
+      <p class="mb-0">
+        For technical help and support, our
+        <a href="<!--#if expr="${domain_docs}" --><!--#echo var="domain_docs" --><!--#endif -->">documentation</a>
+        describes how to use our services, and includes tutorials for
+        commonly used software like WordPress and Drupal.
+      </p>
+    </div>
   </div>
 </div>
 
