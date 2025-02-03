@@ -5,6 +5,6 @@
 # others.
 #
 Contact: mailto:sysadmins@srcf.net
-Expires: 2024-11-11T13:00:00.000Z
+Expires: 2026-11-11T13:00:00.000Z
 Preferred-Languages: en
 Canonical: https://www.srcf.net/.well-known/security.txt
