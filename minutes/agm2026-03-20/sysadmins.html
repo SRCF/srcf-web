@@ -1,0 +1,178 @@
+<!--#set var="title" value="Sysadmins' report" -->
+<!--#include virtual="../../inc/header.html" -->
+<h1 id="sysadmins-report-2026">Sysadmins’ report 2026</h1>
+<h2 id="executive-summary">Executive summary</h2>
+<ul>
+<li>Some user-facing servers are pending updates to a current OS
+version, but remain in security support for now.</li>
+<li>Poor webserver performance is ongoing and impacting many of our
+members and their site visitors. We’re working on ideas to improve it in
+the short term and scale out long term.</li>
+<li>It’s likely the SRCF’s primary physical presence, alongside the SU
+servers, will need to move out of their current machine room in the next
+12 months.</li>
+<li>Our services may need to comply with parts of the University’s
+Systems Management Policy (cybersecurity standards), either with changes
+to how we do things or by applying for exemptions.</li>
+</ul>
+<h2 id="ubuntu-upgrades">Ubuntu upgrades</h2>
+<p>The majority of our virtual machines run Ubuntu as the operating
+system. Since Ubuntu 20.04 reached its end-of-life date of May 2025,
+most non-user-facing machines have seen upgrades to bring them up to a
+supported version.</p>
+<p>The remaining machines are more complicated and/or will be
+user-visible (and therefore disruptive) upgrades, requiring further
+planning and announcements to users:</p>
+<ul>
+<li><code>pip</code> (shell)</li>
+<li><code>sinkhole</code> (web, PostgreSQL)</li>
+<li><code>doom</code> (user-run servers)</li>
+<li><code>hades</code> (email)</li>
+<li><code>squirrel</code> (MySQL)</li>
+</ul>
+<p>Ubuntu ESM (extended security and maintenance updates) has been
+enabled for all of these machines, which keeps them in support for an
+additional five years, until 2030.</p>
+<p>Since we usually use software versions (for Python, PHP, MySQL, etc.)
+that come as part of the standard Ubuntu packages, such base software
+that users rely on will be upgraded at the same time.</p>
+<h2 id="web-hosting-performance">Web hosting performance</h2>
+<p>The SRCF runs a multifaceted web hosting service. It supports static
+HTML websites, PHP and CGI scripting, and proxying to custom
+applications. It is probably the SRCF’s most heavily utilised
+service.</p>
+<p>The web hosting service continues to see a decline in performance:
+even simple pages can take a couple of seconds to load, while busy
+operations in complex applications like WordPress can take 30 seconds or
+more.</p>
+<p>This is in part due to the increasing number of users and groups who
+host websites. Unlike most shared hosting providers, website code is
+executed as the owning user’s account. This was originally adopted to
+allow for strong isolation between different accounts. However, it means
+the main Apache webserver process is frequently creating or recreating
+subprocesses that run as different user accounts, and these switches are
+expensive. It also means we cannot take advantage of ‘new’
+multi-processing approaches (called MPMs) in the Apache Web Server
+(<code>httpd</code>) software, which are not supported by the
+<code>mpm-itk</code> module we use to run the subprocesses as different
+accounts; these ‘new’ MPMs have in fact been present for a long time in
+the <code>httpd</code>, but we cannot take advantage of them.</p>
+<p>MySQL performance is also poor, which may also be in part due to the
+sheer volume of users, databases and queries passing through it. As many
+websites and applications make use of MySQL, not least popular software
+packages like WordPress, they will also carry the strain and see slow
+page loads as a result.</p>
+<p>We, like most of the internet, are also likely taking a significant
+hit from bots and scrapers masquerading as regular web visitors. We
+typically add crude but narrow blocks on particularly abusive or spammy
+traffic when we notice it, though modern scrapers are by design
+virtually indistinguishable from real visitors. Globally applying
+scraper protection solutions such as Anubis would most likely break a
+not-insignificant proportion of the sites we host, which can be old and
+expect direct connections to work without interference.</p>
+<p>Some initial discussion of spreading web hosting across multiple
+servers happened a few years ago, but there has been little capacity
+available amongst volunteers to take on the task since then. In the
+meantime, we have made a few attempts to find “quick wins” in
+performance, including:</p>
+<ul>
+<li>increasing VM resources on <code>squirrel</code>, the MySQL server,
+to reduce contention</li>
+<li>reducing swappiness and later disabling swap on
+<code>sinkhole</code>, the web hosting server</li>
+<li>increasing Apache workers (processes) to reduce process churn</li>
+<li>reducing the limit on how many processes can be assigned to a single
+user</li>
+</ul>
+<p>So far, <code>squirrel</code> as a machine is running more smoothly
+and is no longer a bottleneck, though there does not seem to have been a
+significant effect on general web performance.</p>
+<h2 id="business-as-usual">Business as usual</h2>
+<p>Most account management and provisioning of services for users
+continues to be done via the control panel. Since the control panel’s
+introduction in 2018, most user requests can be met through
+self-service, meaning sysadmins’ intervention in these day-to-day tasks
+is minimal.</p>
+<p>The most common user queries received across the sysadmins and
+support mailboxes were:</p>
+<ul>
+<li>Complaints or queries around poor webserver performance.
+<ul>
+<li><strong>This is by far the most common point of feedback we are
+getting now.</strong></li>
+<li>Every now and again we hear from societies who have had to take
+their websites to another host as the SRCF’s web server runs their site
+so slow. It is of course their free choice, but we feel a little
+saddened each time nonetheless.</li>
+</ul></li>
+<li>Noting that the available version of PHP is out of support, or
+requesting it be updated
+<ul>
+<li>It remains secure and patched by Ubuntu, but WordPress at least
+doesn’t recognise this and shows security warnings in the admin panel of
+every installation</li>
+<li>Naturally, some software also requires newer versions of PHP because
+it’s been written to take advantage of newer language features.</li>
+</ul></li>
+<li>Requests to take over an existing group account</li>
+<li>Requests to fix incorrect file permissions in group spaces</li>
+</ul>
+<p>Reports from CSIRT (University IT security) and Netcraft (external
+vulnerability detection) flagged a handful of vulnerable WordPress
+installaions, about of half of which were unmaintained and taken
+down.</p>
+<p>Not much has changed with our code and configuration, besides a
+handful of bug fixes to incoming mail handling, Nevar (our University
+Account authorisation service), and various bits of internal
+tooling.</p>
+<h2 id="on-the-horizon">On the horizon</h2>
+<h3 id="physical-move-at-some-point">Physical move, at some point</h3>
+<p>The SRCF’s machines are kindly hosted within server racks, or parts
+of a server rack, lent by Cambridge SU and by the Department of Computer
+Science and Technology. Out of these two, the SU are in turn facing the
+prospect of having to move racks (i.e. both SU machines and the SRCF’s
+machines) around the University estate. A similar move took place in
+April 2022, when the whole SU moved buildings. This time, the SU is not
+moving, but the servers (which are hosted elsewhere) are scheduled
+to.</p>
+<p>At this time we are not certain of the deadline by which this needs
+to happen, or to where the SU &amp; SRCF machines will move. However
+this is somewhat typical of University estate planning in general.</p>
+<p>There have been some strong doubts cast over the viability of the
+ongoing relationship between the SRCF and the SU, and rumours that the
+SU no longer wish to host the SRCF. For the record, the sysadmins are
+satisfied that our relationship with the SU, who continue to kindly lend
+the SRCF some of the space, cooling, power and networking resources
+available to them, is in no jeopardy; we form this belief from recent
+conversation with relevant SU staff and in the absence of any
+indications to the contrary.</p>
+<h3 id="university-systems-management-policy">University Systems
+Management Policy</h3>
+<p>The University, centrally through UIS, has introduced a Systems
+Management Policy (SMP) that applies to “multi-user computer systems” in
+the University. Most if not all of the SRCF’s systems are multi-user.
+The SMP incorporates a series of technical standards documents
+containing requirements with cybersecurity, governance and other goals.
+However, the stated focus is on cybersecurity. The SMP is not dissimilar
+in nature to public standards such as ISO 27001/27002 or SOC2.</p>
+<p>The term “the University” can have various definitions, for example
+including or excluding Colleges, although we have taken the cautious
+view that the SMP may well apply to the SRCF and so we should aim to
+operate our systems accordingly, regardless of whether an obligation to
+comply actually exists. Efforts to follow the SMP are in the early
+phases.</p>
+<p>Bringing systems into SMP compliance is a significant undertaking for
+full-time IT teams. By its nature the SRCF sees only part-time attention
+to it, and some aspects of the SRCF’s systems may not be of the typical
+kind that the authors of the SMP had in mind when policies were written.
+For example, the current hardware is older and out of warranty. For
+these reasons the SRCF will need quite a while to follow the SMP, and
+along the way the need to apply to UIS for exemptions from specific
+parts of the SMP may arise. To be clear, applying for an exemption is a
+process built into the SMP.</p>
+<p>Aside from technical changes to systems, the SMP requires a practice
+of documentation in various aspects, such as the production of internal
+policies and procedures. These will have to be authored where they are
+missing, and maintained on an ongoing basis. The creation of new
+volunteer roles may help to handle the upkeep in this area.</p>
+<!--#include virtual="../../inc/footer.html" -->
